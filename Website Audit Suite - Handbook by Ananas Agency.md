@@ -13,12 +13,12 @@ _by Ananas Agency._ Every skill and its reference, compiled into one document. N
 ## Goal
 
 Fetch the user's website and produce a reusable **Site Snapshot**: the shared foundation for every
-other Website Audit skill. Establish it once — what the site is, who it's for, and the one action it
-most wants a visitor to take — then reuse it in each analysis instead of re-establishing the basics.
+other Website Audit skill. Establish it once (what the site is, who it's for, and the one action it
+most wants a visitor to take), then reuse it in each analysis instead of re-establishing the basics.
 
 This suite is **URL-first**: you read the live page and pull the facts yourself; the user only
 confirms them and fills the few things a page can't tell you (the real business goal, the audience,
-who they see as competitors). Written for **business owners and marketers**, not developers — keep
+who they see as competitors). Written for **business owners and marketers**, not developers. Keep
 the language plain and explain any shorthand.
 
 ## Why a Site Snapshot
@@ -31,24 +31,24 @@ purpose, its primary conversion, its audience, and which pages to look at. Captu
   one direction),
 - gives the user a single profile they can update as the site changes.
 
-This skill is intake only — it does **not** grade or produce findings. It feeds the skills that do.
+This skill is intake only. It does **not** grade or produce findings; it feeds the skills that do.
 
 ## What the snapshot captures
 
-1. **Site & business** — the site/brand name and a one-line description of what it does; the
+1. **Site & business:** the site/brand name and a one-line description of what it does; the
    category (e-commerce, SaaS, lead-gen / services, local business, content/media, other).
-2. **Primary conversion goal** — the single most important action a visitor should take (buy, book a
+2. **Primary conversion goal:** the single most important action a visitor should take (buy, book a
    call, request a quote, sign up, subscribe, contact, download). Plus any secondary goals. *This is
    the anchor for the whole audit.*
-3. **Audience** — who the site is for and what they're trying to do when they arrive.
-4. **Page inventory** — the key pages and page *types* (home, services, products, case studies,
+3. **Audience:** who the site is for and what they're trying to do when they arrive.
+4. **Page inventory:** the key pages and page *types* (home, services, products, case studies,
    articles, about, contact). Note which is the main entry page. This drives the suite's two-tier depth:
    the **homepage** gets the full in-depth audit, while the **secondary page types** get a quick site-wide
    SEO sweep (see [report-format.md](report-format.md), "Audit depth").
-5. **Platform & signals** — the platform/CMS if detectable (WordPress, Shopify, Webflow, Wix, custom…),
-   whether analytics/pixels are present, HTTPS, language/region — **only what's actually observable**.
-6. **Competitors / references** — 1–3 sites the user compares themselves to (optional, user-supplied).
-7. **Context** — the URL(s) audited, and any constraints (e.g. "don't judge the blog", "mobile
+5. **Platform & signals:** the platform/CMS if detectable (WordPress, Shopify, Webflow, Wix, custom…),
+   whether analytics/pixels are present, HTTPS, language/region (**only what's actually observable**).
+6. **Competitors / references:** 1–3 sites the user compares themselves to (optional, user-supplied).
+7. **Context:** the URL(s) audited, and any constraints (e.g. "don't judge the blog", "mobile
    matters most").
 
 ## Conversation flow
@@ -56,7 +56,7 @@ This skill is intake only — it does **not** grade or produce findings. It feed
 You do the reading; keep the user's part short. Aim for **one fetch + one confirmation pass** (roughly
 3–5 questions, 2–3 at a time).
 
-> **How to run this session — read before you start.**
+> **How to run this session: read before you start.**
 > - **Fetch first, ask second.** As soon as you have the URL, fetch it and extract everything you can
 >   (name, what it does, category, likely primary CTA, key pages from the nav, platform signals). Come
 >   to the user with a *draft* snapshot to confirm, not a blank questionnaire.
@@ -64,22 +64,22 @@ You do the reading; keep the user's part short. Aim for **one fetch + one confir
 >   who they consider competitors are the three things you usually must ask. Everything else, propose
 >   from what you read and let them correct it.
 > - **Nail the primary goal.** If the page has several calls to action, ask the user which single
->   action matters most commercially — the whole audit is scored against it. Don't guess silently.
+>   action matters most commercially; the whole audit is scored against it. Don't guess silently.
 > - **Prefer pickable options.** For category (e-commerce / SaaS / lead-gen / local / content) and
 >   primary goal (buy / book / quote / sign up / subscribe / contact / download), offer a short
 >   pickable list rather than open prompts.
 > - **Don't invent.** If you can't fetch the page (blocked, JS-only, paywalled), say so and ask the
 >   user to paste the key pages' text or a screenshot. Anything genuinely unknown stays **TBD**, never
->   a guess — the later skills and the final reconciliation pass fill it in.
+>   a guess; the later skills and the final reconciliation pass fill it in.
 
 ### Required inputs — capture before delivering
 Check each off (or mark **TBD**) before Step 4 (Confirm & deliver):
 - [ ] Site/brand name, one-line description, and the **URL(s)** audited
 - [ ] Category (e-commerce / SaaS / lead-gen·services / local / content / other)
 - [ ] **Primary conversion goal** (the single most important visitor action) + any secondary goals
-- [ ] Audience — who it's for and their intent
-- [ ] Page inventory — the key pages, and the main entry page
-- [ ] Platform & signals — platform/CMS, analytics present?, HTTPS, language/region (observable only)
+- [ ] Audience: who it's for and their intent
+- [ ] Page inventory: the key pages, and the main entry page
+- [ ] Platform & signals: platform/CMS, analytics present?, HTTPS, language/region (observable only)
 - [ ] Competitors / references (optional) and any constraints
 
 ### Step 1: Get the URL and fetch it
@@ -116,19 +116,19 @@ guessing. Then deliver the files.
 
 ### Step 5: Hand off (and note the run layer)
 
-Tell the user the snapshot is ready. The recommended next step is the **Goals & Discovery** interview — it
+Tell the user the snapshot is ready. The recommended next step is the **Goals & Discovery** interview. It
 captures how they feel about the site and what they want it to achieve, and it runs *while* the site is
 being read/measured (it's paced by the owner answering, so in the Extended layer you launch the background
 scans first and interview during them). After that, any of the five analyses (**Messaging & Clarity**,
-**Conversion**, **SEO**, **UX & Technical**, **Design & Visual**) can run — they're independent. From here
+**Conversion**, **SEO**, **UX & Technical**, **Design & Visual**) can run; they're independent. From here
 on, the user pastes this snapshot (and the Goals & Discovery brief) whenever a later skill asks about the site.
 
-Also tell them which **layer** this audit will run in (both are free — see
+Also tell them which **layer** this audit will run in (both are free; see
 [report-format.md](report-format.md), "Basic & Extended layers"):
-- **Extended** — the measured tools can run here (you can execute `python`/Playwright), so the audit will
+- **Extended:** the measured tools can run here (you can execute `python`/Playwright), so the audit will
   include real Core Web Vitals, accessibility, mobile, design-token and tracking measurements.
-- **Basic** — the tools can't run in this environment (e.g. the Claude web/desktop app), so those checks
-  will be reported as *"not measured — available with the Extended layer"* and the audit is Claude's
+- **Basic:** the tools can't run in this environment (e.g. the Claude web/desktop app), so those checks
+  will be reported as *"not measured: available with the Extended layer"* and the audit is Claude's
   read-and-reason review. Everything else is identical.
 Quietly test whether a tool can run (or infer from the environment) and say which mode they're getting.
 
@@ -137,7 +137,7 @@ Quietly test whether a tool can run (or infer from the environment) and say whic
 Generate TWO files (`site-snapshot.md` and a styled, self-contained `site-snapshot.html`) and share them
 with the user. The `.html` must follow the shared navigation rules: cross-links to the other deliverables,
 hover hints on short terms, and end with the Print hint (no `pagenav` mid-session). Format and the full
-shared design system (CSS + page frame) — see: [references/rules-snapshot.md](references/rules-snapshot.md),
+shared design system (CSS + page frame). See: [references/rules-snapshot.md](references/rules-snapshot.md),
 section "Output file format".
 
 Save both files and share them with the user for download.
@@ -145,7 +145,7 @@ Save both files and share them with the user for download.
 ## Add to the Website Audit Report
 
 This suite is meant to run as one continuous session, start to finish. **Deliver only your own two files
-now** (`.md` + `.html`). Keep the **Website Audit Report** as an **internal running document** — do **not**
+now** (`.md` + `.html`). Keep the **Website Audit Report** as an **internal running document**. Do **not**
 create, show, or hand over a report file mid-session; it is assembled and delivered only at the very end
 (by the Action Report skill). As the first skill, start that internal record and add the **Site Snapshot**
 section from what you just captured. Full format and section order:
@@ -154,13 +154,13 @@ section from what you just captured. Full format and section order:
 ## Critical rules
 
 1. **URL-first.** Fetch and read the site before asking anything. Come with a draft, not a blank form.
-2. **Intake, not analysis.** No grades, no findings here — that's the five analysis skills' job. Keep it
+2. **Intake, not analysis.** No grades, no findings here; that's the five analysis skills' job. Keep it
    to one short pass.
 3. **Don't invent.** Report only observable signals; mark unknowns **TBD**. The Action Report's
-   reconciliation pass backfills any TBDs answered later — so leave a genuine unknown as **TBD**, never a
+   reconciliation pass backfills any TBDs answered later, so leave a genuine unknown as **TBD**, never a
    guess.
 4. **One primary goal, anchored.** Pin down the single most important conversion and make the user
-   confirm it — every later finding is judged against it.
+   confirm it; every later finding is judged against it.
 5. **One snapshot, reused everywhere.** Remind the user to paste this into the other skills instead of
    re-establishing the site.
 6. **Plain language.** The audience is business owners/marketers. Explain any shorthand; no unexplained
@@ -173,7 +173,7 @@ section from what you just captured. Full format and section order:
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -190,12 +190,12 @@ it is reproduced in full at the bottom of this file.
 ## What to extract from the page (fetch-first checklist)
 
 When you fetch the site, pull these before asking the user anything. Everything here is observable from
-the HTML/rendered page — do not infer beyond what's there.
+the HTML/rendered page. Do not infer beyond what's there.
 
 ### Identity & purpose
-- Site / brand name — from `<title>`, the header logo `alt`, `og:site_name`, the footer.
-- One-line description — from the hero H1/subhead, the `<meta name="description">`, or `og:description`.
-- Category — infer from the content: e-commerce (cart, products, prices), SaaS (sign-up, pricing tiers,
+- Site / brand name: from `<title>`, the header logo `alt`, `og:site_name`, the footer.
+- One-line description: from the hero H1/subhead, the `<meta name="description">`, or `og:description`.
+- Category: infer from the content: e-commerce (cart, products, prices), SaaS (sign-up, pricing tiers,
   "start free trial"), lead-gen / services (contact/quote forms, "book a call"), local business
   (address, opening hours, map), content/media (articles, subscribe).
 
@@ -210,11 +210,11 @@ the HTML/rendered page — do not infer beyond what's there.
 - The main entry page (usually the homepage, unless the user names a campaign landing page).
 
 ### Platform & technical signals (observable only)
-- Platform/CMS — `<meta name="generator">`, tell-tale asset paths (`/wp-content/` → WordPress,
+- Platform/CMS: `<meta name="generator">`, tell-tale asset paths (`/wp-content/` → WordPress,
   `cdn.shopify.com` → Shopify, `.webflow.io`/`assets.website-files.com` → Webflow, `wix` → Wix).
-- Analytics / pixels present — Google Analytics/Tag Manager, Meta pixel, etc. (report presence, not data).
+- Analytics / pixels present: Google Analytics/Tag Manager, Meta pixel, etc. (report presence, not data).
 - HTTPS (is the URL `https://`?), `<html lang>`, apparent language/region.
-- **Not captured at intake:** real load time, Core Web Vitals, true mobile rendering — don't state these
+- **Not captured at intake:** real load time, Core Web Vitals, true mobile rendering. Don't state these
   here; the **UX & Technical** skill *measures* them with the bundled tools. (Uptime and live traffic are
   out of scope for the suite.)
 
@@ -227,7 +227,7 @@ the HTML/rendered page — do not infer beyond what's there.
 ## If the page can't be read
 
 Some sites render nothing useful without JavaScript, block fetching, or sit behind a login. If so:
-- Say plainly what happened ("I couldn't read the page directly — it looks JavaScript-rendered / blocked").
+- Say plainly what happened ("I couldn't read the page directly; it looks JavaScript-rendered / blocked").
 - Ask the user to paste the homepage (and 1–2 key pages') visible text, or share a screenshot.
 - Work from what they provide; mark anything still unknown as **TBD**.
 
@@ -281,7 +281,7 @@ about the site.
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets
 and no JavaScript**), so it opens in any browser, prints cleanly to PDF, and can be emailed as one file.
 Render the **same content** as the Markdown version. Keep the `<style>` block **identical to the shared
-design system** below — every skill in this suite uses this exact block so all deliverables share one look.
+design system** below. Every skill in this suite uses this exact block so all deliverables share one look.
 
 - One `<section class="block">` per heading (Site & business, Primary conversion goal, Audience, Page
   inventory, Platform & signals, Competitors, Scope & constraints, Next step).
@@ -292,11 +292,11 @@ design system** below — every skill in this suite uses this exact block so all
 - **Cross-link every reference to another deliverable** (see [report-format.md](report-format.md)
   for canonical filenames: `messaging.html`, `conversion.html`, `seo.html`, `ux-technical.html`,
   `action-report.html`). Any finding ID cited links to that dimension's page with a tooltip.
-- **Hover hints on short terms — every occurrence, not just the first.** Give a `title` tooltip to every
-  appearance of the shorthand set — **IIF, CRO, SEO, UX, CTA, the ID prefixes (MSG/CRO/SEO/UX), and the
-  quadrant labels (quick win / big bet / fill-in / skip)** — e.g.
+- **Hover hints on short terms, every occurrence, not just the first.** Give a `title` tooltip to every
+  appearance of the shorthand set: **IIF, CRO, SEO, UX, CTA, the ID prefixes (MSG/CRO/SEO/UX), and the
+  quadrant labels (quick win / big bet / fill-in / skip)**, e.g.
   `<abbr title="Issue · Impact · Fix — the finding format">IIF</abbr>`.
-- **No Previous / Next buttons in this file.** Don't add a `pagenav` mid-session — end with the Print
+- **No Previous / Next buttons in this file.** Don't add a `pagenav` mid-session. End with the Print
   hint. The walk is wired only in the final pack (see report-format.md, "Final consistency pass").
 - **Print hint (no JavaScript).** End the page with
   `<p class="printhint">🖨 Print / Save as PDF — press <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>⌘</kbd>+<kbd>P</kbd> on Mac)</p>`.
@@ -509,7 +509,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -521,54 +521,54 @@ Released under the MIT License — keeping the copyright notice is all that is r
 
 ## Goal
 
-Capture the **owner's voice**, then **cross-examine it against the site** — and turn the gap into insight. A
+Capture the **owner's voice**, then **cross-examine it against the site**, and turn the gap into insight. A
 transcript of the owner's answers is low value; the value is putting *what they believe* next to *what the
 page and the measured scans actually show*, and surfacing where the two disagree.
 
 So this skill produces a **diagnostic**, not a form:
-1. a short **owner brief** (satisfaction, the one goal, success, frustrations, audience, appetite) —
+1. a short **owner brief** (satisfaction, the one goal, success, frustrations, audience, appetite),
    compressed, not the bulk;
-2. a **"Stated vs. observed" reality-check** — each belief the owner holds, set against what the fetch +
+2. a **"Stated vs. observed" reality-check:** each belief the owner holds, set against what the fetch +
    the parallel scans reveal, with **the gap** called out (this is the centre of gravity);
-3. the **tensions** — where the goal, the constraints and the data pull against each other;
-4. a short, **prioritised "How to reach your goal"** — opinionated direction, each item pointing to the
+3. the **tensions:** where the goal, the constraints and the data pull against each other;
+4. a short, **prioritised "How to reach your goal":** opinionated direction, each item pointing to the
    analysis that will detail it.
 
 This works *because* the interview runs while the scans render (below): by the time the owner finishes
 answering, the measured data is already in, so you can immediately hold their answers against it. Where the
 [Site Snapshot](../../0%20Site%20Snapshot/site-snapshot/SKILL.md) records what the *page* says and the owner
 brief records what the *person* says, the reality-check is where you **add judgment neither could give alone**.
-Written for **business owners and marketers** — keep it a warm conversation, not a form; plain language, no jargon.
+Written for **business owners and marketers**. Keep it a warm conversation, not a form; plain language, no jargon.
 
 ## Why a Goals & Discovery brief
 
 The five analyses grade the site against the 2026 standard. But "good" only means something relative to a
 goal. Two facts change how every finding should be read:
 
-- **What the owner is trying to achieve** — more leads, more sales, fewer support calls, looking credible
+- **What the owner is trying to achieve:** more leads, more sales, fewer support calls, looking credible
   to investors. The same page is a success or a failure depending on which.
-- **What they can and will change** — a beautiful redesign recommendation is useless if the brand is locked
+- **What they can and will change:** a beautiful redesign recommendation is useless if the brand is locked
   or the budget is an afternoon. Appetite and constraints keep the advice realistic.
 
 Captured once, this brief travels with the [Site Snapshot](../../0%20Site%20Snapshot/site-snapshot/SKILL.md)
-into every skill. It is **discovery + diagnosis + direction** — it produces **no graded findings** (the five
+into every skill. It is **discovery + diagnosis + direction**. It produces **no graded findings** (the five
 analyses do that, with IIF findings and letter grades), but it *does* hold the owner's answers against the
 observed reality and close with **prioritised advice on how to reach their stated goals**, giving the
 analyses and the [Action Report](../../7%20Action%20Report/action-report/SKILL.md) their bearings. The
-reality-check and advice are directional, not the final plan — the analyses verify the specifics and the
+reality-check and advice are directional, not the final plan; the analyses verify the specifics and the
 Action Report ranks them.
 
 ## Runs *while* the site is being analysed
 
-This interview is paced by the **owner answering**, so it costs almost no machine time — which makes it the
+This interview is paced by the **owner answering**, so it costs almost no machine time, which makes it the
 ideal thing to run **concurrently** with the parts of the audit that do:
 
 - **Extended layer (tools can run, e.g. Claude Code):** as soon as you have the URL and a Site Snapshot,
   **launch the measured scans in the background** (`perf-a11y-scan.py`, `mobile-audit.py`, `design-scan.py`,
-  `seo-sweep.py`, `tracking-scan.py`, `interaction-scan.py` — run them in the background so control returns
+  `seo-sweep.py`, `tracking-scan.py`, `interaction-scan.py`; run them in the background so control returns
   to you), then **run this interview while they render**. When the interview wraps, the scan outputs are
   waiting. This hides the slowest part of the whole audit behind the conversation.
-- **Basic layer (no tools, e.g. the Claude app):** there's no background thread, so simply **interleave** —
+- **Basic layer (no tools, e.g. the Claude app):** there's no background thread, so simply **interleave**:
   read a page, ask a question, read the next while the owner types. It still feels concurrent and nothing
   is wasted.
 
@@ -576,47 +576,47 @@ Either way: **don't make the owner wait for a scan bar.** Talk to them while the
 
 ## What the brief captures
 
-**Core — always capture (the fast interview):**
-1. **Satisfaction today** — how happy they are with the site overall, and (optional) a quick 1–5
+**Core, always capture (the fast interview):**
+1. **Satisfaction today:** how happy they are with the site overall, and (optional) a quick 1–5
    self-rating across a few areas: look & feel, message clarity, getting leads/sales, ease of updating.
-   *This is the owner's own view, clearly labelled — not the audit's grade.*
-2. **The one goal** — the single most important thing they want the site to achieve. Reconcile this with
+   *This is the owner's own view, clearly labelled, not the audit's grade.*
+2. **The one goal:** the single most important thing they want the site to achieve. Reconcile this with
    the Snapshot's **primary conversion goal** (they should agree; if not, resolve it here).
-3. **What success looks like** — how they'd know it's working, with a **number if they have one** (e.g.
+3. **What success looks like:** how they'd know it's working, with a **number if they have one** (e.g.
    "20 qualified leads a month", "a 2% checkout rate", "10 booked calls a week"). Mark **TBD** if none.
-4. **Biggest frustrations** — the one or two things that bother them most, in their own words.
-5. **Audience, in their words** — who they think the site is really for and what those people come to do.
-6. **References they admire** — sites they look at and want to emulate, and *what* they like about each.
-7. **Appetite & constraints** — how much time/budget they have for change, and anything off-limits (brand
+4. **Biggest frustrations:** the one or two things that bother them most, in their own words.
+5. **Audience, in their words:** who they think the site is really for and what those people come to do.
+6. **References they admire:** sites they look at and want to emulate, and *what* they like about each.
+7. **Appetite & constraints:** how much time/budget they have for change, and anything off-limits (brand
    locked, can't change platform, don't touch page X, a redesign already underway).
-8. **History & wishlist** *(light)* — anything they've changed or tried recently, and the one new thing
+8. **History & wishlist** *(light)*: anything they've changed or tried recently, and the one new thing
    they wish the site could do.
 
-**Deeper — capture when there's time, or for a fuller brief** (these sharpen the advice at the end):
-9. **Current results baseline** — roughly how many enquiries/sales the site brings now, and how good the
+**Deeper, capture when there's time, or for a fuller brief** (these sharpen the advice at the end):
+9. **Current results baseline:** roughly how many enquiries/sales the site brings now, and how good the
    quality is. Gives the target a starting point ("from ~3 to ~10 a month").
-10. **Traffic sources** — where visitors come from today (search, ads, referrals, social, word of mouth) —
+10. **Traffic sources:** where visitors come from today (search, ads, referrals, social, word of mouth),
     even roughly. Tells you which lever moves the goal.
-11. **Why clients really choose them** — the true differentiator, in the owner's words (not the tagline).
-12. **Biggest objection** — the doubt or question prospects raise most before they buy/commit.
-13. **Money pages** — the pages/products/services that matter most commercially (where to focus effort).
-14. **Marketing in flight** — what's running now (ads, content/SEO, email, events, outbound) that the site
+11. **Why clients really choose them:** the true differentiator, in the owner's words (not the tagline).
+12. **Biggest objection:** the doubt or question prospects raise most before they buy/commit.
+13. **Money pages:** the pages/products/services that matter most commercially (where to focus effort).
+14. **Marketing in flight:** what's running now (ads, content/SEO, email, events, outbound) that the site
     should support.
-15. **Brand & assets** — do they have brand guidelines / a logo / photography, or is a rebrand underway?
-16. **Budget & timeline** — a rough band and any deadline (a launch, a campaign, a trade show).
-17. **Who decides** — who signs off on changes (owner alone, a marketing lead, a committee).
-18. **The competitor to beat** — one rival or example site they want to outclass, and why.
-19. **Anything we missed** *(open catch-all)* — "What haven't I asked that matters for this site?" Always
+15. **Brand & assets:** do they have brand guidelines / a logo / photography, or is a rebrand underway?
+16. **Budget & timeline:** a rough band and any deadline (a launch, a campaign, a trade show).
+17. **Who decides:** who signs off on changes (owner alone, a marketing lead, a committee).
+18. **The competitor to beat:** one rival or example site they want to outclass, and why.
+19. **Anything we missed** *(open catch-all)*: "What haven't I asked that matters for this site?" Always
     end on this; it's where owners volunteer the thing no fixed question would surface.
 
 **Ask each in the right form:**
 - **Single-select pickable** (force one answer): satisfaction · the **one** goal · appetite. The point is
-  a priority — don't let these be multi.
+  a priority; don't let these be multi.
 - **Multi-select pickable** (pick all that apply): traffic sources · frustrations · audiences ·
   marketing-in-flight · brand assets. More than one is usually true.
 - **Open (their own words)**: what success/"wow" looks like · why clients really choose them · the biggest
   objection · references they admire · the wishlist · the competitor to beat · the catch-all above. These
-  can't be pre-listed, and they carry the richest material — quote them verbatim.
+  can't be pre-listed, and they carry the richest material; quote them verbatim.
 - Every pickable question still offers an **"Other"** so a pick never traps them.
 
 Scale to the session: the **Core** eight are enough for a quick brief; add as many **Deeper** questions as
@@ -627,70 +627,70 @@ can be.
 
 The output leads with the **judgment**, not the answers. In order:
 
-**1. Owner brief (compressed).** The answers in a few tight rows — satisfaction, the one goal, success (+ a
+**1. Owner brief (compressed).** The answers in a few tight rows: satisfaction, the one goal, success (+ a
 number or **TBD**), top frustration, audience, appetite & constraints. Keep it short; it's context, not the
 main event.
 
-**2. "Stated vs. observed" reality-check — the centre of the deliverable.** For each belief the owner holds,
+**2. "Stated vs. observed" reality-check, the centre of the deliverable.** For each belief the owner holds,
 set it beside what the **fetched page and the parallel scans** actually show, and name **the gap**. Examples:
 - Owner's goal is *"look credible"* → the scan measured **LCP 10.8s / 6 MB / no security headers** → *the
-  #1 credibility killer is technical, not visual — a 10-second load reads as amateur before design is seen.*
+  #1 credibility killer is technical, not visual: a 10-second load reads as amateur before design is seen.*
 - Owner says *"the message isn't sharp"* → the H1 is a slogan, services are generic, the portfolio is
   anonymised → *confirmed, and it's a copy fix: name what you do + who for, and name the clients.*
 - Owner's satisfaction is *"okay"* → the measured foundation grades poorly → *the self-rating is generous.*
 
 Each row is **you said → what we see → the gap**. This is what the owner can't get from a form, and it's the
-reason the interview runs while the scans render — the data is ready to hold their answers against.
+reason the interview runs while the scans render; the data is ready to hold their answers against.
 
-**3. Tensions.** Where the goal, the constraints and the data pull against each other — e.g. *"you want 'wow'
+**3. Tensions.** Where the goal, the constraints and the data pull against each other, e.g. *"you want 'wow'
 but have only a few days and want to keep the design"* → then resolve it (often the constraint and goal turn
 out compatible, which is itself worth saying).
 
-**4. "How to reach your goal" — prioritised advice.** 3–6 opinionated, plain recommendations, **ordered by
+**4. "How to reach your goal": prioritised advice.** 3–6 opinionated, plain recommendations, **ordered by
 leverage toward the stated goal**, each tied to an answer + the reality-check and pointing to the analysis
 that details it. Sharp and short, not a hedge.
 
 Rules that keep it honest:
-- **Cross-examine, don't just record** — a row that only restates an answer adds nothing; every row must
+- **Cross-examine, don't just record:** a row that only restates an answer adds nothing; every row must
   carry an observation or a gap.
-- **Ground the "observed" side in fact** — the fetched page, or the measured scans (cite the real number).
+- **Ground the "observed" side in fact:** the fetched page, or the measured scans (cite the real number).
   Don't invent metrics; the real-world numbers only analytics can show stay owner-reported.
-- **No grades or IIF findings** — that's the five analyses and the Action Report. This is the orienting
+- **No grades or IIF findings:** that's the five analyses and the Action Report. This is the orienting
   diagnosis, not the graded plan.
 
 ## Conversation flow
 
-Keep it human and warm — **2–3 questions at a time**, in a few short passes. Always cover the **Core** eight;
+Keep it human and warm: **2–3 questions at a time**, in a few short passes. Always cover the **Core** eight;
 then go as deep into the **Deeper** set as the owner has patience for (a quick brief is ~8 questions; a full
-one is ~14–18). Come curious, not clipboard-in-hand — and let the depth follow their energy, not a checklist.
+one is ~14–18). Come curious, not clipboard-in-hand, and let the depth follow their energy, not a checklist.
 
-> **How to run this session — read before you start.**
+> **How to run this session: read before you start.**
 > - **Kick off the machine work first (if you can), then talk.** In the Extended layer, launch the
 >   background scans before you ask question one, so they render while you interview (see "Runs while the
 >   site is being analysed"). Never leave the owner watching a progress bar.
-> - **Mix pickable and open questions — don't make it all multiple-choice.** Use a short **pickable list**
+> - **Mix pickable and open questions, don't make it all multiple-choice.** Use a short **pickable list**
 >   for quick categorical answers (satisfaction: very happy / okay / frustrated; the goal: more leads /
 >   sales / bookings / sign-ups / credibility / fewer support calls; appetite: an afternoon / a few days / a
->   project) — always with an **"Other"** escape so they can type their own. But ask a genuine **open
+>   project), always with an **"Other"** escape so they can type their own. But ask a genuine **open
 >   question** wherever the answer needs their own words and can't be pre-listed: *what "success" actually
 >   looks like, why clients really choose them, the sites they admire and why, the one thing they wish the
->   site did, and "what am I missing?"*. The open answers are where the richest material comes from — quote
+>   site did, and "what am I missing?"*. The open answers are where the richest material comes from; quote
 >   them verbatim.
 > - **Let pickable questions take more than one answer where more than one is true.** Traffic sources,
->   frustrations, audiences, and marketing-in-flight are rarely a single item — offer these as
+>   frustrations, audiences, and marketing-in-flight are rarely a single item, so offer these as
 >   **multi-select** (pick all that apply) rather than forcing one choice. Satisfaction, the *one* goal, and
 >   appetite stay single-select (the whole point is to force a priority).
 > - **Nail the one goal and a number.** Push gently for the single most important goal and, if it exists,
->   a target number — it's what makes "is the site working?" answerable. If there's genuinely no number,
+>   a target number; it's what makes "is the site working?" answerable. If there's genuinely no number,
 >   record **TBD**, don't invent one.
 > - **Reconcile with the Snapshot.** If the owner's stated goal differs from the primary conversion in the
->   Site Snapshot, surface the mismatch and settle it — the analyses are scored against one goal.
+>   Site Snapshot, surface the mismatch and settle it; the analyses are scored against one goal.
 > - **Their words are evidence.** Quote the owner directly in the brief (e.g. *"it looks dated and I'm
 >   embarrassed to send the link"*). Don't paraphrase their frustration into blandness.
 > - **Cross-examine, don't transcribe.** A brief that only echoes the answers is low value. Once you've
 >   captured enough, hold each belief against the page + the finished scans and write the **"Stated vs.
 >   observed"** reality-check (you said → what we see → the gap), then the **tensions**, then prioritised
->   advice. No grades or IIF findings (that's the analyses) — but real judgment, grounded in what you saw.
+>   advice. No grades or IIF findings (that's the analyses), but real judgment, grounded in what you saw.
 
 ### Required inputs — capture before delivering
 Check each off (or mark **TBD**) before you deliver:
@@ -702,7 +702,7 @@ Check each off (or mark **TBD**) before you deliver:
 - [ ] **Core:** References they admire (optional) and what they like
 - [ ] **Core:** Appetite & constraints (time/budget; anything off-limits)
 - [ ] **Core:** History & wishlist (optional)
-- [ ] **Core:** "Anything we missed?" — the open catch-all (always ask last)
+- [ ] **Core:** "Anything we missed?", the open catch-all (always ask last)
 - [ ] **Deeper (as captured):** results baseline · traffic sources · true differentiator · biggest objection ·
       money pages · marketing in flight · brand & assets · budget & timeline · who decides · competitor to beat
 - [ ] **Reality-check:** a **"Stated vs. observed"** row per belief (you said → what we see → the gap)
@@ -711,7 +711,7 @@ Check each off (or mark **TBD**) before you deliver:
 
 ### Step 1: Set up the parallel work, then open the conversation
 If you have the URL and a Snapshot and can run tools, **start the background scans now**. Then open warmly:
-*"Before I dig into the site — how do you feel about it today, and what do you most want it to do for you?"*
+*"Before I dig into the site, how do you feel about it today, and what do you most want it to do for you?"*
 
 ### Step 2: Satisfaction & the one goal
 Ask how happy they are (offer very happy / okay / frustrated) and, optionally, a quick 1–5 on look & feel,
@@ -727,7 +727,7 @@ Ask which sites they admire and why, how much appetite/budget they have for chan
 Optionally: anything they've changed recently, and the one thing they wish the site could do.
 
 ### Step 5: Deeper context (as far as they'll go)
-If the owner has patience, go into the **Deeper** set — a couple of questions at a time: current results
+If the owner has patience, go into the **Deeper** set, a couple of questions at a time: current results
 baseline and traffic sources, why clients really choose them and the biggest objection, the money pages and
 marketing in flight, brand/assets, budget & timeline, who decides, and the competitor to beat. Stop whenever
 their energy dips; every extra answer just makes the closing advice sharper. Mark anything skipped **TBD**.
@@ -737,17 +737,17 @@ This is the step that makes the deliverable worth reading. By now the parallel s
 each of the owner's beliefs against what you can actually see:
 - Read the fetched page yourself (hero, copy, CTA, proof, structure) and pull the measured numbers from the
   scans (perf/CWV, security headers, axe/keyboard, mobile, design tokens, tracking/consent, links).
-- For each belief — the goal, the satisfaction rating, the frustration, the audience — write one row:
+- For each belief (the goal, the satisfaction rating, the frustration, the audience) write one row:
   **you said → what we see → the gap**. Prefer rows where the two *disagree* (that's the insight); confirm
   the ones where they agree, briefly.
-- Then list the **tensions**: where the goal, the constraints and the data conflict — and resolve each
+- Then list the **tensions**: where the goal, the constraints and the data conflict, and resolve each
   (often the constraint and the goal are compatible, which is worth stating).
-Ground every "observed" claim in the page or a real measured number — never invent one.
+Ground every "observed" claim in the page or a real measured number; never invent one.
 
 ### Step 7: Write the prioritised "How to reach your goal" advice
-Turn the reality-check into 3–6 **opinionated, ordered** recommendations — highest leverage toward the
+Turn the reality-check into 3–6 **opinionated, ordered** recommendations, highest leverage toward the
 stated goal first. Anchor each to a belief + its gap, make it concrete and plain, cite the real number where
-one exists, and point it to the analysis that will detail it. No grades, no IIF findings — the analyses and
+one exists, and point it to the analysis that will detail it. No grades, no IIF findings; the analyses and
 Action Report produce the graded, prioritised plan.
 
 ### Step 8: Confirm & deliver
@@ -755,7 +755,7 @@ Summarise the reality-check and the top advice back in a few lines and get a qui
 unknowns **TBD** (the Action Report's reconciliation pass backfills any answered later). Then deliver the files.
 
 ### Step 9: Hand off
-Tell the owner the brief is ready and travels with the Site Snapshot — they paste both whenever a later
+Tell the owner the brief is ready and travels with the Site Snapshot; they paste both whenever a later
 skill asks about the site. Point them to the analyses (**Messaging**, **Conversion**, **SEO**,
 **UX & Technical**, **Design & Visual**), any of which can run next, and note that by now the background
 scans (if you launched them) are likely done.
@@ -765,7 +765,7 @@ scans (if you launched them) are likely done.
 Generate TWO files (`goals.md` and a styled, self-contained `goals.html`) and share them. The `.html` uses
 the **shared design system** and follows the shared navigation rules: cross-links to the other deliverables,
 hover hints on short terms, and the Print hint at the end (no `pagenav` mid-session). Format and the full
-shared page frame — see [references/rules-goals-discovery.md](references/rules-goals-discovery.md),
+shared page frame. See [references/rules-goals-discovery.md](references/rules-goals-discovery.md),
 section "Output file format".
 
 Save both files and share them with the user for download.
@@ -773,7 +773,7 @@ Save both files and share them with the user for download.
 ## Add to the Website Audit Report
 
 This suite runs as one continuous session. **Deliver only your own two files now** (`.md` + `.html`). Keep
-the **Website Audit Report** as an **internal running document** — do **not** create, show, or hand over a
+the **Website Audit Report** as an **internal running document**. Do **not** create, show, or hand over a
 report file mid-session; the [Action Report](../../7%20Action%20Report/action-report/SKILL.md) assembles and
 delivers it at the very end. Record the **Goals & Discovery** section (the compressed owner brief, the
 **"Stated vs. observed"** reality-check, the tensions, and the prioritised **"How to reach your goal"**
@@ -782,19 +782,19 @@ order: [report-format.md](report-format.md).
 
 ## Critical rules
 
-1. **Run it in parallel.** It's owner-paced — launch the background scans first (Extended) or interleave
+1. **Run it in parallel.** It's owner-paced: launch the background scans first (Extended) or interleave
    (Basic), so the interview and the machine work overlap. Never make the owner wait on a scan.
-2. **Cross-examine — don't transcribe.** The value is the gap between what the owner *believes* and what the
+2. **Cross-examine, don't transcribe.** The value is the gap between what the owner *believes* and what the
    page + scans *show*. Lead with the **"Stated vs. observed"** reality-check and tensions, then prioritised
-   advice. No letter grades and no IIF findings (that's the five analyses) — but every row must carry an
+   advice. No letter grades and no IIF findings (that's the five analyses), but every row must carry an
    observation or a gap, grounded in the page or a real measured number, never invented.
 3. **One goal, reconciled.** Pin the single most important goal and make it agree with the Snapshot's
-   primary conversion — every later finding is judged against it.
-4. **Chase a number.** Push gently for a target metric; if there genuinely isn't one, record **TBD** — never
+   primary conversion; every later finding is judged against it.
+4. **Chase a number.** Push gently for a target metric; if there genuinely isn't one, record **TBD**, never
    invent a figure.
 5. **Quote the owner.** Their own words are the evidence in this brief; don't sand them down.
 6. **Don't invent.** Anything unknown stays **TBD**; the reconciliation pass backfills what's answered later.
-7. **Plain language, warm tone.** Business owners are the audience — a conversation, not a questionnaire.
+7. **Plain language, warm tone.** Business owners are the audience: a conversation, not a questionnaire.
 
 
 ---
@@ -803,7 +803,7 @@ order: [report-format.md](report-format.md).
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -814,13 +814,13 @@ Released under the MIT License — keeping the copyright notice is all that is r
 # Goals & Discovery Rules — Detailed Reference
 
 The owner's-voice intake. This skill runs a short, warm interview and produces a **Goals & Discovery
-brief** — no grades, no findings. It pairs with the [Site Snapshot](../../../0%20Site%20Snapshot/site-snapshot/references/rules-snapshot.md)
+brief** (no grades, no findings). It pairs with the [Site Snapshot](../../../0%20Site%20Snapshot/site-snapshot/references/rules-snapshot.md)
 and gives every analysis the human context a crawler can't see. This reference holds the question bank,
 the satisfaction pulse, the reconciliation rule, and the output format.
 
 ## Run it in parallel (do this first)
 
-The interview is **owner-paced** — it spends its time waiting on the person, not the machine — so overlap
+The interview is **owner-paced** (it spends its time waiting on the person, not the machine), so overlap
 it with the parts of the audit that *are* machine-bound:
 
 - **Extended layer (tools available).** As soon as you have the URL and a Snapshot, launch the measured
@@ -833,7 +833,7 @@ it with the parts of the audit that *are* machine-bound:
   python scripts/seo-sweep.py      https://example.com/ --out out &
   ```
   (In an agent runtime, use its background-run mechanism rather than a literal shell `&`.) When the
-  interview wraps, collect the outputs — they've been rendering the whole time.
+  interview wraps, collect the outputs. They've been rendering the whole time.
 - **Basic layer (no tools).** No background thread exists, so **interleave**: read a page, ask a question,
   read the next while the owner answers. Same feel, no wasted time.
 
@@ -844,17 +844,17 @@ The rule: **never make the owner watch a progress bar.** Talk to them while the 
 ## The question bank (ask 6–9, in 1–2 passes, 2–3 at a time)
 
 Warm and curious, not a form. Each question is tagged with its form:
-- **[pick-1]** — single-select pickable (force one answer); always add an **"Other"** so a pick never traps them.
-- **[pick-many]** — multi-select pickable ("pick all that apply"); use where more than one is usually true.
-- **[open]** — free text, in the owner's own words; can't be pre-listed, and carries the richest material —
+- **[pick-1]**: single-select pickable (force one answer); always add an **"Other"** so a pick never traps them.
+- **[pick-many]**: multi-select pickable ("pick all that apply"); use where more than one is usually true.
+- **[open]**: free text, in the owner's own words; can't be pre-listed, and carries the richest material, so
   quote it verbatim.
 
 Don't make it all multiple-choice: the **[open]** questions are where the value is.
 
 ### 1. Satisfaction today **[pick-1]**
-- "How do you feel about your website right now?" — offer **very happy / it's okay / frustrated** (+ Other).
+- "How do you feel about your website right now?" Offer **very happy / it's okay / frustrated** (+ Other).
 - **Optional pulse (1–5):** a quick self-rating so the brief has a shape. *This is the owner's view, not the
-  audit's grade — always label it that way.*
+  audit's grade. Always label it that way.*
 
   | Area | Owner's 1–5 | In their words |
   |------|:-----------:|----------------|
@@ -867,27 +867,27 @@ Don't make it all multiple-choice: the **[open]** questions are where the value 
 - "Of everything the site could do, what's the **single most important** thing you want it to achieve?"
 - Pickable: **more leads · more sales · more bookings/calls · sign-ups · look credible · fewer support
   requests · sell a specific product/service**.
-- **Reconcile** with the Snapshot's primary conversion goal — see "Reconcile with the Snapshot" below.
+- **Reconcile** with the Snapshot's primary conversion goal; see "Reconcile with the Snapshot" below.
 
 ### 3. What success looks like **[open]**
-- "How would you *know* it's working? Is there a number you watch?" — chase a concrete metric: leads/month,
+- "How would you *know* it's working? Is there a number you watch?" Chase a concrete metric: leads/month,
   sales, conversion %, booked calls, sign-ups, enquiries, average order value.
-- If there genuinely isn't one, record **TBD** — never invent a target.
+- If there genuinely isn't one, record **TBD**; never invent a target.
 
 ### 4. Biggest frustrations **[pick-many]**
-- "What's the one or two things about the site that bug you most?" — **quote them verbatim** in the brief.
+- "What's the one or two things about the site that bug you most?" **Quote them verbatim** in the brief.
 
 ### 5. Audience, in their words **[open]**
-- "Who is this really for, and what are they trying to do when they land?" — capture *their* framing even if
+- "Who is this really for, and what are they trying to do when they land?" Capture *their* framing even if
   the Snapshot already has an inferred audience; a gap between the two is itself useful signal.
 
 ### 6. References they admire **[open]**
-- "Whose website do you look at and think 'I want that'? What do you like about it?" — 1–3 sites + the *why*.
+- "Whose website do you look at and think 'I want that'? What do you like about it?" Note 1–3 sites + the *why*.
 
 ### 7. Appetite & constraints **[pick-1]** (appetite) + **[open]** (off-limits)
-- "How much appetite do you have for changes right now?" — pickable: **a quick afternoon · a few days · a
+- "How much appetite do you have for changes right now?" Pickable: **a quick afternoon · a few days · a
   proper project/redesign**.
-- "Anything off-limits?" — brand/logo locked, can't change platform, don't touch page X, redesign already
+- "Anything off-limits?" Watch for: brand/logo locked, can't change platform, don't touch page X, redesign already
   underway, legal/compliance limits.
 
 ### 8. History & wishlist **[open]** *(optional, light)*
@@ -902,15 +902,15 @@ These sharpen the closing advice. Ask a couple at a time; stop when their energy
 **TBD**. A quick brief covers the Core eight; a full brief works through most of these too.
 
 ### 9. Current results baseline **[open]**
-- "Roughly how many enquiries/sales does the site bring you now — and how good is the quality?" Gives the
+- "Roughly how many enquiries/sales does the site bring you now, and how good is the quality?" Gives the
   target a starting point ("from ~3 a month to ~10").
 
 ### 10. Traffic sources **[pick-many]**
-- "Where do visitors come from today — search, ads, referrals, social, word of mouth?" Even rough. Tells you
+- "Where do visitors come from today: search, ads, referrals, social, word of mouth?" Even rough. Tells you
   which lever actually moves the goal (more traffic vs. better conversion).
 
 ### 11. Why clients really choose them **[open]**
-- "When someone picks you over a competitor, what's the real reason?" The true differentiator in their words —
+- "When someone picks you over a competitor, what's the real reason?" The true differentiator in their words,
   not the tagline. This is gold for the messaging advice.
 
 ### 12. Biggest objection **[open]**
@@ -921,23 +921,23 @@ These sharpen the closing advice. Ask a couple at a time; stop when their energy
 - "Which pages, products, or services matter most commercially?" Focuses the effort where revenue is.
 
 ### 14. Marketing in flight **[pick-many]**
-- "What's running right now that the site needs to support — ads, content/SEO, email, events, outbound?"
+- "What's running right now that the site needs to support: ads, content/SEO, email, events, outbound?"
 
 ### 15. Brand & assets **[pick-many]**
-- "Do you have brand guidelines, a logo, decent photography — or is a rebrand underway?" Sizes the design
+- "Do you have brand guidelines, a logo, decent photography, or is a rebrand underway?" Sizes the design
   advice and respects locked brand.
 
 ### 16. Budget & timeline **[open]**
-- "Roughly what budget band and timeline are you thinking? Any hard deadline — a launch, a campaign, a show?"
+- "Roughly what budget band and timeline are you thinking? Any hard deadline: a launch, a campaign, a show?"
 
 ### 17. Who decides **[pick-1]**
-- "Who signs off on changes — you, a marketing lead, a committee?" Shapes how the advice should be pitched.
+- "Who signs off on changes: you, a marketing lead, a committee?" Shapes how the advice should be pitched.
 
 ### 18. The competitor to beat **[open]**
 - "Is there one rival or example site you'd love to outclass? What do they do well?"
 
 ### 19. Anything we missed **[open]**
-- "What haven't I asked that matters for this site?" Always end here — it's where owners volunteer the thing no fixed question would surface. Quote it verbatim.
+- "What haven't I asked that matters for this site?" Always end here. It's where owners volunteer the thing no fixed question would surface. Quote it verbatim.
 
 ---
 
@@ -946,33 +946,33 @@ These sharpen the closing advice. Ask a couple at a time; stop when their energy
 A transcript of the answers is low value. The deliverable's centre of gravity is the **"Stated vs. observed"
 reality-check**: each belief the owner holds, set against what the fetched page and the finished parallel
 scans actually show, with **the gap** named. This is possible precisely because the interview runs while the
-scans render — by the time the owner stops talking, the data is in.
+scans render. By the time the owner stops talking, the data is in.
 
 ### 1. "Stated vs. observed" reality-check
 One row per belief: **you said → what we see → the gap.**
-- **"You said"** — the owner's answer (goal, satisfaction, frustration, audience, appetite).
-- **"What we see"** — grounded in fact: the fetched page (hero, copy, CTA, proof, structure) or a **real
+- **"You said"**: the owner's answer (goal, satisfaction, frustration, audience, appetite).
+- **"What we see"**, grounded in fact: the fetched page (hero, copy, CTA, proof, structure) or a **real
   measured number** from a scan (LCP, security headers, axe violations, tokens, tracking). Never invent one.
-- **"The gap"** — the insight the owner couldn't get from a form. Favour rows where belief and reality
+- **"The gap"**: the insight the owner couldn't get from a form. Favour rows where belief and reality
   *disagree*; confirm the ones that agree, briefly.
 
 Worked examples:
 - *Goal "look credible"* → *scan: LCP 10.8 s, 6 MB, no security headers* → *your #1 credibility killer is
-  technical, not visual — a 10-second load reads as amateur before the design is even seen.*
+  technical, not visual: a 10-second load reads as amateur before the design is even seen.*
 - *"The message isn't sharp"* → *H1 is a slogan; services all generic; portfolio anonymised* → *confirmed,
   and it's a copy fix: name what you do + who for, and name the clients.*
 - *Satisfaction "okay"* → *the measured foundation grades poorly* → *the self-rating is generous.*
 
 ### 2. Tensions
-List where the **goal, the constraints and the data conflict**, and resolve each — e.g. *"you want 'wow' but
+List where the **goal, the constraints and the data conflict**, and resolve each. For example: *"you want 'wow' but
 have only a few days and want to keep the design."* Often the constraint and the goal turn out compatible
-(the credibility levers are all few-days fixes); say so — that's useful too.
+(the credibility levers are all few-days fixes); say so, which is useful too.
 
 ### 3. "How to reach your goal" — prioritised advice
 3–6 **opinionated, ordered** recommendations (highest leverage toward the stated goal first). Each: a short
 imperative headline, one or two sentences of why/how tied to a belief + its gap (cite the real number where
 one exists), and a `→` pointer to the analysis that will detail it. No letter grades, no IIF finding IDs, no
-Impact/Effort scoring — that's the analyses and the Action Report; this orients them.
+Impact/Effort scoring. That's the analyses and the Action Report; this orients them.
 
 **Reconcile the goal with the Snapshot** as part of the reality-check: if the owner's stated goal differs
 from the Snapshot's primary conversion, surface the mismatch, settle on the one commercial goal, and note
@@ -986,7 +986,7 @@ The audit is scored against **one** primary goal. If the owner's stated goal her
 conversion captured in the Site Snapshot:
 
 1. Surface the mismatch plainly ("the site pushes newsletter sign-ups, but you're telling me sales matter
-   most — which should the audit judge against?").
+   most, so which should the audit judge against?").
 2. Settle on the single goal the owner cares about commercially.
 3. Note the resolution in the brief, and treat that as the anchor the analyses use. If the Snapshot was
    already delivered, its open items are backfilled in the Action Report's reconciliation pass.
@@ -1046,39 +1046,39 @@ brief with the Site Snapshot when asked about the site.
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets and
 no JavaScript**), so it opens in any browser, prints cleanly to PDF, and emails as one file. Render the
 **same content** as the Markdown version. Keep the `<style>` block **identical to the shared design system**
-(reproduced in full below) — every skill in this suite uses this exact block so all deliverables share one
+(reproduced in full below). Every skill in this suite uses this exact block so all deliverables share one
 look. Only these differ per skill: the `<title>`, the header, and the `utm_content=goals-discovery` in the
 two brand links.
 
 - Lead with the **diagnosis**, keep the answers compact. One `<section class="block">` per heading, in this
   order: **Owner brief** (compressed), **Stated vs. observed** (the reality-check), **Tensions**,
   **How to reach your goal** (prioritised advice), How this shapes the audit, Next step.
-- **Owner brief** — a few `.row`s (satisfaction, goal + success, frustration, audience, appetite/constraints,
+- **Owner brief:** a few `.row`s (satisfaction, goal + success, frustration, audience, appetite/constraints,
   deeper-as-captured). Compact; put owner quotes in `<blockquote>`. Label it "the owner's own view".
-- **Stated vs. observed** — a `<table>` with three columns: **You said · What the page + scans show · The
+- **Stated vs. observed**, a `<table>` with three columns: **You said · What the page + scans show · The
   gap**. One row per belief; the "observed" cell cites a real measured number or a page fact. This is the
-  visual centre of gravity — give it the most weight.
-- **Tensions** — `.row`s: the conflict → its resolution.
-- **How to reach your goal** — render **each advice item as an `article.card`**: a bold imperative headline in
+  visual centre of gravity; give it the most weight.
+- **Tensions**, `.row`s: the conflict → its resolution.
+- **How to reach your goal**, render **each advice item as an `article.card`**: a bold imperative headline in
   `.card h3`, one or two sentences of why/how in a `.row` (cite the real number), and a `→ [Analysis]`
   pointer linking that analysis's page. Order by leverage; number them.
-- **No grade chip and no IIF finding cards** — this is the orienting diagnosis, not the graded analysis.
+- **No grade chip and no IIF finding cards:** this is the orienting diagnosis, not the graded analysis.
 
 **Navigation & hints (required in every generated `.html`):**
 - **Cross-link every reference to another deliverable** (see [report-format.md](report-format.md) for
   canonical filenames: `site-snapshot.html`, `messaging.html`, `conversion.html`, `seo.html`,
   `ux-technical.html`, `design.html`, `action-report.html`). Any finding ID cited links to that dimension's
   page with a tooltip.
-- **Hover hints on short terms — every occurrence, not just the first.** Give a `title` tooltip to every
-  appearance of the shorthand set — **IIF, CRO, SEO, UX, CTA, the ID prefixes (MSG/CRO/SEO/UX/DSN), and the
-  quadrant labels (quick win / big bet / fill-in / skip)** — e.g.
+- **Hover hints on short terms, every occurrence, not just the first.** Give a `title` tooltip to every
+  appearance of the shorthand set: **IIF, CRO, SEO, UX, CTA, the ID prefixes (MSG/CRO/SEO/UX/DSN), and the
+  quadrant labels (quick win / big bet / fill-in / skip)**, e.g.
   `<abbr title="Issue · Impact · Fix — the finding format">IIF</abbr>`.
-- **No Previous / Next buttons in this file.** Don't add a `pagenav` mid-session — end with the Print hint.
+- **No Previous / Next buttons in this file.** Don't add a `pagenav` mid-session. End with the Print hint.
   The walk is wired only in the final pack (see report-format.md, "Final consistency pass").
 - **Print hint (no JavaScript).** End the page with
   `<p class="printhint">🖨 Print / Save as PDF — press <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>⌘</kbd>+<kbd>P</kbd> on Mac)</p>`.
 
-Full page (reproduce the shared `<style>` block verbatim — it is identical suite-wide; only the `<title>`,
+Full page (reproduce the shared `<style>` block verbatim; it is identical suite-wide; only the `<title>`,
 header, and `utm_content` change):
 
 ```html
@@ -1292,7 +1292,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -1310,25 +1310,25 @@ turn every weakness into a prioritised, fixable **Finding**. Deliver a graded me
 Impact and Effort so the user knows what to fix first.
 
 This is **URL-first**: read the live pages and quote what's actually on them. Written for **business
-owners and marketers** — plain language, no unexplained jargon, and every finding tied to a real effect
+owners and marketers**. Plain language, no unexplained jargon, and every finding tied to a real effect
 on their visitors.
 
 ## Inputs
 
-- **Site Snapshot** (from Skill 0) — paste it if you have it; it anchors the analysis to the site's
+- **Site Snapshot** (from Skill 0): paste it if you have it; it anchors the analysis to the site's
   **primary conversion goal** and audience. If it's missing, do a quick mini-snapshot first (fetch the
-  homepage; establish name, what it does, primary goal, audience) so your findings have an anchor —
+  homepage; establish name, what it does, primary goal, audience) so your findings have an anchor,
   but don't run the full intake.
-- **The URL(s)** — the homepage plus any key landing/product pages the user cares about.
+- **The URL(s):** the homepage plus any key landing/product pages the user cares about.
 
 ## The core unit: a Finding (Issue · Impact · Fix)
 
-Every observation is a Finding — see [report-format.md](report-format.md) for the full definition,
+Every observation is a Finding. See [report-format.md](report-format.md) for the full definition,
 the Impact/Effort scales (1–5), and the priority quadrants (quick win / big bet / fill-in / skip). In
 short:
-- **Issue** — the specific clarity problem, with the **actual copy or element quoted** as evidence.
-- **Impact** — what it costs (visitors bounce, don't grasp the offer, don't act). Rated **Impact 1–5**.
-- **Fix** — the concrete rewrite or change, ideally with an example.
+- **Issue:** the specific clarity problem, with the **actual copy or element quoted** as evidence.
+- **Impact:** what it costs (visitors bounce, don't grasp the offer, don't act). Rated **Impact 1–5**.
+- **Fix:** the concrete rewrite or change, ideally with an example.
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
 Give each finding an ID: `MSG-01`, `MSG-02`, … in impact order.
@@ -1339,21 +1339,21 @@ Give each finding an ID: `MSG-01`, `MSG-02`, … in impact order.
 
 Take the Site Snapshot (or build the mini one) and **fetch the homepage and key pages**. Read the hero,
 the section headings, the CTAs, the body copy, the proof elements. Keep the site's **primary goal** in
-mind — clarity is always "clear *toward what action*".
+mind; clarity is always "clear *toward what action*".
 
 ### Step 2: Run the clarity tests
 
-Apply the fast diagnostic tests before the full rubric — details and examples in
+Apply the fast diagnostic tests before the full rubric; details and examples in
 [references/rules-messaging-clarity.md](references/rules-messaging-clarity.md):
-- **The 5-second test** — from the hero alone, can a first-time visitor say *what this is, who it's for,
+- **The 5-second test:** from the hero alone, can a first-time visitor say *what this is, who it's for,
   and what they can do next*?
-- **The "so what?" test** — does the headline promise a benefit, or just name the company/product?
-- **The "only you" test** — could a competitor put their name on this exact copy? If yes, there's no
+- **The "so what?" test:** does the headline promise a benefit, or just name the company/product?
+- **The "only you" test:** could a competitor put their name on this exact copy? If yes, there's no
   differentiation.
 
 ### Step 2b: Check the message across the key pages (not just the homepage)
 
-Interior pages — top services/products, case studies, about, contact — are common entry points from
+Interior pages (top services/products, case studies, about, contact) are common entry points from
 search and ads, so **fetch the key pages too** and, for each, pull the **H1**, the **primary CTA**, and
 the hero line. Compare them:
 - **Clarity:** does each page pass the 5-second test on arrival, or does it lead with a bare product/
@@ -1364,36 +1364,36 @@ the hero line. Compare them:
   it on a bare label?
 
 You already have most of this data if the SEO sweep (Skill 4, `seo-sweep.py`) and the interaction scan
-(Skill 3, `interaction-scan.py`) ran — reuse their per-page H1s and CTAs. Turn a systemic weakness into
+(Skill 3, `interaction-scan.py`) ran; reuse their per-page H1s and CTAs. Turn a systemic weakness into
 one cross-page `MSG-` finding (e.g. "every interior page leads with a product-label H1, not a benefit"),
 not one finding per page. This feeds the **Cross-page consistency** rubric criterion.
 
 ### Step 3: Work the rubric and generate findings
 
-Go through the messaging rubric criteria (see the reference, "Scoring rubric") — above-the-fold clarity,
+Go through the messaging rubric criteria (see the reference, "Scoring rubric"): above-the-fold clarity,
 headline, subhead, primary CTA, differentiation, proof, customer language, scannable benefit-led copy,
 cross-page consistency, objection handling. For each weakness, write a Finding (IIF) with quoted evidence,
-an Impact and Effort rating, and a quadrant. **Also note genuine strengths** — the report shouldn't be
+an Impact and Effort rating, and a quadrant. **Also note genuine strengths**; the report shouldn't be
 only problems.
 
 ### Step 4: Score the dimension
 
-Rate each rubric criterion Pass / Partial / Fail — **each criterion's "Pass" is the 2026 standard from
+Rate each rubric criterion Pass / Partial / Fail: **each criterion's "Pass" is the 2026 standard from
 [benchmarks-2026.md](benchmarks-2026.md)**, so cite the benchmark in findings ("the standard is X,
-you're at Y") — apply the weights, and total to a **0–100 score**; map
+you're at Y"), then apply the weights, and total to a **0–100 score**; map
 to a **letter grade** (A–F, bands in [report-format.md](report-format.md)). Show the criteria table so
 the grade is explainable. State plainly that the grade is an **expert judgement**, not a lab measurement.
 
 ### Step 5: Deliver the files
 
 Generate `messaging.md` and a styled, self-contained `messaging.html` and share them. Format, the finding
-card component, and the scorecard layout — see the reference, "Output file format". End the HTML with the
+card component, and the scorecard layout. See the reference, "Output file format". End the HTML with the
 Print hint; **no `pagenav`** mid-session.
 
 ### Step 6: Add to the Website Audit Report & hand off
 
 Record the **Messaging & Clarity** section (grade + criteria + findings) into the internal running
-**Website Audit Report** (do not create/show a report file now — that's the Action Report skill's job at
+**Website Audit Report** (do not create/show a report file now; that's the Action Report skill's job at
 the end). Format and section order: [report-format.md](report-format.md). Tell the user the next skill
 is any of **Conversion (CRO)**, **SEO & Content**, or **UX & Technical**, and that **Action Report** ties
 them together at the end.
@@ -1407,7 +1407,7 @@ them together at the end.
 3. **Fixes are concrete.** Give the rewrite or a worked example, not "make it clearer".
 4. **Impact + Effort on every finding.** So the Action Report can place it on the matrix.
 5. **Don't invent.** Judge only what's on the page. If you couldn't read a page, say so and ask for the
-   text/screenshot — never assume copy you didn't see.
+   text/screenshot; never assume copy you didn't see.
 6. **Name strengths too.** Note what already works, so the grade and the report are balanced and credible.
 7. **Plain language.** Business owners are the audience; explain any shorthand (CTA, above the fold, …).
 
@@ -1418,7 +1418,7 @@ them together at the end.
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -1434,7 +1434,7 @@ adds the messaging-specific tests, the scoring rubric, worked finding examples, 
 
 ## The clarity tests
 
-Run these fast before the full rubric — they surface the biggest issues quickly.
+Run these fast before the full rubric. They surface the biggest issues quickly.
 
 ### The 5-second test
 From the hero (the first screen, before scrolling) alone, could a first-time visitor answer:
@@ -1451,7 +1451,7 @@ the company/product or state a feature? "The invoicing app for freelancers who h
 
 ### The "only you" test (differentiation)
 Could a direct competitor paste their own name onto this exact copy and have it still fit? If yes, the
-messaging says nothing distinctive — a differentiation finding.
+messaging says nothing distinctive: a differentiation finding.
 
 ### The jargon / customer-language test
 Is the copy written in the **visitor's** words about **their** problem, or in the company's internal
@@ -1487,24 +1487,24 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
 
 ## Worked finding examples (Issue · Impact · Fix)
 
-**MSG-01 — Hero says nothing about what the site does** · Impact 5 · Effort 1 · **quick win**
+**MSG-01. Hero says nothing about what the site does** · Impact 5 · Effort 1 · **quick win**
 - **Issue:** The homepage H1 reads *"Welcome — we're glad you're here."* Nothing on the first screen says
   what's sold or for whom.
-- **Impact:** A first-time visitor fails the 5-second test and can't tell they're in the right place —
+- **Impact:** A first-time visitor fails the 5-second test and can't tell they're in the right place,
   the single biggest cause of bounce on the primary entry page.
 - **Fix:** Replace with a benefit-led headline naming the offer and audience, e.g. *"Bookkeeping for
   tradespeople — your accounts sorted in an hour a week."* Add a one-line subhead on how it works.
 - **Evidence:** `<h1>Welcome — we're glad you're here.</h1>`
 
-**MSG-02 — No differentiation; copy is interchangeable** · Impact 4 · Effort 3 · **big bet**
+**MSG-02. No differentiation; copy is interchangeable** · Impact 4 · Effort 3 · **big bet**
 - **Issue:** Body copy is *"We deliver high-quality solutions with a customer-first approach."* Fails the
-  "only you" test — any competitor could use it verbatim.
+  "only you" test; any competitor could use it verbatim.
 - **Impact:** Nothing tells the visitor why to pick this over the three other tabs they have open; the
   site competes on price by default.
 - **Fix:** Replace generic claims with one concrete, ownable difference (a method, a guarantee, a niche
   focus, a number). Interview the owner for the real "why us" and lead with it.
 
-**MSG-03 — Feature dump, no benefits** · Impact 3 · Effort 2 · **fill-in**
+**MSG-03. Feature dump, no benefits** · Impact 3 · Effort 2 · **fill-in**
 - **Issue:** The product section lists *"OAuth 2.0, REST API, 99.9% uptime, multi-tenant architecture"*
   with no plain-language benefit.
 - **Impact:** Non-technical buyers can't map features to what they *get*, so the value is lost on the
@@ -1516,14 +1516,14 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
 specific result each — strong, credible proof."
 
 ### Anti-patterns to catch (each becomes a finding)
-- **Generic hero** — "Welcome", "Your partner in X", "Solutions for a better tomorrow".
-- **Brand-first headline** — leads with the company name instead of the visitor's outcome.
-- **Adjective soup** — "innovative, dynamic, world-class" with nothing concrete.
-- **Buried CTA** — no clear next action above the fold, or five competing CTAs of equal weight.
-- **Claims without proof** — "trusted by thousands" with no logos, numbers, or testimonials.
-- **We-we-we copy** — every sentence starts with "We…"; nothing about the reader.
-- **Jargon wall** — insider terms the actual audience wouldn't use.
-- **Inconsistent promise** — the ad/landing headline doesn't match what the page then talks about.
+- **Generic hero:** "Welcome", "Your partner in X", "Solutions for a better tomorrow".
+- **Brand-first headline:** leads with the company name instead of the visitor's outcome.
+- **Adjective soup:** "innovative, dynamic, world-class" with nothing concrete.
+- **Buried CTA:** no clear next action above the fold, or five competing CTAs of equal weight.
+- **Claims without proof:** "trusted by thousands" with no logos, numbers, or testimonials.
+- **We-we-we copy:** every sentence starts with "We…"; nothing about the reader.
+- **Jargon wall:** insider terms the actual audience wouldn't use.
+- **Inconsistent promise:** the ad/landing headline doesn't match what the page then talks about.
 
 ---
 
@@ -1567,24 +1567,24 @@ Primary goal audited against: [the site's primary conversion]
 ### File 2: `messaging.html` (styled, share-ready)
 
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets and
-no JavaScript**). Use the **shared design system** — the exact `<style>` block and page frame from
+no JavaScript**). Use the **shared design system**: the exact `<style>` block and page frame from
 [rules-snapshot.md](../../../0%20Site%20Snapshot/site-snapshot/references/rules-snapshot.md), reproduced
 in full below so this skill is self-contained. Only these differ from the snapshot page: the `<title>`,
 the header, the `utm_content=messaging-clarity` in the two brand links, and the section content.
 
 Components:
-- **A grade section first** — the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
+- **A grade section first:** the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
   a one-line verdict, and the **scorecard `<table>`** (criteria × pass/partial/fail × weight × points).
-- **A Findings section** — one `.card` per finding. Card header: the `.id` chip (`MSG-01`), the short
+- **A Findings section:** one `.card` per finding. Card header: the `.id` chip (`MSG-01`), the short
   title, an **Impact meter** (`<span class="scorewrap"><span class="meter"><i style="width:NN%"></i></span><span class="scoreno">Impact X/5</span></span>`,
   width = Impact/5×100), and the **priority `.tag`** (`quickwin` / `bigbet` / `fillin` / `skip`). Body:
   Issue / Impact / Fix as `.row`s (append `· Effort X/5` in the Impact row via `<span class="effort">`),
   and the quoted evidence in a `<blockquote>`.
-- **A "What's working" section** — `.row`s or `ul.clean` of strengths.
-- **A Summary section** — findings count and the top priority (cited by ID).
+- **A "What's working" section:** `.row`s or `ul.clean` of strengths.
+- **A Summary section:** findings count and the top priority (cited by ID).
 
 **Navigation & hints (required):** cross-link other deliverables and tooltip every ID and shorthand term
-(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels) — every occurrence, per
+(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels), every occurrence, per
 [report-format.md](report-format.md). **No `pagenav`** mid-session; end with the Print hint.
 
 Finding card pattern:
@@ -1600,7 +1600,7 @@ Finding card pattern:
 </article>
 ```
 
-Full page (reproduce the shared `<style>` block verbatim — it is identical suite-wide):
+Full page (reproduce the shared `<style>` block verbatim; it is identical suite-wide):
 
 ```html
 <!DOCTYPE html>
@@ -1791,7 +1791,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -1808,33 +1808,33 @@ turn every weakness into a prioritised, fixable **Finding**. Deliver a graded co
 (0–100 → letter grade) and a list of `CRO-` findings in **Issue · Impact · Fix** format, each rated on
 Impact and Effort so the user knows what to fix first.
 
-**CRO** means Conversion Rate Optimisation — making it easier and more compelling for a visitor to take
+**CRO** means Conversion Rate Optimisation: making it easier and more compelling for a visitor to take
 the action you want (buy, enquire, book, sign up). A **CTA** is a call to action: the button or link that
 asks for that step ("Get a quote", "Add to cart").
 
 This is **URL-first**: read the live pages and quote what's actually on them. Written for **business
-owners and marketers** — plain language, no unexplained jargon, and every finding tied to a real effect
+owners and marketers**. Plain language, no unexplained jargon, and every finding tied to a real effect
 on their visitors' likelihood to convert.
 
 ## Inputs
 
-- **Site Snapshot** (from Skill 0) — paste it if you have it; it anchors the analysis to the site's
+- **Site Snapshot** (from Skill 0): paste it if you have it; it anchors the analysis to the site's
   **primary conversion goal** and audience. If it's missing, do a quick mini-snapshot first (fetch the
-  homepage; establish name, what it does, primary goal, audience) so your findings have an anchor —
+  homepage; establish name, what it does, primary goal, audience) so your findings have an anchor,
   but don't run the full intake.
-- **The URL(s)** — the homepage plus any key pages on the conversion path (product/pricing, the landing
+- **The URL(s):** the homepage plus any key pages on the conversion path (product/pricing, the landing
   page, the contact/quote/booking/checkout page the user cares about).
 
 ## The core unit: a Finding (Issue · Impact · Fix)
 
-Every observation is a Finding — see [report-format.md](report-format.md) for the full definition,
+Every observation is a Finding. See [report-format.md](report-format.md) for the full definition,
 the Impact/Effort scales (1–5), and the priority quadrants (quick win / big bet / fill-in / skip). In
 short:
-- **Issue** — the specific conversion problem, with the **actual copy, element, or form field quoted** as
+- **Issue:** the specific conversion problem, with the **actual copy, element, or form field quoted** as
   evidence.
-- **Impact** — what it costs (visitors hesitate, abandon the form, leave the path, don't act). Rated
+- **Impact:** what it costs (visitors hesitate, abandon the form, leave the path, don't act). Rated
   **Impact 1–5**.
-- **Fix** — the concrete change or rewrite, ideally with an example.
+- **Fix:** the concrete change or rewrite, ideally with an example.
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
 Give each finding an ID: `CRO-01`, `CRO-02`, … in impact order.
@@ -1847,24 +1847,24 @@ Take the Site Snapshot (or build the mini one) and **fetch the homepage and the 
 path**. Read the hero and its primary CTA, every CTA on the page (text, position, prominence, repetition),
 the form(s) and their fields and labels, the trust signals (testimonials, reviews, logos, guarantees,
 badges) and where they sit relative to the ask, the pricing (or the path to it), and anything that competes
-for the click. Keep the site's **primary goal** firmly in mind — every judgement is "does this move the
+for the click. Keep the site's **primary goal** firmly in mind; every judgement is "does this move the
 visitor toward *that action*".
 
 ### Step 2: Run the fast conversion tests
 
-Apply the fast diagnostic tests before the full rubric — details and examples in
+Apply the fast diagnostic tests before the full rubric; details and examples in
 [references/rules-conversion.md](references/rules-conversion.md):
-- **The one-action test** — on each key page, is there ONE obvious next step, or do several CTAs of equal
+- **The one-action test:** on each key page, is there ONE obvious next step, or do several CTAs of equal
   weight compete for the click?
-- **The form-field test** — is every field on the form justified? Each extra field costs conversions;
+- **The form-field test:** is every field on the form justified? Each extra field costs conversions;
   anything not strictly needed to act is friction.
-- **The trust-at-the-ask test** — is proof or reassurance (a testimonial, guarantee, review, security
-  note) right where the visitor commits — beside the button or form — not only stranded at the top of the
+- **The trust-at-the-ask test:** is proof or reassurance (a testimonial, guarantee, review, security
+  note) right where the visitor commits (beside the button or form), not only stranded at the top of the
   page?
 
 ### Step 2b: Measure measurement-readiness (can they even track the outcome?)
 
-The whole audit tells the user to "improve the conversion" — so **check they can measure it.** If a
+The whole audit tells the user to "improve the conversion", so **check they can measure it.** If a
 headless browser is available, run the bundled tool:
 
 ```
@@ -1877,24 +1877,24 @@ or just page views, the **Consent Management Platform** and whether **trackers f
 (a GDPR risk) with **Google Consent Mode** present or not, and the cookies set. Full method:
 [references/rules-conversion.md](references/rules-conversion.md), "Measurement-readiness (measured)".
 
-Turn gaps into `CRO-` findings — the highest-value one is usually *"analytics is installed but there's no
+Turn gaps into `CRO-` findings; the highest-value one is usually *"analytics is installed but there's no
 conversion tracking, so the primary goal can't actually be measured"* (which undercuts the entire
 improvement plan), plus any *"trackers fire before consent"* privacy issue. If the tool can't run, say so
 and check the analytics tags by hand from the markup.
 
 ### Step 3: Work the rubric and generate findings
 
-Go through the conversion rubric criteria (see the reference, "Scoring rubric") — single clear path, CTA
+Go through the conversion rubric criteria (see the reference, "Scoring rubric"): single clear path, CTA
 prominence & repetition, CTA copy, form friction, trust at the ask, value reinforcement at decision points,
 pricing clarity, friction & distraction (leaks), urgency/relevance, and the mobile path. For each weakness,
 write a Finding (IIF) with quoted evidence, an Impact and Effort rating, and a quadrant. **Also note
-genuine strengths** — the report shouldn't be only problems.
+genuine strengths**; the report shouldn't be only problems.
 
 ### Step 4: Score the dimension
 
-Rate each rubric criterion Pass / Partial / Fail — **each criterion's "Pass" is the 2026 standard from
+Rate each rubric criterion Pass / Partial / Fail: **each criterion's "Pass" is the 2026 standard from
 [benchmarks-2026.md](benchmarks-2026.md)**, so cite the benchmark in findings ("the standard is X,
-you're at Y") — apply the weights, and total to a **0–100 score**; map
+you're at Y"), then apply the weights, and total to a **0–100 score**; map
 to a **letter grade** (A–F, bands in [report-format.md](report-format.md)). Show the criteria table so
 the grade is explainable. State plainly that the grade is an **expert judgement**, not a lab measurement,
 and that real conversion behaviour needs the user's own analytics (see the honesty rule below).
@@ -1902,13 +1902,13 @@ and that real conversion behaviour needs the user's own analytics (see the hones
 ### Step 5: Deliver the files
 
 Generate `conversion.md` and a styled, self-contained `conversion.html` and share them. Format, the finding
-card component, and the scorecard layout — see the reference, "Output file format". End the HTML with the
+card component, and the scorecard layout. See the reference, "Output file format". End the HTML with the
 Print hint; **no `pagenav`** mid-session.
 
 ### Step 6: Add to the Website Audit Report & hand off
 
 Record the **Conversion (CRO)** section (grade + criteria + findings) into the internal running **Website
-Audit Report** (do not create/show a report file now — that's the Action Report skill's job at the end).
+Audit Report** (do not create/show a report file now; that's the Action Report skill's job at the end).
 Format and section order: [report-format.md](report-format.md). Tell the user the remaining skills are
 any of **Messaging & Clarity**, **SEO & Content**, or **UX & Technical**, and that **Action Report** ties
 them together at the end.
@@ -1919,12 +1919,12 @@ them together at the end.
    exact element. No vague "the conversion path could be tighter".
 2. **Anchor to the primary goal.** Judge every element by whether it moves the visitor toward the site's
    one main conversion, not conversion in the abstract.
-3. **Fixes are concrete.** Give the rewrite, the fields to cut, or the trust element to add — not "improve
+3. **Fixes are concrete.** Give the rewrite, the fields to cut, or the trust element to add, not "improve
    the form".
 4. **Impact + Effort on every finding.** So the Action Report can place it on the matrix.
 5. **Report only what's observable; never invent numbers.** Judge the copy, elements, forms, links, and
    structure you can actually see (and the measured interaction/tracking scans). **Real funnel behaviour**
-   (drop-off rates, form completion, where visitors abandon) is the owner's private analytics data — no tool
+   (drop-off rates, form completion, where visitors abandon) is the owner's private analytics data; no tool
    in this suite can see it, so treat it as **owner-reported**: use whatever the owner told you in the
    **Goals & Discovery** brief (current enquiry volume/quality, the goal, the frustration) as context, and
    otherwise leave it out. Never invent a conversion rate or an abandonment figure.
@@ -1939,7 +1939,7 @@ them together at the end.
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -1959,12 +1959,12 @@ Optimisation; a **CTA** = call to action (the button/link that asks for the step
 
 ## The fast conversion tests
 
-Run these fast before the full rubric — they surface the biggest leaks quickly.
+Run these fast before the full rubric. They surface the biggest leaks quickly.
 
 ### The one-action test
 On each key page, is there **ONE obvious next step**? Look at the CTAs above the fold and down the page.
 If several buttons of equal visual weight compete ("Buy now", "Learn more", "Contact", "Download the
-brochure", "Join our newsletter" all shouting at once), the visitor has to choose instead of act — and a
+brochure", "Join our newsletter" all shouting at once), the visitor has to choose instead of act, and a
 confused visitor does nothing. One clear primary action per page passes; a wall of equal choices fails.
 
 ### The form-field test
@@ -1974,8 +1974,8 @@ you hear about us" before giving anything back is friction the visitor didn't ag
 with the rest optional or asked later, passes; a long form of "nice to have" required fields fails.
 
 ### The trust-at-the-ask test
-Is proof or reassurance **right where the visitor commits** — beside the button, under the form, at the
-price — not stranded at the top of the page? People hesitate at the moment of action: a testimonial,
+Is proof or reassurance **right where the visitor commits** (beside the button, under the form, at the
+price), not stranded at the top of the page? People hesitate at the moment of action: a testimonial,
 a star rating, a "no card required", a money-back guarantee, or a security note *at the ask* removes that
 last doubt. Trust placed only in a far-away section, or missing entirely at the decision point, fails.
 
@@ -2005,26 +2005,26 @@ grade. Always show this table in the deliverable so the grade is explainable.
 
 ### Measurement-readiness (measured — the check that validates the whole plan)
 
-The audit's roadmap says "improve the conversion" and "measure bookings in GA4" — so **verify they can.**
-Run the bundled tool (needs Playwright — `pip install playwright && playwright install chromium`; read-only, no clicks/submits):
+The audit's roadmap says "improve the conversion" and "measure bookings in GA4". So **verify they can.**
+Run the bundled tool (needs Playwright: `pip install playwright && playwright install chromium`; read-only, no clicks/submits):
 
 ```
 python scripts/tracking-scan.py <URL> --out <folder>
 ```
 
 It renders the page on a fresh load and reports:
-- **Analytics stack** — GA4 / Universal Analytics / Google Tag Manager, and the measurement IDs.
-- **Conversion tracking** — are there **events/conversions** (dataLayer events, gtag/fbq `track`) or **only
-  page views**? Analytics with no conversion tracking means the primary goal **can't be measured** — the
+- **Analytics stack:** GA4 / Universal Analytics / Google Tag Manager, and the measurement IDs.
+- **Conversion tracking:** are there **events/conversions** (dataLayer events, gtag/fbq `track`) or **only
+  page views**? Analytics with no conversion tracking means the primary goal **can't be measured**, the
   single most important gap, because it undercuts the entire improvement plan.
-- **Marketing pixels** — Meta, LinkedIn, Google Ads, TikTok, etc.
-- **Consent** — a real **CMP** (Cookiebot / OneTrust / Usercentrics / Complianz…) vs. a cosmetic cookie
+- **Marketing pixels:** Meta, LinkedIn, Google Ads, TikTok, etc.
+- **Consent:** a real **CMP** (Cookiebot / OneTrust / Usercentrics / Complianz…) vs. a cosmetic cookie
   bar, whether **Google Consent Mode** is present, and whether **analytics/marketing trackers fire before
   consent** (a GDPR risk).
 - **Cookies** set on first load (count, analytics vs marketing, first vs third party).
 
 **Findings it produces (CRO-):**
-- *"GA4 is installed but no conversion tracking is configured — the primary goal (bookings) can't be
+- *"GA4 is installed but no conversion tracking is configured; the primary goal (bookings) can't be
   measured yet"* → high impact (blocks the whole 30–60–90 measurement plan), low effort (define one
   conversion event), quick win.
 - *"Trackers fire before consent with no real CMP / Consent Mode"* → a privacy/GDPR finding (bigger effort:
@@ -2042,13 +2042,13 @@ python scripts/interaction-scan.py <homepage-URL> --pages <home,contact,top-serv
 ```
 
 It drives a headless browser across the key pages and checks:
-- **CTA reachability** — does the primary CTA point to a real destination (a page / an on-page target),
+- **CTA reachability:** does the primary CTA point to a real destination (a page / an on-page target),
   or a dead `#` / empty link? For buttons it clicks and observes navigation.
-- **Form validation** — the main form's fields, required count, input types, and whether the browser would
-  **block an empty submit** (client-side validation present) — via `checkValidity()`.
+- **Form validation:** the main form's fields, required count, input types, and whether the browser would
+  **block an empty submit** (client-side validation present), via `checkValidity()`.
 
-**Ethics — read this:** the tool may **follow a navigation CTA** (that's just browsing) but it **never
-submits a form** — submitting sends real data to the business. Never auto-submit a live production form;
+**Ethics, read this:** the tool may **follow a navigation CTA** (that's just browsing) but it **never
+submits a form**. Submitting sends real data to the business. Never auto-submit a live production form;
 if you need to test submission, do it on staging or with the owner's permission.
 
 Findings it surfaces (CRO-): a CTA that only scrolls to a buried widget, a **contact page with no form**
@@ -2057,74 +2057,74 @@ markup-only pass can't see.
 
 Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 60–69 · F 0–59.
 
-> **Honesty rule (conversion-specific).** Report only what's observable from the fetched page — the copy,
-> the CTAs, the form fields, the links, the layout, what renders — plus the measured interaction/tracking
+> **Honesty rule (conversion-specific).** Report only what's observable from the fetched page (the copy,
+> the CTAs, the form fields, the links, the layout, what renders), plus the measured interaction/tracking
 > scans. Real funnel data (drop-off, form-completion, cart-abandonment, where visitors leave) is the owner's
-> private analytics and **no tool in this suite can see it** — treat it as **owner-reported**: use what the
+> private analytics and **no tool in this suite can see it**. Treat it as **owner-reported**: use what the
 > owner said in the **Goals & Discovery** brief as context, and otherwise leave it out. **Never invent a
-> conversion rate or an abandonment number.** A grade is an expert judgement, not a lab measurement — say so.
+> conversion rate or an abandonment number.** A grade is an expert judgement, not a lab measurement. Say so.
 
 ---
 
 ## Worked finding examples (Issue · Impact · Fix)
 
-**CRO-01 — 11-field contact form on the main conversion page** · Impact 4 · Effort 2 · **quick win**
-- **Issue:** The "Request a quote" form requires eleven fields — name, company, phone, email, budget range,
-  timeframe, job title, industry, company size, "how did you hear about us", and a message — all marked
+**CRO-01. 11-field contact form on the main conversion page** · Impact 4 · Effort 2 · **quick win**
+- **Issue:** The "Request a quote" form requires eleven fields (name, company, phone, email, budget range,
+  timeframe, job title, industry, company size, "how did you hear about us", and a message), all marked
   required before the visitor gets anything.
 - **Impact:** Every extra required field costs completions; a first-touch enquiry form this long turns away
   ready-to-buy visitors who'd happily give a name and email. This is the primary conversion, so the leak is
-  costly. (Real completion rate is the owner's analytics data — owner-reported via Goals & Discovery, not
+  costly. (Real completion rate is the owner's analytics data, owner-reported via Goals & Discovery, not
   tool-measured.)
 - **Fix:** Cut to the two or three fields you truly need to respond (name, email, one-line message); make
   the rest optional or ask them after first contact. Add a reassurance line under the button.
 - **Evidence:** `<label>Budget range *</label> … <label>Company size *</label> … <label>How did you hear about us? *</label>`
 
-**CRO-02 — "Submit" button with no value or reassurance** · Impact 4 · Effort 1 · **quick win**
+**CRO-02. "Submit" button with no value or reassurance** · Impact 4 · Effort 1 · **quick win**
 - **Issue:** The primary CTA on the enquiry form reads *"Submit"*, with no statement of what happens next
   and no trust signal beside it.
 - **Impact:** "Submit" describes the visitor's effort, not their reward, and at the exact moment of
-  commitment there's nothing answering "is this safe / what do I get / how fast will they reply?" —
+  commitment there's nothing answering "is this safe / what do I get / how fast will they reply?". That is
   hesitation right at the ask.
 - **Fix:** Rewrite to action + value, e.g. *"Get my free quote"*, and add a one-line reassurance beneath it
   ("No obligation — we reply within one working day"). Consider a small testimonial or star rating next to
   the button.
 - **Evidence:** `<button type="submit">Submit</button>`
 
-**CRO-03 — Five competing CTAs above the fold; no single path** · Impact 4 · Effort 3 · **big bet**
-- **Issue:** The hero shows five buttons of equal weight — *"Buy now", "Book a demo", "Download brochure",
-  "Watch video", "Join newsletter"* — with none visually dominant.
+**CRO-03. Five competing CTAs above the fold; no single path** · Impact 4 · Effort 3 · **big bet**
+- **Issue:** The hero shows five buttons of equal weight (*"Buy now", "Book a demo", "Download brochure",
+  "Watch video", "Join newsletter"*), with none visually dominant.
 - **Impact:** The one-action test fails: the visitor must choose instead of act, and competing choices dilute
   every click away from the primary goal (which the Snapshot names as booking a demo).
 - **Fix:** Pick one primary action, make it the loud, high-contrast button, and demote the rest to quieter
   secondary links lower down. One page, one job.
 - **Evidence:** `<a class="btn">Buy now</a> <a class="btn">Book a demo</a> <a class="btn">Download brochure</a> …`
 
-**CRO-04 — Pricing hidden behind "Contact us"** · Impact 3 · Effort 3 · **fill-in**
+**CRO-04. Pricing hidden behind "Contact us"** · Impact 3 · Effort 3 · **fill-in**
 - **Issue:** The pricing page carries no numbers, only *"Contact us for a custom quote"* with a form.
 - **Impact:** Visitors who can't gauge fit or affordability leave to compare a competitor who shows a range;
   the "talk to sales" wall filters out self-serve buyers who were ready.
-- **Fix:** Show at least a starting price, a "from £X" band, or three example packages — even indicative
+- **Fix:** Show at least a starting price, a "from £X" band, or three example packages; even indicative
   numbers let visitors self-qualify and keep them on the path.
 
 **Strength worth noting** (not a finding, but record it): "The checkout shows trust badges, a money-back
-guarantee, and 'no card details stored' right beside the Pay button — proof exactly at the ask."
+guarantee, and 'no card details stored' right beside the Pay button: proof exactly at the ask."
 
 ### Anti-patterns to catch (each becomes a finding)
-- **"Submit" / "Click here" CTAs** — button copy that names the effort, not the reward.
-- **Over-long forms** — asking phone, company, budget, job title before giving any value.
-- **No trust at the ask** — testimonials and guarantees stranded far from the button or form.
-- **Competing CTAs** — several equal-weight buttons; no single obvious next step.
-- **Hidden pricing** — "Contact us for pricing" with no number or range anywhere.
-- **Auto-playing distractions** — carousels, video, pop-ups, or chat nags that pull focus off the action.
-- **Leaks off the path** — the checkout/enquiry page still carries full nav, footer links, and outbound
+- **"Submit" / "Click here" CTAs:** button copy that names the effort, not the reward.
+- **Over-long forms:** asking phone, company, budget, job title before giving any value.
+- **No trust at the ask:** testimonials and guarantees stranded far from the button or form.
+- **Competing CTAs:** several equal-weight buttons; no single obvious next step.
+- **Hidden pricing:** "Contact us for pricing" with no number or range anywhere.
+- **Auto-playing distractions:** carousels, video, pop-ups, or chat nags that pull focus off the action.
+- **Leaks off the path:** the checkout/enquiry page still carries full nav, footer links, and outbound
   links that invite the visitor away.
-- **Multi-step where one step would do** — a three-screen flow (or a mandatory account) for what a single
+- **Multi-step where one step would do:** a three-screen flow (or a mandatory account) for what a single
   short form could capture.
-- **Dark-pattern urgency** — fake countdowns, invented "only 2 left", pre-ticked upsells. Honest urgency
+- **Dark-pattern urgency:** fake countdowns, invented "only 2 left", pre-ticked upsells. Honest urgency
   only.
-- **CTA below the fold on mobile** — the primary action pushed off-screen behind a wall of hero text
-  (flag as observable; the measured mobile render — `mobile-audit.py`, via UX & Technical — confirms the
+- **CTA below the fold on mobile:** the primary action pushed off-screen behind a wall of hero text
+  (flag as observable; the measured mobile render, `mobile-audit.py` via UX & Technical, confirms the
   small-screen placement).
 
 ---
@@ -2169,24 +2169,24 @@ Primary goal audited against: [the site's primary conversion]
 ### File 2: `conversion.html` (styled, share-ready)
 
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets and
-no JavaScript**). Use the **shared design system** — the exact `<style>` block and page frame from
+no JavaScript**). Use the **shared design system**: the exact `<style>` block and page frame from
 [rules-snapshot.md](../../../0%20Site%20Snapshot/site-snapshot/references/rules-snapshot.md), reproduced
 in full below so this skill is self-contained. Only these differ from the snapshot page: the `<title>`,
 the header, the `utm_content=conversion-cro` in the two brand links, and the section content.
 
 Components:
-- **A grade section first** — the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
+- **A grade section first:** the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
   a one-line verdict, and the **scorecard `<table>`** (criteria × pass/partial/fail × weight × points).
-- **A Findings section** — one `.card` per finding. Card header: the `.id` chip (`CRO-01`), the short
+- **A Findings section:** one `.card` per finding. Card header: the `.id` chip (`CRO-01`), the short
   title, an **Impact meter** (`<span class="scorewrap"><span class="meter"><i style="width:NN%"></i></span><span class="scoreno">Impact X/5</span></span>`,
   width = Impact/5×100), and the **priority `.tag`** (`quickwin` / `bigbet` / `fillin` / `skip`). Body:
   Issue / Impact / Fix as `.row`s (append `· Effort X/5` in the Impact row via `<span class="effort">`),
   and the quoted evidence in a `<blockquote>`.
-- **A "What's working" section** — `.row`s or `ul.clean` of strengths.
-- **A Summary section** — findings count and the top priority (cited by ID).
+- **A "What's working" section:** `.row`s or `ul.clean` of strengths.
+- **A Summary section:** findings count and the top priority (cited by ID).
 
 **Navigation & hints (required):** cross-link other deliverables and tooltip every ID and shorthand term
-(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels) — every occurrence, per
+(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels), every occurrence, per
 [report-format.md](report-format.md). **No `pagenav`** mid-session; end with the Print hint.
 
 Finding card pattern:
@@ -2202,7 +2202,7 @@ Finding card pattern:
 </article>
 ```
 
-Full page (reproduce the shared `<style>` block verbatim — it is identical suite-wide):
+Full page (reproduce the shared `<style>` block verbatim; it is identical suite-wide):
 
 ```html
 <!DOCTYPE html>
@@ -2393,7 +2393,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -2405,36 +2405,36 @@ Released under the MIT License — keeping the copyright notice is all that is r
 
 ## Goal
 
-Judge how well the website can be **found in search and understood once found** — by both search engines
-and the people typing queries — and turn every weakness into a prioritised, fixable **Finding**. Deliver
+Judge how well the website can be **found in search and understood once found** (by both search engines
+and the people typing queries), and turn every weakness into a prioritised, fixable **Finding**. Deliver
 a graded SEO scorecard (0–100 → letter grade) and a list of `SEO-` findings in **Issue · Impact · Fix**
 format, each rated on Impact and Effort so the user knows what to fix first.
 
-This is **URL-first**: read the live pages and quote what's actually in them — the `<title>`, the meta
+This is **URL-first**: read the live pages and quote what's actually in them: the `<title>`, the meta
 description, the headings, the alt text, the URLs, the schema. Written for **business owners and
-marketers**, not SEO specialists — so explain the jargon in plain language (a *meta description* is the
+marketers**, not SEO specialists, so explain the jargon in plain language (a *meta description* is the
 grey summary line under a Google result; an *H1* is the page's main on-page heading; a *canonical* tells
 Google which URL is the "real" one; *schema* is hidden code that helps Google show rich results), and tie
 every finding to a real effect: fewer clicks, wrong page ranking, invisible to search.
 
 ## Inputs
 
-- **Site Snapshot** (from Skill 0) — paste it if you have it; it anchors the analysis to the site's
+- **Site Snapshot** (from Skill 0). Paste it if you have it; it anchors the analysis to the site's
   **audience** and **what they'd search for**, plus the page inventory. If it's missing, do a quick
   mini-snapshot first (fetch the homepage; establish name, what it does, audience, key pages) so your
-  findings have an anchor — but don't run the full intake.
-- **The URL(s)** — the homepage plus any key landing/product/content pages the user cares about.
+  findings have an anchor, but don't run the full intake.
+- **The URL(s)**: the homepage plus any key landing/product/content pages the user cares about.
 
 ## The core unit: a Finding (Issue · Impact · Fix)
 
-Every observation is a Finding — see [report-format.md](report-format.md) for the full definition,
+Every observation is a Finding. See [report-format.md](report-format.md) for the full definition,
 the Impact/Effort scales (1–5), and the priority quadrants (quick win / big bet / fill-in / skip). In
 short:
-- **Issue** — the specific SEO or content problem, with the **actual tag, heading, URL, or copy quoted**
+- **Issue**: the specific SEO or content problem, with the **actual tag, heading, URL, or copy quoted**
   as evidence.
-- **Impact** — what it costs (the page can't be found, loses the click on the results page, ranks for the
+- **Impact**: what it costs (the page can't be found, loses the click on the results page, ranks for the
   wrong intent, reads as thin). Rated **Impact 1–5**.
-- **Fix** — the concrete change, ideally with an example (the rewritten title, the H1 to use, the schema
+- **Fix**: the concrete change, ideally with an example (the rewritten title, the H1 to use, the schema
   to add).
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
@@ -2442,35 +2442,35 @@ Give each finding an ID: `SEO-01`, `SEO-02`, … in impact order.
 
 ## Conversation flow
 
-> **Two-tier depth (how deep to go where).** The **homepage** is the main page — give it the **full,
+> **Two-tier depth (how deep to go where).** The **homepage** is the main page: give it the **full,
 > in-depth** analysis below (every rubric criterion, quoted evidence, the full finding treatment). The
-> **secondary pages** — services, products, case studies, articles, about — don't each need the full
+> **secondary pages** (services, products, case studies, articles, about) don't each need the full
 > workup; they get a **quick per-page SEO sweep** (Step 2b) that tabulates the on-page SEO signals across
 > them and surfaces site-wide patterns. This keeps coverage broad without auditing 25 pages by hand.
 
 ### Step 1: Load context and fetch the homepage (full depth)
 
-Take the Site Snapshot (or build the mini one) and **fetch the homepage** — this is the page you analyse
+Take the Site Snapshot (or build the mini one) and **fetch the homepage**. This is the page you analyse
 in full. Read the raw HTML, not just the rendered text: the `<title>`, `<meta name="description">`, the
 heading outline (H1/H2/H3), the image `alt` attributes, the on-page links and their anchor text, the URL,
 any `<script type="application/ld+json">` schema, the `<link rel="canonical">`, `robots` meta, and the
-viewport tag. Keep the site's **audience** in mind — SEO is always "findable *by whom, searching for
+viewport tag. Keep the site's **audience** in mind. SEO is always "findable *by whom, searching for
 what*".
 
 ### Step 2: Run the SEO tests
 
-Apply the fast diagnostic tests before the full rubric — details and examples in
+Apply the fast diagnostic tests before the full rubric. Details and examples in
 [references/rules-seo.md](references/rules-seo.md):
-- **The SERP-preview test** — write the title + meta description out as they'd appear in a Google result.
+- **The SERP-preview test**: write the title + meta description out as they'd appear in a Google result.
   Do they read well and earn the click, or are they blank, truncated, or duplicated across pages?
-- **The search-intent match test** — take the term this page is trying to rank for; if a real person
+- **The search-intent match test**: take the term this page is trying to rank for; if a real person
   searched it, would *this* page satisfy what they wanted, or would they bounce back to Google?
-- **The one-H1 test** — is there exactly one clear H1 that states the page topic in the words the
+- **The one-H1 test**: is there exactly one clear H1 that states the page topic in the words the
   audience would use, or are there zero, several, or a decorative-logo H1?
 
 ### Step 2b: Site-wide quick SEO sweep (the secondary pages)
 
-Don't hand-audit every page — **sweep them**. Run the bundled tool (pure Python, no browser needed):
+Don't hand-audit every page; **sweep them**. Run the bundled tool (pure Python, no browser needed):
 
 ```
 python scripts/seo-sweep.py <homepage-URL> --per-type 5 --out <folder>
@@ -2480,7 +2480,7 @@ It discovers pages from the homepage nav and the sitemap, classifies them (servi
 case-studies / articles / about), caps to ~5 per type, fetches each **statically**, and returns a compact
 per-page table plus site-wide flags. Per page it checks: HTTP status, `<title>` (+ length), meta
 description (+ length), canonical, `noindex`, H1 count, H2/H3 counts, word count (thin-content), image-alt
-coverage, Open Graph, **structured data — which it validates locally (JSON parse + required-field checks per
+coverage, Open Graph, **structured data, which it validates locally (JSON parse + required-field checks per
 type, e.g. Organization/Product/Article/FAQPage), including the homepage's schema**, internal-link count, and
 whether the H1 and title share keywords. Full detail and thresholds:
 [references/rules-seo.md](references/rules-seo.md), "Site-wide quick SEO sweep".
@@ -2488,37 +2488,37 @@ whether the H1 and title share keywords. Full detail and thresholds:
 Turn the sweep into **a few site-wide `SEO-` findings** (not one per page): e.g. "9 of 15 pages have
 titles under 30 chars", "the homepage title is duplicated on N pages", "2 pages carry no canonical",
 "the homepage Product schema is missing required fields". Put the full table in the deliverable as reference.
-If the tool can't run (no Python), fall back to spot-checking a couple of pages by hand — and say the sweep
+If the tool can't run (no Python), fall back to spot-checking a couple of pages by hand, and say the sweep
 was not run.
 
 ### Step 3: Work the rubric and generate findings
 
-Go through the SEO rubric criteria (see the reference, "Scoring rubric") — title tags, meta descriptions,
+Go through the SEO rubric criteria (see the reference, "Scoring rubric"): title tags, meta descriptions,
 heading structure, keyword/search-intent match, content depth, URL structure, image optimization,
 internal linking, structured data, indexability basics, content gaps. For each weakness, write a Finding
-(IIF) with quoted evidence, an Impact and Effort rating, and a quadrant. **Also note genuine strengths**
-— the report shouldn't be only problems.
+(IIF) with quoted evidence, an Impact and Effort rating, and a quadrant. **Also note genuine strengths**,
+so the report isn't only problems.
 
 ### Step 4: Score the dimension
 
-Rate each rubric criterion Pass / Partial / Fail — **each criterion's "Pass" is the 2026 standard from
+Rate each rubric criterion Pass / Partial / Fail. **Each criterion's "Pass" is the 2026 standard from
 [benchmarks-2026.md](benchmarks-2026.md)** (e.g. unique 50–60-char titles, one H1, schema, HTTPS +
-sitemap + canonical), so cite the benchmark in findings — apply the weights, and total to a **0–100
+sitemap + canonical), so cite the benchmark in findings. Apply the weights, and total to a **0–100
 score**; map
 to a **letter grade** (A–F, bands in [report-format.md](report-format.md)). Show the criteria table so
 the grade is explainable. State plainly that the grade is an **expert judgement of on-page SEO**, not a
-ranking report — it doesn't measure where the site actually ranks.
+ranking report; it doesn't measure where the site actually ranks.
 
 ### Step 5: Deliver the files
 
 Generate `seo.md` and a styled, self-contained `seo.html` and share them. Format, the finding card
-component, and the scorecard layout — see the reference, "Output file format". End the HTML with the
+component, and the scorecard layout: see the reference, "Output file format". End the HTML with the
 Print hint; **no `pagenav`** mid-session.
 
 ### Step 6: Add to the Website Audit Report & hand off
 
 Record the **SEO & Content** section (grade + criteria + findings) into the internal running **Website
-Audit Report** (do not create/show a report file now — that's the Action Report skill's job at the end).
+Audit Report** (do not create/show a report file now; that's the Action Report skill's job at the end).
 Format and section order: [report-format.md](report-format.md). Tell the user the next skill is any of
 **Messaging & Clarity**, **Conversion (CRO)**, or **UX & Technical**, and that **Action Report** ties them
 together at the end.
@@ -2529,14 +2529,14 @@ together at the end.
    "SEO could be better".
 2. **Anchor to the audience's search.** Judge findability toward the terms this audience actually types,
    not keywords in the abstract.
-3. **Fixes are concrete.** Give the rewritten title, the H1 to use, the schema type to add — not "improve
+3. **Fixes are concrete.** Give the rewritten title, the H1 to use, or the schema type to add, not "improve
    SEO".
 4. **Impact + Effort on every finding.** So the Action Report can place it on the matrix.
 5. **Sweep the site's tags; never invent rankings or numbers.** Site-wide on-page signals (titles, metas,
    H1s, canonicals, thin content, duplicate titles) and **structured-data validity** **are measured** by the
-   bundled `seo-sweep.py` across the homepage and the sampled secondary pages — quote its real numbers.
-   Live search performance — rankings, impressions, search volume, backlinks, organic traffic, whether Google
-   has indexed a page — is **out of scope** for this suite (it needs the owner's own search data). Never state
+   bundled `seo-sweep.py` across the homepage and the sampled secondary pages; quote its real numbers.
+   Live search performance (rankings, impressions, search volume, backlinks, organic traffic, whether Google
+   has indexed a page) is **out of scope** for this suite (it needs the owner's own search data). Never state
    or estimate any of it; judge on-page SEO only.
 6. **Name strengths too.** Note what already works, so the grade and the report are balanced and credible.
 7. **Plain language.** Business owners are the audience; explain every term (meta description, H1,
@@ -2549,7 +2549,7 @@ together at the end.
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -2564,18 +2564,18 @@ grade bands, and cross-linking rules live in [report-format.md](report-format.md
 adds the SEO-specific tests, the scoring rubric, worked finding examples, and the HTML output format.
 
 > **Honesty rule (on-page only).** This skill analyses the **observable, on-page SEO** in the HTML you
-> fetched — titles, meta tags, headings, alt text, URLs, links, schema, canonical, robots, viewport — and
-> the site-wide sweep + local structured-data validation from `seo-sweep.py`. Live search performance —
-> rankings, search volume, backlinks, organic traffic, whether a page is actually indexed — is the owner's
+> fetched: titles, meta tags, headings, alt text, URLs, links, schema, canonical, robots, viewport, plus
+> the site-wide sweep + local structured-data validation from `seo-sweep.py`. Live search performance
+> (rankings, search volume, backlinks, organic traffic, whether a page is actually indexed) is the owner's
 > own search data and is **out of scope** for this suite: never state or estimate any of it. The grade is an
 > expert judgement of on-page SEO, not a ranking measurement.
 
 ## The SEO tests
 
-Run these fast before the full rubric — they surface the biggest issues quickly.
+Run these fast before the full rubric; they surface the biggest issues quickly.
 
 ### The SERP-preview test
-A **SERP** is a search engine results page — the list of blue links Google shows. Write the page's
+A **SERP** is a search engine results page: the list of blue links Google shows. Write the page's
 `<title>` and `<meta name="description">` out exactly as they'd appear there:
 
 > **Title line** (the blue clickable link, ~50–60 characters before Google truncates it)
@@ -2585,35 +2585,35 @@ A **SERP** is a search engine results page — the list of blue links Google sho
 Now judge it as a searcher would: is the title descriptive and specific, or is it "Home", blank, or the
 same on every page? Does the description invite the click, or is it missing (so Google prints a random
 sentence from the page)? If the preview reads badly or is duplicated across pages, that's a high-impact
-finding — this is the site's advert on the results page.
+finding: this is the site's advert on the results page.
 
 ### The search-intent match test
 Take the term a page is trying to rank for (from its title, H1, and topic). If a real person from the
-audience searched that term, what did they *want* — to buy, to compare, to learn how, to find a local
+audience searched that term, what did they *want*: to buy, to compare, to learn how, to find a local
 supplier? Does **this page** satisfy that intent, or is there a mismatch (a blog post ranking for a
 "buy" query, a thin page ranking for a "how-to", a service the page never actually explains)? A page that
-attracts the click but not the intent gets the bounce — an intent finding.
+attracts the click but not the intent gets the bounce, an intent finding.
 
 ### The one-H1 test
 The **H1** is the page's single main on-page heading (not the same as the browser-tab title). Check the
 heading outline: is there **exactly one** H1, and does it state the page topic in the words the audience
 uses? Zero H1s (common when the logo or a decorative banner is the top heading), several competing H1s,
-or an H1 that says "Home" or a slogan with no keyword — each is a structure finding.
+or an H1 that says "Home" or a slogan with no keyword: each is a structure finding.
 
 ### The findability / indexability test
 Can search engines reach and trust the page at all? Quick observable checks: is the URL `https://`; does
 the `robots` meta or a visible `noindex` block it; is there a `<link rel="canonical">` pointing somewhere
 sensible; is there a `viewport` meta (mobile-friendliness signal); does an XML sitemap appear to exist
 (`/sitemap.xml`, or linked in `robots.txt`)? Anything blocking or missing here is a findability finding.
-(Whether Google has *actually* indexed the page is the owner's search data — out of scope; judge the
+(Whether Google has *actually* indexed the page is the owner's search data, out of scope; judge the
 on-page indexability signals only.)
 
 ---
 
 ## Site-wide quick SEO sweep (the secondary pages)
 
-The homepage gets the full analysis above. For the **secondary pages** — services, products, case
-studies, articles, about — run the bundled **static** crawler instead of hand-auditing each:
+The homepage gets the full analysis above. For the **secondary pages** (services, products, case
+studies, articles, about), run the bundled **static** crawler instead of hand-auditing each:
 
 ```
 python scripts/seo-sweep.py <homepage-URL> --per-type 5 --out <folder>
@@ -2622,7 +2622,7 @@ python scripts/seo-sweep.py <homepage-URL> --per-type 5 --out <folder>
 It discovers URLs from the homepage nav and the sitemap (`sitemap_index.xml` / `sitemap.xml` /
 `wp-sitemap.xml`), classifies them by URL path (services / products / case-studies / articles / about),
 caps to `--per-type` per class (default 5), fetches each page **statically** (no browser), and writes a
-compact `seo-sweep.md` table + `seo-sweep.json`. Pure standard library — no installs.
+compact `seo-sweep.md` table + `seo-sweep.json`. Pure standard library, no installs.
 
 **What it records per page**, and the thresholds it flags on:
 
@@ -2642,11 +2642,11 @@ compact `seo-sweep.md` table + `seo-sweep.json`. Pure standard library — no in
 It also rolls up **site-wide patterns**: duplicate titles across pages, how many pages miss a meta
 description, which pages are thin, which lack a canonical.
 
-**Turn it into findings, not noise.** Summarise the table into **a few site-wide `SEO-` findings** — one
+**Turn it into findings, not noise.** Summarise the table into **a few site-wide `SEO-` findings**, one
 per pattern, not one per page. Good sweep-driven findings read like:
-- *"9 of 15 secondary pages have titles under 30 characters (e.g. `/case-studies/power-bi/` at 8 chars) —
+- *"9 of 15 secondary pages have titles under 30 characters (e.g. `/case-studies/power-bi/` at 8 chars);
   they waste the strongest on-page ranking signal."* → Impact 3, Effort 3 (templated fix), big bet.
-- *"The homepage title is duplicated on N pages — Google can't tell them apart."* → Impact 3.
+- *"The homepage title is duplicated on N pages, so Google can't tell them apart."* → Impact 3.
 - *"`/case-studies/ms-fabric/` has an all-but-empty title (9 chars) and meta description (9 chars)."*
 
 Keep the **full table in the deliverable** (a `Site-wide SEO sweep` section) as the evidence behind those
@@ -2685,8 +2685,8 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
 **SEO-01 — Homepage `<title>` is just "Home"** · Impact 4 · Effort 1 · **quick win**
 - **Issue:** The homepage title tag reads *"Home"*. The title is the blue clickable line on Google and
   the browser-tab label; this one says nothing about what the business does or for whom.
-- **Impact:** On the results page (the SERP), a searcher sees "Home" and has no reason to click — the site
-  loses the click even when it ranks. It also throws away the single strongest on-page keyword signal.
+- **Impact:** On the results page (the SERP), a searcher sees "Home" and has no reason to click, so the
+  site loses the click even when it ranks. It also throws away the single strongest on-page keyword signal.
 - **Fix:** Write a unique, descriptive title ~50–60 characters leading with the offer and audience, e.g.
   *"Bookkeeping for tradespeople — Sorted in an hour a week"*. Give every page its own distinct title.
 - **Evidence:** `<title>Home</title>`
@@ -2701,7 +2701,7 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
   a phone CTA above the fold, and FAQ-style answers to what an emergency caller asks.
 
 **SEO-03 — Meaningful images have no alt text** · Impact 3 · Effort 2 · **fill-in**
-- **Issue:** All six product photos use empty or filename alt text — e.g. `alt=""` and
+- **Issue:** All six product photos use empty or filename alt text, e.g. `alt=""` and
   `alt="IMG_4821.jpg"`. Alt text is the words search engines (and screen readers) read in place of an
   image.
 - **Impact:** The site is invisible in Google Images for these products, and the page loses the extra
@@ -2712,20 +2712,20 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
 - **Evidence:** `<img src="IMG_4821.jpg" alt="">`
 
 **Strength worth noting** (not a finding, but record it): "Every service page carries valid LocalBusiness
-schema with address, opening hours, and phone — a strong, correctly-implemented rich-result signal."
+schema with address, opening hours, and phone: a strong, correctly-implemented rich-result signal."
 
 ### Anti-patterns to catch (each becomes a finding)
-- **Duplicate or blank titles** — the same `<title>` on every page, or missing titles.
-- **"Home" / brand-only titles** — a title that names nothing the audience searches for.
-- **Missing meta descriptions** — no `<meta name="description">`, so Google prints a random page snippet.
-- **Multiple or zero H1s** — no clear main heading, or several competing ones.
-- **Keyword stuffing** — the same term jammed unnaturally into titles, headings, and body copy.
-- **Thin or duplicate content** — pages of a few boilerplate lines, or near-identical location/service pages.
-- **"Click here" anchors** — links whose anchor text carries no meaning ("click here", "read more", "this").
-- **No alt text** — meaningful images with empty or filename `alt`.
-- **No structured data** — no schema at all where Product/FAQ/LocalBusiness/Article clearly applies.
-- **Blocked by robots** — a `noindex` meta or robots rule keeping a page (that should rank) out of search.
-- **Non-descriptive URLs** — `?p=123`, `/page-2`, uppercase or parameter-soup URLs instead of readable slugs.
+- **Duplicate or blank titles:** the same `<title>` on every page, or missing titles.
+- **"Home" / brand-only titles:** a title that names nothing the audience searches for.
+- **Missing meta descriptions:** no `<meta name="description">`, so Google prints a random page snippet.
+- **Multiple or zero H1s:** no clear main heading, or several competing ones.
+- **Keyword stuffing:** the same term jammed unnaturally into titles, headings, and body copy.
+- **Thin or duplicate content:** pages of a few boilerplate lines, or near-identical location/service pages.
+- **"Click here" anchors:** links whose anchor text carries no meaning ("click here", "read more", "this").
+- **No alt text:** meaningful images with empty or filename `alt`.
+- **No structured data:** no schema at all where Product/FAQ/LocalBusiness/Article clearly applies.
+- **Blocked by robots:** a `noindex` meta or robots rule keeping a page (that should rank) out of search.
+- **Non-descriptive URLs:** `?p=123`, `/page-2`, uppercase or parameter-soup URLs instead of readable slugs.
 
 ---
 
@@ -2785,31 +2785,31 @@ Audience searched for: [who searches, and the kind of terms they'd use]
 ### File 2: `seo.html` (styled, share-ready)
 
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets and
-no JavaScript**). Use the **shared design system** — the exact `<style>` block and page frame from
+no JavaScript**). Use the **shared design system**: the exact `<style>` block and page frame from
 [rules-snapshot.md](../../../0%20Site%20Snapshot/site-snapshot/references/rules-snapshot.md), reproduced
 in full below so this skill is self-contained. Only these differ from the snapshot page: the `<title>`,
 the header, the `utm_content=seo-content` in the two brand links, and the section content.
 
 Components:
-- **A grade section first** — the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
+- **A grade section first:** the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
   a one-line verdict, and the **scorecard `<table>`** (criteria × pass/partial/fail × weight × points).
-- **A Findings section** — one `.card` per finding. Card header: the `.id` chip (`SEO-01`), the short
+- **A Findings section:** one `.card` per finding. Card header: the `.id` chip (`SEO-01`), the short
   title, an **Impact meter** (`<span class="scorewrap"><span class="meter"><i style="width:NN%"></i></span><span class="scoreno">Impact X/5</span></span>`,
   width = Impact/5×100), and the **priority `.tag`** (`quickwin` / `bigbet` / `fillin` / `skip`). Body:
   Issue / Impact / Fix as `.row`s (append `· Effort X/5` in the Impact row via `<span class="effort">`),
   and the quoted evidence in a `<blockquote>`.
-- **A "Site-wide SEO sweep" section** — the `seo-sweep.py` per-page table as a `<table>` (Page, Type,
+- **A "Site-wide SEO sweep" section:** the `seo-sweep.py` per-page table as a `<table>` (Page, Type,
   Title len, Desc len, H1, Words, Alt, Schema, Flags), one row per swept page, above a one-line note that
   the homepage is audited in full and this is the quick sweep of the sampled secondary pages. Include the
   **structured-data validation** result (homepage + any per-page schema issues) beneath it.
-- **A "What's working" section** — `.row`s or `ul.clean` of strengths.
-- **An "Out of scope" note** — a one-line `ul.clean` that live rankings, traffic, and index status are the
+- **A "What's working" section:** `.row`s or `ul.clean` of strengths.
+- **An "Out of scope" note:** a one-line `ul.clean` that live rankings, traffic, and index status are the
   owner's own search data, not measured here (never invent rankings, traffic, or search-volume numbers, and
   name no third-party tool).
-- **A Summary section** — findings count and the top priority (cited by ID).
+- **A Summary section:** findings count and the top priority (cited by ID).
 
 **Navigation & hints (required):** cross-link other deliverables and tooltip every ID and shorthand term
-(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels) — every occurrence, per
+(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels), every occurrence, per
 [report-format.md](report-format.md). **No `pagenav`** mid-session; end with the Print hint.
 
 Finding card pattern:
@@ -2825,7 +2825,7 @@ Finding card pattern:
 </article>
 ```
 
-Full page (reproduce the shared `<style>` block verbatim — it is identical suite-wide):
+Full page (reproduce the shared `<style>` block verbatim; it is identical suite-wide):
 
 ```html
 <!DOCTYPE html>
@@ -3024,7 +3024,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -3036,37 +3036,37 @@ Released under the MIT License — keeping the copyright notice is all that is r
 
 ## Goal
 
-Judge how **usable and technically sound** the website is — can visitors find their way, read the
-page, use it on a phone, trust it, and complete a form without friction — and turn every weakness
+Judge how **usable and technically sound** the website is (can visitors find their way, read the
+page, use it on a phone, trust it, and complete a form without friction), and turn every weakness
 into a prioritised, fixable **Finding**. Deliver a graded UX & Technical scorecard (0–100 → letter
 grade) and a list of `UX-` findings in **Issue · Impact · Fix** format, each rated on Impact and
 Effort so the user knows what to fix first.
 
 This is **URL-first**: inspect the live pages and quote what's actually in the markup and on screen.
-Written for **business owners and marketers** — plain language, and every piece of jargon explained
+Written for **business owners and marketers**: plain language, and every piece of jargon explained
 (viewport, alt text, contrast ratio, render-blocking, Core Web Vitals) with each finding tied to a
 real effect on their visitors.
 
 ## Inputs
 
-- **Site Snapshot** (from Skill 0) — paste it if you have it; it anchors the analysis to the site's
+- **Site Snapshot** (from Skill 0). Paste it if you have it; it anchors the analysis to the site's
   **primary conversion goal**, audience, page inventory, and the observable platform/HTTPS signals
   already captured. If it's missing, do a quick mini-snapshot first (fetch the homepage; establish
-  name, what it does, primary goal, key pages, HTTPS) so your findings have an anchor — but don't run
+  name, what it does, primary goal, key pages, HTTPS) so your findings have an anchor, but don't run
   the full intake.
-- **The URL(s)** — the homepage plus any key pages the user cares about (a product/pricing page, the
+- **The URL(s)**: the homepage plus any key pages the user cares about (a product/pricing page, the
   contact/booking page with the main form, a deep content page).
 
 ## The core unit: a Finding (Issue · Impact · Fix)
 
-Every observation is a Finding — see [report-format.md](report-format.md) for the full definition,
+Every observation is a Finding. See [report-format.md](report-format.md) for the full definition,
 the Impact/Effort scales (1–5), and the priority quadrants (quick win / big bet / fill-in / skip). In
 short:
-- **Issue** — the specific usability or technical problem, with the **actual element, attribute, or
+- **Issue**: the specific usability or technical problem, with the **actual element, attribute, or
   page quoted** as evidence (the missing viewport tag, the unlabeled input, the 404 link).
-- **Impact** — what it costs (visitors can't navigate, bounce on mobile, can't submit the form, lose
+- **Impact**: what it costs (visitors can't navigate, bounce on mobile, can't submit the form, lose
   trust). Rated **Impact 1–5**.
-- **Fix** — the concrete change, ideally with the exact markup or attribute to add.
+- **Fix**: the concrete change, ideally with the exact markup or attribute to add.
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
 Give each finding an ID: `UX-01`, `UX-02`, … in impact order.
@@ -3079,24 +3079,24 @@ Take the Site Snapshot (or build the mini one) and **fetch the homepage and key 
 markup, not just the rendered text: the `<head>` (viewport meta, `<html lang>`, HTTPS on asset URLs),
 the navigation, the heading order (`<h1>`…`<h6>`), image `alt` attributes, form `<label>`s and input
 types, link `href`s, and the weight/dimensions of hero images. Keep the site's **primary goal** in
-mind — usability is always "usable *toward completing that action*".
+mind. Usability is always "usable *toward completing that action*".
 
 ### Step 2: Run the UX/technical fast tests
 
-Apply the fast diagnostic tests before the full rubric — details and examples in
+Apply the fast diagnostic tests before the full rubric. Details and examples in
 [references/rules-ux-technical.md](references/rules-ux-technical.md):
-- **The three-click test** — can a visitor reach any key page (product, pricing, contact) in about
+- **The three-click test**: can a visitor reach any key page (product, pricing, contact) in about
   three clicks from the homepage, or do they hit dead ends?
-- **The squint test** — blur or squint at the page: does the visual hierarchy pull the eye to the one
+- **The squint test**: blur or squint at the page: does the visual hierarchy pull the eye to the one
   main action, or does everything shout equally (or nothing stands out)?
-- **The mobile-viewport test** — is there a `<meta name="viewport">` tag, and (confirmed by the
+- **The mobile-viewport test**: is there a `<meta name="viewport">` tag, and (confirmed by the
   measured render in Step 2b) do the text size and tap targets survive a narrow phone-width screen
   without a horizontal scrollbar?
 
 ### Step 2b: Measure mobile-friendliness (headless render — the correct way)
 
-Don't guess mobile behaviour from the markup — **render the page and measure it**. If Playwright is
-available (`pip install playwright && playwright install chromium` — it bundles its own Chromium,
+Don't guess mobile behaviour from the markup; **render the page and measure it**. If Playwright is
+available (`pip install playwright && playwright install chromium`, which bundles its own Chromium,
 cross-platform), run the bundled tool:
 
 ```
@@ -3106,22 +3106,22 @@ python scripts/mobile-audit.py <URL> --out <folder> --widths 320,390,414
 It renders the page with real mobile emulation at each phone width and reports, per width
 (full detail and thresholds in [references/rules-ux-technical.md](references/rules-ux-technical.md),
 "Measured mobile-friendliness test"):
-- **Fits the screen?** — document scroll width vs viewport width (any horizontal scroll = fail).
-- **Elements too big** — every element whose box extends past the screen edge (real overflow), kept
+- **Fits the screen?** Document scroll width vs viewport width (any horizontal scroll = fail).
+- **Elements too big**: every element whose box extends past the screen edge (real overflow), kept
   separate from content merely clipped inside a carousel/`overflow` container.
 - **Images wider than the screen.**
-- **Tap targets under 44×44px** — buttons/links too small to tap reliably (Apple HIG / WCAG 2.5.5).
-- **Text under 12px** — too small to read on a phone.
-- A **full-page screenshot per width** — open them and eyeball the layout for anything the numbers miss.
+- **Tap targets under 44×44px**: buttons/links too small to tap reliably (Apple HIG / WCAG 2.5.5).
+- **Text under 12px**: too small to read on a phone.
+- A **full-page screenshot per width**: open them and eyeball the layout for anything the numbers miss.
 
 Turn each measured problem into a `UX-` finding with the real numbers as evidence (e.g. "44 tap
-targets below 44×44px at 390px — pagination, language switch, carousel controls"). If **no headless
-browser is available** (Basic layer), say so and fall back to marking these "not measured" — describe the
+targets below 44×44px at 390px: pagination, language switch, carousel controls"). If **no headless
+browser is available** (Basic layer), say so and fall back to marking these "not measured", then describe the
 observable signals but never assume the result.
 
 ### Step 2c: Measure performance, accessibility & security (headless — the correct way)
 
-Don't guess "is it fast?", "is it accessible?", or "is it secure?" — **measure them**. If Playwright is available (bundled Chromium, cross-platform),
+Don't guess "is it fast?", "is it accessible?", or "is it secure?"; **measure them**. If Playwright is available (bundled Chromium, cross-platform),
 run the bundled scanner:
 
 ```
@@ -3134,47 +3134,53 @@ heaviest resources; **real WCAG violations** via **axe-core** (critical / seriou
 keyboard focus-order pass**; and a **security** read (HTTPS, TLS version, HSTS/CSP & security headers present
 vs. missing, redirect chain, mixed content). Thresholds and full method:
 [references/rules-ux-technical.md](references/rules-ux-technical.md), "Measured performance, accessibility & security".
-Turn each into a `UX-` finding with the numbers as evidence. **Honesty:** this is a **lab** run — the INP
+Turn each into a `UX-` finding with the numbers as evidence. **Honesty:** this is a **lab** run. The INP
 figure is the standard lab proxy (TBT), not the real-world field percentile; and full **screen-reader**
 testing is manual and out of scope. Say so. If the scanner can't run (Basic layer), fall back to "not measured".
 
 ### Step 3: Work the rubric and generate findings
 
-Go through the UX & Technical rubric criteria (see the reference, "Scoring rubric") — navigation & IA,
+Go through the UX & Technical rubric criteria (see the reference, "Scoring rubric"): navigation & IA,
 visual hierarchy & readability, mobile responsiveness, page-speed signals, accessibility, links &
 errors, security & trust basics, forms usability, UI consistency, layout & whitespace, responsive
 robustness. For each weakness, write a Finding (IIF) with quoted evidence, an Impact and Effort
-rating, and a quadrant. **Also note genuine strengths** — the report shouldn't be only problems.
+rating, and a quadrant. **Also note genuine strengths**, so the report isn't only problems.
+
+**Readability of the content templates is measured.** The Design & Visual scan (`design-scan.py --pages`)
+renders representative interior templates (an article, a service page, a case study) and measures each one's
+**body text-alignment** and **characters-per-line**. Use `design-pages.json` for the readability criterion:
+centred body copy, or lines well outside ~45-75 characters, on an article or service template is a real
+`UX-` readability finding even when the homepage reads fine. Cite the measured value.
 
 ### Step 4: Score the dimension
 
-Rate each rubric criterion Pass / Partial / Fail — **each criterion's "Pass" is the 2026 standard from
+Rate each rubric criterion Pass / Partial / Fail. **Each criterion's "Pass" is the 2026 standard from
 [benchmarks-2026.md](benchmarks-2026.md)** (Core Web Vitals ≤ 2.5s/200ms/0.1, tap targets ≥ 44px,
-WCAG 2.2 AA, HTTPS + HSTS, and the **UI/UX & usability** bars — Nielsen's heuristics, clear IA in ~1–3
+WCAG 2.2 AA, HTTPS + HSTS, and the **UI/UX & usability** bars: Nielsen's heuristics, clear IA in ~1–3
 clicks, one focal point, ≥ 16px / 45–75-char / 1.5 text, consistency, visible feedback under 1s), so cite
-the benchmark in findings — apply the weights, and total to a **0–100 score**;
+the benchmark in findings. Apply the weights, and total to a **0–100 score**;
 map to a **letter grade** (A–F, bands in [report-format.md](report-format.md)). Show the criteria
-table so the grade is explainable. State plainly that the grade is an **expert judgement** — informed by the
+table so the grade is explainable. State plainly that the grade is an **expert judgement**, informed by the
 measured numbers where the bundled tools ran (speed, mobile fit, accessibility, security, links), and by
 observable markup signals where they didn't (Basic layer).
 
 ### Step 5: Deliver the files
 
 Generate `ux-technical.md` and a styled, self-contained `ux-technical.html` and share them. Format,
-the finding card component, and the scorecard layout — see the reference, "Output file format". End
+the finding card component, and the scorecard layout: see the reference, "Output file format". End
 the HTML with the Print hint; **no `pagenav`** mid-session.
 
 ### Step 6: Add to the Website Audit Report & hand off
 
 Record the **UX & Technical** section (grade + criteria + findings) into the internal running
-**Website Audit Report** (do not create/show a report file now — that's the Action Report skill's job
+**Website Audit Report** (do not create/show a report file now; that's the Action Report skill's job
 at the end). Format and section order: [report-format.md](report-format.md). Tell the user the
 remaining analyses are any of **Messaging & Clarity**, **Conversion (CRO)**, or **SEO & Content**, and
 that **Action Report** ties them together at the end.
 
 ## Critical rules
 
-1. **Evidence, always.** Every finding quotes the actual element, attribute, or page — the missing
+1. **Evidence, always.** Every finding quotes the actual element, attribute, or page: the missing
    `<meta name="viewport">`, the `<img>` with no `alt`, the link returning 404. No vague "the UX
    could be better".
 2. **Measure what you can; be honest about the rest.** With a headless browser, these are now
@@ -3183,19 +3189,19 @@ that **Action Report** ties them together at the end.
    + a keyboard focus pass**, and **security** (HTTPS/TLS/headers/redirects/mixed content)
    (`perf-a11y-scan.py`, Step 2c); and **broken-link HTTP status** across the key pages
    (`interaction-scan.py`). Base those findings on the real numbers and quote them. The only thing a local
-   run genuinely can't produce is the real-world **field percentile** (LCP/INP/CLS across many real users)
-   — measure the lab equivalents and don't claim a field number; full **screen-reader** testing stays
+   run genuinely can't produce is the real-world **field percentile** (LCP/INP/CLS across many real users).
+   Measure the lab equivalents and don't claim a field number; full **screen-reader** testing stays
    manual and out of scope. Never invent a load time, a CWV score, or a violation you didn't measure. In the
-   **Basic layer** (no browser), these fall back to "not measured" — describe observable signals, don't name
+   **Basic layer** (no browser), these fall back to "not measured"; describe observable signals, don't name
    a third-party tool.
-3. **Anchor to the primary goal.** Judge usability toward the site's one main conversion — friction
+3. **Anchor to the primary goal.** Judge usability toward the site's one main conversion; friction
    on the path to the main action outranks cosmetic issues.
 4. **Fixes are concrete.** Give the exact attribute, tag, or change (e.g. "add
    `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` to the `<head>`"), not
    "make it responsive".
 5. **Impact + Effort on every finding.** So the Action Report can place it on the matrix.
 6. **Don't invent.** Judge only what you can observe. If a page couldn't be read or rendered, say so
-   and ask for the markup/screenshot — never assume behaviour you didn't see.
+   and ask for the markup/screenshot; never assume behaviour you didn't see.
 7. **Name strengths too.** Note what already works, so the grade and the report are balanced and
    credible.
 8. **Plain language.** Business owners are the audience; explain every technical term the first time
@@ -3210,7 +3216,7 @@ that **Action Report** ties them together at the end.
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -3230,26 +3236,26 @@ output format.
 This dimension is where the **honesty rule** bites hardest, because the questions users ask ("is it
 fast?", "is it accessible?") often need tools you don't have. Be scrupulous about the line:
 
-**You CAN verify from the page you fetched** — the `<head>` tags (`<meta name="viewport">`,
+**You CAN verify from the page you fetched:** the `<head>` tags (`<meta name="viewport">`,
 `<html lang>`), whether URLs and assets are served over **HTTPS** and whether any asset is loaded over
 plain `http://` on an `https://` page (**mixed content**), the navigation and whether key pages are
 reachable, the **heading order** (`<h1>`…`<h6>`), image **alt** attributes, form `<label>`s and input
 `type`s, link `href`s (and whether they resolve), the number and apparent weight of scripts and
 images, and obvious layout/UI-consistency issues in what renders.
 
-**You CAN now MEASURE** — three things a static read couldn't, all via bundled headless-Chrome tools:
-1. **Mobile-friendliness** — `scripts/mobile-audit.py`: fit-to-screen, oversized elements/images, tap
+**You CAN now MEASURE** three things a static read couldn't, all via bundled headless-Chrome tools:
+1. **Mobile-friendliness** via `scripts/mobile-audit.py`: fit-to-screen, oversized elements/images, tap
    targets ≥44×44px, text ≥12px (see "Measured mobile-friendliness test" below).
-2. **Performance (lab Core Web Vitals)** — `scripts/perf-a11y-scan.py`: LCP, CLS, FCP, TTFB, load time,
+2. **Performance (lab Core Web Vitals)** via `scripts/perf-a11y-scan.py`: LCP, CLS, FCP, TTFB, load time,
    total transferred weight, request count, third-party count, and the heaviest resources.
-3. **Accessibility (WCAG)** — the same `scripts/perf-a11y-scan.py` injects **axe-core** and returns real
+3. **Accessibility (WCAG):** the same `scripts/perf-a11y-scan.py` injects **axe-core** and returns real
    violations grouped by impact (critical / serious / moderate / minor).
-Quote the **real measured numbers** as evidence — these are no longer "observed from markup only" (see
+Quote the **real measured numbers** as evidence; these are no longer "observed from markup only" (see
 "Measured performance & accessibility" below).
 
-**Measured here — locally, no API keys.** The bundled tools render/inspect the page and return real
+**Measured here, locally, no API keys.** The bundled tools render/inspect the page and return real
 numbers; quote them as evidence. The only thing a local run genuinely can't produce is the **real-world
-field percentile** (LCP/INP/CLS across many real users) — that needs live user data, so this suite measures
+field percentile** (LCP/INP/CLS across many real users). That needs live user data, so this suite measures
 the **lab** equivalents instead and never claims field numbers.
 
 | Measured here (bundled tool) | What you get |
@@ -3261,25 +3267,25 @@ the **lab** equivalents instead and never claims field numbers.
 | Security — HTTPS, TLS version, HSTS/CSP & headers, redirect chain, mixed content (`perf-a11y-scan.py`) | measured |
 | Broken links — HTTP status of every link across the key pages (`interaction-scan.py`) | measured |
 
-Only in the **Basic layer** (no headless browser available) do these fall back to "not measured" — there you
+Only in the **Basic layer** (no headless browser available) do these fall back to "not measured"; there you
 still flag the *signals* (a 4 MB hero image, ten render-blocking scripts, missing alt) but never fabricate a
-score. Full **screen-reader** testing remains manual and is out of scope — say so plainly; don't point at a
+score. Full **screen-reader** testing remains manual and is out of scope: say so plainly; don't point at a
 third-party tool.
 
 ---
 
 ## The UX/technical fast tests
 
-Run these fast before the full rubric — they surface the biggest issues quickly.
+Run these fast before the full rubric; they surface the biggest issues quickly.
 
 ### The three-click test
-Starting from the homepage, can a visitor reach any **key page** — the main product/service, pricing,
-and the contact/booking page — in roughly **three clicks**, following clearly labelled links? If a key
+Starting from the homepage, can a visitor reach any **key page** (the main product/service, pricing,
+and the contact/booking page) in roughly **three clicks**, following clearly labelled links? If a key
 page is buried, orphaned, or only reachable via the footer, or the trail leads to a dead end, that's a
 navigation finding.
 
 ### The squint test
-Blur your eyes (or mentally squint) at the first screen. Does one element — the primary action — stand
+Blur your eyes (or mentally squint) at the first screen. Does one element, the primary action, stand
 out by size, colour, or position, so the eye lands on it first? If everything competes at the same
 visual weight (or nothing draws the eye), the **visual hierarchy** isn't guiding the visitor to the
 main action. This is the visual analogue of the messaging 5-second test.
@@ -3287,10 +3293,10 @@ main action. This is the visual analogue of the messaging 5-second test.
 ### The mobile-viewport test
 Two parts. First, is there a `<meta name="viewport" content="width=device-width, initial-scale=1">`
 tag in the `<head>`? Without it, phones render the desktop layout zoomed out and the site is not
-mobile-responsive. Second — and this is now **measured, not eyeballed** (see "Measured mobile-friendliness
-test" below) — when rendered at phone width, does the **text stay legible** (≥12px), do the **tap targets
+mobile-responsive. Second, and this is now **measured, not eyeballed** (see "Measured mobile-friendliness
+test" below), when rendered at phone width, does the **text stay legible** (≥12px), do the **tap targets
 stay big enough** (≥44×44px), and does the content **fit without a horizontal scrollbar**? Failing either
-part is a high-impact mobile finding — remember most traffic is mobile.
+part is a high-impact mobile finding; remember most traffic is mobile.
 
 ### The jargon check (for the reader, not the site)
 Every technical term you use in a finding gets a plain-language gloss on first use: *viewport* (the
@@ -3302,11 +3308,11 @@ script that delays the page appearing), *Core Web Vitals* (Google's real-world s
 
 ## Measured mobile-friendliness test (the correct way to check "does it fit the phone?")
 
-Static HTML can only tell you the viewport tag is present — it cannot tell you whether things actually
+Static HTML can only tell you the viewport tag is present; it cannot tell you whether things actually
 **fit** or are **too big**, because that depends on CSS, images, and JavaScript at a real screen width.
 So render the page and measure it.
 
-**Run it** (needs Playwright — `pip install playwright && playwright install chromium`; it bundles its own Chromium, no browser to install):
+**Run it** (needs Playwright: `pip install playwright && playwright install chromium`; it bundles its own Chromium, no browser to install):
 ```
 python scripts/mobile-audit.py <URL> --out <folder> --widths 320,390,414
 ```
@@ -3325,17 +3331,17 @@ python scripts/mobile-audit.py <URL> --out <folder> --widths 320,390,414
 
 **Turn results into findings.** Each failed check becomes a `UX-` finding with the real numbers as
 evidence, e.g.:
-- *"At 390px the page fits with no horizontal scroll and no oversized images — mobile layout is sound."*
+- *"At 390px the page fits with no horizontal scroll and no oversized images; mobile layout is sound."*
   (a **strength**, recorded, not a finding)
 - *"44 tap targets render below 44×44px at 390px (pagination 32×32, language switch 40×40, carousel
-  arrows 30×32) — fiddly to tap on a phone."* → Impact 3, Effort 2, quick win.
+  arrows 30×32); fiddly to tap on a phone."* → Impact 3, Effort 2, quick win.
 - *"A hero container is 131px wider than the 390px screen and forces sideways scroll."* → Impact 4+.
 
-**Also open the screenshots.** The numbers catch overflow and sizing; your eyes catch things they can't
-— overlapping elements, a menu that covers content, text crammed against the edge, an image that's
+**Also open the screenshots.** The numbers catch overflow and sizing; your eyes catch things they can't:
+overlapping elements, a menu that covers content, text crammed against the edge, an image that's
 technically in-bounds but visually dominating. Note those as findings too.
 
-**If there's no headless browser** (Basic layer), say so and fall back to "not measured" — describe the
+**If there's no headless browser** (Basic layer), say so and fall back to "not measured"; describe the
 observable signals (viewport meta present? fixed-width containers? tiny tap targets in the markup?) but do
 **not** assert whether the page actually fits.
 
@@ -3343,7 +3349,7 @@ observable signals (viewport meta present? fixed-width containers? tiny tap targ
 
 ## Measured performance, accessibility & security (the flags a static read leaves open)
 
-Run the bundled scanner (needs Playwright — `pip install playwright && playwright install chromium`; axe-core
+Run the bundled scanner (needs Playwright: `pip install playwright && playwright install chromium`; axe-core
 is loaded from a CDN at run time, everything else is local, no API keys):
 
 ```
@@ -3352,7 +3358,7 @@ python scripts/perf-a11y-scan.py <URL> --out <folder>
 
 It renders the page **mobile-emulated** (as Google measures) and returns four things:
 
-**Performance — lab Core Web Vitals + weight + a lab INP proxy**, with the 2026 thresholds:
+**Performance: lab Core Web Vitals + weight + a lab INP proxy**, with the 2026 thresholds:
 
 | Metric | Good | Needs work | Poor |
 |--------|------|-----------|------|
@@ -3363,24 +3369,24 @@ It renders the page **mobile-emulated** (as Google measures) and returns four th
 | **INP proxy — Total Blocking Time** | ≤ 200ms | 200–600ms | > 600ms |
 
 Plus total transferred KB, request count, third-party host count, and the **heaviest resources** (a
-multi-MB hero image/video is the usual culprit). **Honesty:** this is a **lab** run (one emulated load) — the
+multi-MB hero image/video is the usual culprit). **Honesty:** this is a **lab** run (one emulated load); the
 INP figure is the standard **lab proxy (Total Blocking Time)**, not the real-world field percentile (which
 needs many real users); measure the lab number and don't claim a field number.
 
-**Accessibility — real WCAG violations via axe-core** (Deque, MIT), grouped by impact (**critical / serious /
-moderate / minor**) with the rule id, the WCAG tags, and element counts — **plus a keyboard focus-order pass**
+**Accessibility: real WCAG violations via axe-core** (Deque, MIT), grouped by impact (**critical / serious /
+moderate / minor**) with the rule id, the WCAG tags, and element counts, **plus a keyboard focus-order pass**
 (how many tab stops reached, how many with no visible focus indicator, and positive-`tabindex` anti-patterns).
 A **critical** (e.g. a button with no accessible name) or **serious** (e.g. colour-contrast) is a genuine
-WCAG 2.2 AA failure — and, under the EU Accessibility Act, a compliance risk. **Honesty:** axe + the keyboard
-pass catch the automatable share of WCAG; full **screen-reader** testing is manual and out of scope — say so.
+WCAG 2.2 AA failure and, under the EU Accessibility Act, a compliance risk. **Honesty:** axe + the keyboard
+pass catch the automatable share of WCAG; full **screen-reader** testing is manual and out of scope; say so.
 
-**Security — measured from the response:** HTTPS, TLS version, which security headers are present vs. missing
+**Security, measured from the response:** HTTPS, TLS version, which security headers are present vs. missing
 (HSTS, CSP, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy), the redirect chain,
 and any **mixed content** (http assets on an https page).
 
 Turn each into a `UX-` finding with the real numbers as evidence (e.g. "TTFB 1.3s and a 2 MB hero video",
 "axe-core: 1 critical (button-name), 18 contrast failures", "TBT 274ms", "HSTS and CSP both missing"). In the
-**Basic layer** (no browser), fall back to "not measured" — never invent a score.
+**Basic layer** (no browser), fall back to "not measured"; never invent a score.
 
 ---
 
@@ -3388,13 +3394,13 @@ Turn each into a `UX-` finding with the real numbers as evidence (e.g. "TTFB 1.3
 
 Rate each criterion **Pass** (full weight), **Partial** (half), or **Fail** (0). Sum → 0–100 → letter
 grade. Always show this table in the deliverable so the grade is explainable. Criteria marked
-**(observable-only)** are judged from the markup and what renders — not from a measurement tool; note
+**(observable-only)** are judged from the markup and what renders, not from a measurement tool; note
 that limitation in the finding.
 
 | # | Criterion | What "Pass" looks like | Weight |
 |---|-----------|------------------------|:------:|
 | 1 | **Navigation & information architecture** | Intuitive, labelled nav; key pages findable in 1–2 clicks; no dead ends or orphan pages. | 12 |
-| 2 | **Visual hierarchy & readability** | Clear hierarchy; legible type size and line length; adequate text contrast so copy is easy to read. | 10 |
+| 2 | **Visual hierarchy & readability** *(interior templates measured — design-scan.py)* | Clear hierarchy; legible type size; **line length ~45-75 chars** and **body text left/justified, not centred**, on content templates (articles, service pages), not just the homepage; adequate text contrast. | 10 |
 | 3 | **Mobile responsiveness** *(measured — mobile-audit.py)* | `<meta name="viewport">` present; page fits the screen at 320/390/414px with no horizontal scroll; no oversized elements/images; text ≥12px; tap targets ≥44×44px. | 12 |
 | 4 | **Performance** *(measured — perf-a11y-scan.py)* | Lab Core Web Vitals in the green: LCP ≤ 2.5s, CLS ≤ 0.1, FCP ≤ 1.8s, TTFB ≤ 0.8s, TBT ≤ 200ms; page weight reasonable, no multi-MB hero asset. *(INP measured as a lab proxy — TBT; only real-world field percentiles need live users.)* | 10 |
 | 5 | **Accessibility** *(measured — perf-a11y-scan.py: axe-core + keyboard pass)* | axe-core finds no critical/serious WCAG violations; images have alt, fields have labels, contrast ≥4.5:1, one H1, logical order, `<html lang>` set; keyboard focus order reaches controls with a visible focus indicator. | 12 |
@@ -3422,7 +3428,7 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
   biggest cause of mobile bounce and blocks the primary conversion for most of the audience.
 - **Fix:** Add `<meta name="viewport" content="width=device-width, initial-scale=1">` to the `<head>`,
   then verify the layout in the browser's responsive/device mode. **True mobile rendering not
-  measured here — check it in device mode after the change.**
+  measured here; check it in device mode after the change.**
 - **Evidence:** `<head>` contains `<title>`, `<meta charset>` and stylesheet links, but no
   `<meta name="viewport" …>`.
 
@@ -3430,55 +3436,55 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
 - **Issue:** All 14 content images, including the hero and the three product thumbnails, are
   `<img src="…">` with no `alt` attribute. *(Alt text = the text description of an image, read aloud by
   screen readers and shown if the image fails to load.)*
-- **Impact:** Visitors using screen readers get nothing where the images are — key product visuals are
-  effectively blank — and it's a common accessibility/legal exposure. Search engines also lose the
-  image context. **Full accessibility not measured here — this is a markup check only.**
+- **Impact:** Visitors using screen readers get nothing where the images are (key product visuals are
+  effectively blank), and it's a common accessibility/legal exposure. Search engines also lose the
+  image context. **Full accessibility not measured here; this is a markup check only.**
 - **Fix:** Add a concise, descriptive `alt` to each meaningful image (e.g.
   `alt="Blue insulated water bottle, 750ml"`); use `alt=""` for purely decorative images. The bundled
   `perf-a11y-scan.py` (axe-core + keyboard pass) confirms the fix and the rest of the WCAG scan.
-- **Evidence:** `<img src="/img/hero.jpg">` — no `alt` on this or any of the 14 images.
+- **Evidence:** `<img src="/img/hero.jpg">`, with no `alt` on this or any of the 14 images.
 
 **UX-03 — Oversized hero image with no lazy-loading** · Impact 4 · Effort 2 · **quick win**
 - **Issue:** The homepage hero is a single **4.2 MB** JPEG (`hero-full.jpg`) served at full resolution
   with no `loading="lazy"` on below-the-fold images. *(Render-blocking/heavy assets delay the page
   appearing.)*
-- **Impact:** A multi-megabyte hero is a strong signal of slow first load, especially on mobile data —
+- **Impact:** A multi-megabyte hero is a strong signal of slow first load, especially on mobile data,
   which loses impatient visitors before they see anything. **In a Basic run this is an asset-weight signal,
   not a score; the bundled `perf-a11y-scan.py` measures the real load impact (LCP/TTFB/weight).**
 - **Fix:** Export the hero as a compressed, correctly sized image (target well under 300 KB; serve
   WebP/AVIF and a smaller mobile variant), and add `loading="lazy"` to below-the-fold images. Then
   **re-run `perf-a11y-scan.py`** to confirm the improvement.
-- **Evidence:** `hero-full.jpg` — 4.2 MB, 4000×2500px, displayed at ~1200px wide.
+- **Evidence:** `hero-full.jpg`: 4.2 MB, 4000×2500px, displayed at ~1200px wide.
 
 **UX-04 — Contact form fields have no labels** · Impact 4 · Effort 2 · **quick win**
-- **Issue:** On the contact page every input relies on placeholder text only — e.g.
-  `<input type="text" placeholder="Your name">` — with no associated `<label>`, and the message field
+- **Issue:** On the contact page every input relies on placeholder text only (e.g.
+  `<input type="text" placeholder="Your name">`) with no associated `<label>`, and the message field
   uses `type="text"` instead of a `<textarea>`.
 - **Impact:** Placeholders vanish once the user types (they lose track of what a field is for),
-  screen readers may not announce the field, and the wrong input type worsens the mobile keyboard —
+  screen readers may not announce the field, and the wrong input type worsens the mobile keyboard,
   all adding friction on the page that drives the primary conversion.
 - **Fix:** Give every field a real `<label for="…">`, use correct types (`type="email"`,
   `type="tel"`), switch the message to `<textarea>`, and add inline validation with clear error and
   success messages.
-- **Evidence:** `<input type="text" placeholder="Your name">` — no `<label>` anywhere in the form.
+- **Evidence:** `<input type="text" placeholder="Your name">`, with no `<label>` anywhere in the form.
 
 **Strength worth noting** (not a finding, but record it): "Every page is served over HTTPS with no
-mixed content, the primary nav is consistent across all pages, and `<html lang=\"en\">` is set — solid
+mixed content, the primary nav is consistent across all pages, and `<html lang=\"en\">` is set: solid
 trust and consistency basics."
 
 ### Anti-patterns to catch (each becomes a finding)
-- **Missing viewport meta** — no `<meta name="viewport">`; phones get the zoomed-out desktop layout.
-- **Tiny or low-contrast text** — body copy below ~14px or pale grey on white that's hard to read.
-- **Images without alt** — meaningful `<img>` with no `alt` attribute.
-- **Unlabeled form fields** — inputs with only placeholders, no `<label>`.
-- **Mystery-meat navigation** — icon-only or vague nav ("Solutions", "More") that hides where links go.
-- **Broken links** — nav or in-body links returning 404, or anchors pointing to the wrong page.
-- **Mixed content over HTTPS** — an `https://` page loading images/scripts over plain `http://`.
-- **No HTTPS** — the site (or the form-submit endpoint) served over plain `http://`.
-- **Layout shift / overlap on mobile** — elements overlapping, clipped, or causing horizontal scroll
+- **Missing viewport meta:** no `<meta name="viewport">`; phones get the zoomed-out desktop layout.
+- **Tiny or low-contrast text:** body copy below ~14px or pale grey on white that's hard to read.
+- **Images without alt:** meaningful `<img>` with no `alt` attribute.
+- **Unlabeled form fields:** inputs with only placeholders, no `<label>`.
+- **Mystery-meat navigation:** icon-only or vague nav ("Solutions", "More") that hides where links go.
+- **Broken links:** nav or in-body links returning 404, or anchors pointing to the wrong page.
+- **Mixed content over HTTPS:** an `https://` page loading images/scripts over plain `http://`.
+- **No HTTPS:** the site (or the form-submit endpoint) served over plain `http://`.
+- **Layout shift / overlap on mobile:** elements overlapping, clipped, or causing horizontal scroll
   at narrow widths.
-- **Giant unoptimised hero images** — multi-megabyte, full-resolution images signalling slow load.
-- **Inconsistent buttons/components** — different button styles, spacings, or colours page to page.
+- **Giant unoptimised hero images:** multi-megabyte, full-resolution images signalling slow load.
+- **Inconsistent buttons/components:** different button styles, spacings, or colours page to page.
 
 ---
 
@@ -3525,26 +3531,26 @@ Primary goal audited against: [the site's primary conversion]
 ### File 2: `ux-technical.html` (styled, share-ready)
 
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets
-and no JavaScript**). Use the **shared design system** — the exact `<style>` block and page frame from
+and no JavaScript**). Use the **shared design system**: the exact `<style>` block and page frame from
 [rules-snapshot.md](../../../0%20Site%20Snapshot/site-snapshot/references/rules-snapshot.md), reproduced
 in full below so this skill is self-contained. Only these differ from the snapshot page: the `<title>`,
 the header, the `utm_content=ux-technical` in the two brand links, and the section content.
 
 Components:
-- **A grade section first** — the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
+- **A grade section first:** the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
   a one-line verdict, and the **scorecard `<table>`** (criteria × pass/partial/fail × weight × points).
-- **A Findings section** — one `.card` per finding. Card header: the `.id` chip (`UX-01`), the short
+- **A Findings section:** one `.card` per finding. Card header: the `.id` chip (`UX-01`), the short
   title, an **Impact meter** (`<span class="scorewrap"><span class="meter"><i style="width:NN%"></i></span><span class="scoreno">Impact X/5</span></span>`,
   width = Impact/5×100), and the **priority `.tag`** (`quickwin` / `bigbet` / `fillin` / `skip`). Body:
   Issue / Impact / Fix as `.row`s (append `· Effort X/5` in the Impact row via `<span class="effort">`),
   and the quoted evidence in a `<blockquote>`. If a scan couldn't run (Basic layer), say **"not measured"**
-  in the row — don't name a third-party tool.
-- **A "What's working" section** — `.row`s or `ul.clean` of strengths.
-- **A Summary section** — findings count, a one-line measured-tools summary (or a Basic-layer "not measured"
+  in the row; don't name a third-party tool.
+- **A "What's working" section:** `.row`s or `ul.clean` of strengths.
+- **A Summary section:** findings count, a one-line measured-tools summary (or a Basic-layer "not measured"
   note if the scans couldn't run), and the top priority (cited by ID).
 
 **Navigation & hints (required):** cross-link other deliverables and tooltip every ID and shorthand term
-(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels) — every occurrence, per
+(IIF, CRO, SEO, UX, CTA, MSG/CRO/SEO/UX, quadrant labels), every occurrence, per
 [report-format.md](report-format.md). **No `pagenav`** mid-session; end with the Print hint.
 
 Finding card pattern:
@@ -3560,7 +3566,7 @@ Finding card pattern:
 </article>
 ```
 
-Full page (reproduce the shared `<style>` block verbatim — it is identical suite-wide):
+Full page (reproduce the shared `<style>` block verbatim; it is identical suite-wide):
 
 ```html
 <!DOCTYPE html>
@@ -3754,7 +3760,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -3766,41 +3772,41 @@ Released under the MIT License — keeping the copyright notice is all that is r
 
 ## Goal
 
-Judge how the website **actually looks** — whether the rendered design leads the eye to the main action,
-feels coherent and current, and reads as professional and trustworthy — and turn every weakness into a
+Judge how the website **actually looks** (whether the rendered design leads the eye to the main action,
+feels coherent and current, and reads as professional and trustworthy), and turn every weakness into a
 prioritised, fixable **Finding**. Deliver a graded Design & Visual scorecard (0–100 → letter grade) and a
 list of `DSN-` findings in **Issue · Impact · Fix** format, each rated on Impact and Effort so the user
 knows what to fix first.
 
-This is the one dimension a **static-HTML read can't do** — you have to see the page. So it works from two
+This is the one dimension a **static-HTML read can't do**: you have to see the page. So it works from two
 inputs: the **measured design tokens** (objective counts, from the bundled `scripts/design-scan.py`) and a
 **visual read** of the rendered desktop + mobile screenshots (expert judgement). Written for **business
-owners and marketers** — plain language, no unexplained jargon, and every finding tied to a real effect on
+owners and marketers**: plain language, no unexplained jargon, and every finding tied to a real effect on
 their visitors.
 
 ## Inputs
 
-- **Site Snapshot** (from Skill 0) — paste it if you have it; it anchors the analysis to the site's
+- **Site Snapshot** (from Skill 0). Paste it if you have it; it anchors the analysis to the site's
   **primary conversion goal** and audience. If it's missing, do a quick mini-snapshot first (fetch the
-  homepage; establish name, what it does, primary goal, audience) so your findings have an anchor — but
+  homepage; establish name, what it does, primary goal, audience) so your findings have an anchor, but
   don't run the full intake.
-- **The URL** — the homepage (the main page gets the full visual audit); optionally a key landing/product
+- **The URL**: the homepage (the main page gets the full visual audit); optionally a key landing/product
   page the user cares about.
-- **Brand guidelines** (optional) — the company's real colours, fonts, and logo. **Needed for a true
+- **Brand guidelines** (optional): the company's real colours, fonts, and logo. **Needed for a true
   "off-brand" call.** Without them, judge general design quality and internal consistency only, and ask
   the user for their brand guidelines if they want brand-*fit* assessed (see Critical rules).
 
 ## The core unit: a Finding (Issue · Impact · Fix)
 
-Every observation is a Finding — see [report-format.md](report-format.md) for the full definition,
+Every observation is a Finding. See [report-format.md](report-format.md) for the full definition,
 the Impact/Effort scales (1–5), and the priority quadrants (quick win / big bet / fill-in / skip). In
 short:
-- **Issue** — the specific design problem, with **evidence**: a measured token ("design-scan: 11 distinct
+- **Issue**: the specific design problem, with **evidence**: a measured token ("design-scan: 11 distinct
   button styles") and/or the visual observation ("the hero uses a 2012-era glossy gradient and a drop
   shadow on every card").
-- **Impact** — what it costs (visitors don't know where to look, the site reads as dated or amateur, trust
+- **Impact**: what it costs (visitors don't know where to look, the site reads as dated or amateur, trust
   erodes via the aesthetic-usability effect). Rated **Impact 1–5**.
-- **Fix** — the concrete design change, ideally with the target ("collapse to two button styles — one
+- **Fix**: the concrete design change, ideally with the target ("collapse to two button styles, one
   primary, one secondary").
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
@@ -3811,33 +3817,34 @@ Give each finding an ID: `DSN-01`, `DSN-02`, … in impact order.
 ### Step 1: Load context and identify the page
 
 Take the Site Snapshot (or build the mini one) and confirm the URL to render (the homepage, plus any key
-page the user names). Keep the site's **primary goal** and **audience** in mind — good design is design
+page the user names). Keep the site's **primary goal** and **audience** in mind. Good design is design
 that leads the eye *toward the main action* and fits *who the site is for*.
 
 ### Step 2: Run the design scan (headless render — the correct way)
 
-Don't guess how the page looks from the markup — **render it and measure it**. If Playwright is available
-(`pip install playwright && playwright install chromium` — it bundles its own Chromium, cross-platform), run the bundled tool:
+Don't guess how the page looks from the markup; **render it and measure it**. If Playwright is available
+(`pip install playwright && playwright install chromium`, which bundles its own Chromium, cross-platform), run the bundled tool:
 
 ```
-python scripts/design-scan.py <URL> --pages <home,top-service,about,contact> --out <folder>
+python scripts/design-scan.py <URL> --pages <one-article,one-service-page,one-case-study> --out <folder>
 ```
 
-Pass `--pages` (the key interior pages) and the tool also renders and tokenises each, then **compares
-their design tokens** — writing `design-pages.json` with a **cross-page consistency** read: is the same
-typeface and palette used everywhere (a coherent design system, a strength), or does a page drift to
-different fonts/colours/button styles? It also reveals whether issues like button-style sprawl or a loose
-type scale are **homepage-only or systemic** across the site. Turn drift into a `DSN-` finding; confirmed
-consistency is a recorded strength.
+Pass `--pages` with **one representative page per key interior template**: an **article/blog post**, a
+**service/offering page**, and a **case study** (pick them from the Snapshot's page inventory or the SEO
+sweep's page types). A site's biggest design and readability problems usually live on these template pages,
+not the homepage, so the tool renders each one, **screenshots it** (`page-<slug>.png`), compares tokens for
+**cross-page consistency** (same typeface/palette/button system, or drift?), and **measures readability** per
+page: body **text-alignment**, approximate **characters-per-line** (the 45-75 target), and **words-per-visual**
+(a wall-of-text signal). This is what lets you judge the interior templates, not just the homepage.
 
-It renders the page in headless Chrome at desktop (1440px) and mobile (390px) and produces four artefacts
-(full detail and thresholds in [references/rules-design-visual.md](references/rules-design-visual.md),
-"The design scan"):
-- **`design-tokens.json` / `design-scan.md`** — the MEASURED tokens: the **typeface(s)** in use, the
-  **count of distinct font sizes** (and weights), the **colour palette** (distinct text colours +
-  backgrounds, with the top ones), and the **count of distinct BUTTON STYLES** (a design-system coherence
-  signal — fewer is more consistent). These counts are **objective**.
-- **`design-desktop.png`** and **`design-mobile.png`** — **full-page** screenshots for the visual read.
+It renders in headless Chrome at desktop (1440px) and mobile (390px) and produces (full detail and thresholds
+in [references/rules-design-visual.md](references/rules-design-visual.md), "The design scan"):
+- **`design-tokens.json` / `design-scan.md`**: the MEASURED tokens: the **typeface(s)**, the **count of
+  distinct font sizes** (and weights), the **colour palette** (distinct text colours + backgrounds), and the
+  **count of distinct BUTTON STYLES** (a coherence signal, fewer is more consistent). These counts are objective.
+- **`design-desktop.png`** and **`design-mobile.png`**: full-page homepage screenshots for the visual read.
+- With `--pages`: **`page-<slug>.png`** per interior template, plus `design-pages.json` with the cross-page
+  token consistency and the **per-page readability** (alignment, chars-per-line, words-per-visual).
 
 ### Step 2b: Do the visual read — actually LOOK at the screenshots
 
@@ -3845,65 +3852,87 @@ Open `design-desktop.png` and `design-mobile.png` and **look at them**. This is 
 grounded in the **benchmarks-2026.md §4 UI/UX principles** (Nielsen's heuristics, visual hierarchy,
 consistency/Jakob's Law, aesthetic-usability, Stanford Web Credibility), judge visual hierarchy, whitespace,
 typography, imagery quality, modern-vs-dated, colour harmony, brand coherence, and the trust/polish the
-design conveys — on both desktop and the phone. Cross-reference the measured tokens (e.g. a "cluttered,
+design conveys, on both desktop and the phone. Cross-reference the measured tokens (e.g. a "cluttered,
 no focal point" observation next to "design-scan: 9 distinct font sizes, 11 button styles"). Run the three
 fast tests first (Step 3).
 
 **If no headless browser is available**, say so and fall back to a **user-provided screenshot** of the page.
-If none is available either, mark the visual read **"not assessed"** and ask for a screenshot — never invent
+If none is available either, mark the visual read **"not assessed"** and ask for a screenshot; never invent
 what the page looks like. The measured token counts also require the render, so without either they're
 unavailable too.
 
+### Step 2c: Read the interior templates (not just the homepage)
+
+Open each `page-<slug>.png` from the `--pages` render and read the interior templates the way you read the
+homepage. This is where the biggest design problems on real sites hide. For each template, judge:
+- **Layout & structure:** is the page designed (sections, cards, a clear structure), or is it a long
+  undifferentiated column that reads like a pasted document?
+- **Text density & visual variety:** does it mix text with graphics, diagrams, and varied section layouts,
+  or is it a wall of text? The measured **words-per-visual** is the signal (a service or article page with
+  hundreds of words and almost no visuals is text-heavy). This is the common offering-page failure.
+- **What the page delivers:** a service/offering page should look like it answers *"what the client gets"*,
+  not read like an essay on the technology or the process.
+- **Readability (measured):** cross-check the numbers. **Centred body text**, or **chars-per-line well
+  outside 45-75** (benchmarks-2026.md §4), makes a page hard to read regardless of how it looks. Quote the
+  measured value in the finding.
+
+Turn each template-level problem into a `DSN-` finding with the screenshot and the measured readability
+value as evidence (e.g. *"the article template centres its body text at ~120 chars/line, which is hard to
+read"*, or *"the service page is a wall of text: ~140 words per visual, no diagrams or section variety"*).
+These are page-**template** findings, so one finding per template pattern, not one per page. If a readability
+problem is really about legibility and line length, note that **UX & Technical** covers it too and align the
+two.
+
 ### Step 3: Run the design fast tests
 
-Apply the fast diagnostic tests before the full rubric — details and examples in
+Apply the fast diagnostic tests before the full rubric. Details and examples in
 [references/rules-design-visual.md](references/rules-design-visual.md):
-- **The squint test** — blur the page (or squint): does **one clear focal point** emerge and lead the eye
-  to the primary action, and is the layout balanced — or does everything compete (or nothing stands out)?
-- **The 5-second impression** — glance for five seconds: does it look **modern, professional and
+- **The squint test**: blur the page (or squint): does **one clear focal point** emerge and lead the eye
+  to the primary action, and is the layout balanced, or does everything compete (or nothing stands out)?
+- **The 5-second impression**: glance for five seconds: does it look **modern, professional and
   trustworthy**, or dated, generic, or amateur?
-- **The consistency count** — from the scan, how many **button styles / font sizes / colours**? A tight
+- **The consistency count**: from the scan, how many **button styles / font sizes / colours**? A tight
   set signals a coherent design system; a sprawling one signals an ad-hoc, inconsistent build.
 
 ### Step 4: Work the rubric and generate findings
 
-Go through the Design & Visual rubric criteria (see the reference, "Scoring rubric") — visual hierarchy,
+Go through the Design & Visual rubric criteria (see the reference, "Scoring rubric"): visual hierarchy,
 design-system consistency, typography, colour & palette, layout/grid/alignment, whitespace & density,
 imagery & media quality, modern-vs-dated, brand coherence & credibility, and mobile visual quality. For
-each weakness, write a Finding (IIF) — **cite the measured number as evidence where it applies AND the
-visual observation** — with an Impact and Effort rating and a quadrant. **Also note genuine strengths** —
-the report shouldn't be only problems.
+each weakness, write a Finding (IIF): **cite the measured number as evidence where it applies AND the
+visual observation**, with an Impact and Effort rating and a quadrant. **Also note genuine strengths**, so
+the report isn't only problems.
 
 ### Step 5: Score the dimension
 
-Rate each rubric criterion Pass / Partial / Fail — **each criterion's "Pass" is the 2026 standard from
-[benchmarks-2026.md](benchmarks-2026.md)** (§4 UI/UX & usability — one focal point, visual hierarchy,
+Rate each rubric criterion Pass / Partial / Fail. **Each criterion's "Pass" is the 2026 standard from
+[benchmarks-2026.md](benchmarks-2026.md)** (§4 UI/UX & usability: one focal point, visual hierarchy,
 consistency/Jakob's Law, ≥16px / 45–75-char / 1.5 readable type, aesthetic-minimalist design, and the
-aesthetic-usability effect on trust), so cite the benchmark in findings — apply the weights, and total to a
+aesthetic-usability effect on trust), so cite the benchmark in findings. Apply the weights, and total to a
 **0–100 score**; map to a **letter grade** (A–F, bands in [report-format.md](report-format.md)). Show the
 criteria table so the grade is explainable. State plainly that the **token counts are measured** but the
-**visual judgement is expert-subjective** — grounded in the §4 UI/UX principles, not a lab metric.
+**visual judgement is expert-subjective**, grounded in the §4 UI/UX principles, not a lab metric.
 
 ### Step 6: Deliver the files
 
 Generate `design.md` and a styled, self-contained `design.html` (embedding the two rendered screenshots and
 the measured tokens) and share them. Format, the finding card component, the design-tokens block, and the
-scorecard layout — see the reference, "Output file format". End the HTML with the Print hint; **no
+scorecard layout: see the reference, "Output file format". End the HTML with the Print hint; **no
 `pagenav`** mid-session.
 
 ### Step 7: Add to the Website Audit Report & hand off
 
 Record the **Design & Visual** section (grade + criteria + findings) into the internal running **Website
-Audit Report** (do not create/show a report file now — that's the Action Report skill's job at the end).
+Audit Report** (do not create/show a report file now; that's the Action Report skill's job at the end).
 Format and section order: [report-format.md](report-format.md). Tell the user the remaining analyses are
 any of **Messaging & Clarity**, **Conversion (CRO)**, **SEO & Content**, or **UX & Technical**, and that
 **Action Report** ties them together at the end.
 
 ## Critical rules
 
-1. **Measured vs. expert-subjective — say which is which.** The design-token **counts** (button styles,
+1. **Measured vs. expert-subjective: say which is which.** The design-token **counts** (button styles,
    font sizes, colours, typefaces) are **objective and measured** by `design-scan.py`. The **visual
-   judgement** (hierarchy, whitespace, modern-vs-dated, imagery, polish) is **expert-subjective** —
+   judgement** (hierarchy, whitespace, modern-vs-dated, imagery, polish) is **expert-subjective**,
    grounded in the **benchmarks-2026.md §4 UI/UX** principles (Nielsen's heuristics, visual hierarchy,
    consistency, aesthetic-usability), **not a lab metric**. Label it as expert judgement; never dress an
    opinion up as a measurement.
@@ -3913,12 +3942,12 @@ any of **Messaging & Clarity**, **Conversion (CRO)**, **SEO & Content**, or **UX
    they want brand-fit assessed. Never assert a colour or font is "wrong for the brand" with no reference.
 3. **Look, don't guess.** Base the visual read on the **rendered screenshots** (or a user-supplied one).
    If no headless browser and no screenshot are available, mark the visual read **"not assessed"** and ask
-   for one — **never invent what the page looks like**.
-4. **Evidence, always — the number and the eye.** Every finding cites the measured token where relevant
+   for one; **never invent what the page looks like**.
+4. **Evidence, always: the number and the eye.** Every finding cites the measured token where relevant
    ("design-scan: 11 button styles") **and/or** the concrete visual observation ("the hero is a glossy
    2012-era gradient"). No vague "the design could be better".
 5. **Anchor to the primary goal and audience.** Judge the design toward the site's one main conversion and
-   who it's for — a focal point that leads to the main action, and an aesthetic that fits the audience.
+   who it's for: a focal point that leads to the main action, and an aesthetic that fits the audience.
 6. **Fixes are concrete.** Give the specific change and target (e.g. "collapse to two button styles",
    "cut to one display + one body typeface", "replace the generic stock photo with a real product shot"),
    not "make it look nicer".
@@ -3936,7 +3965,7 @@ any of **Messaging & Clarity**, **Conversion (CRO)**, **SEO & Content**, or **UX
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -3956,26 +3985,26 @@ HTML output format.
 This dimension mixes two very different kinds of evidence, and the **honesty rule** requires you keep them
 apart:
 
-**MEASURED — objective, from `scripts/design-scan.py`.** The token **counts** are computed from the
+**MEASURED, objective, from `scripts/design-scan.py`.** The token **counts** are computed from the
 rendered page's real styles, so quote them as facts:
 - the **typeface(s)** actually in use (top font families),
 - the **count of distinct font sizes** (and the weights present),
-- the **colour palette** — the count of distinct text colours and backgrounds, plus the top ones,
-- the **count of distinct button styles** — a design-system coherence signal (fewer is more consistent).
+- the **colour palette**: the count of distinct text colours and backgrounds, plus the top ones,
+- the **count of distinct button styles**: a design-system coherence signal (fewer is more consistent).
 
-**EXPERT-SUBJECTIVE — the visual read, from looking at the screenshots.** Whether the hierarchy leads the
+**EXPERT-SUBJECTIVE: the visual read, from looking at the screenshots.** Whether the hierarchy leads the
 eye, whether the layout is balanced, whether the imagery is quality, whether it looks modern or dated, and
-whether it reads as trustworthy — these are **expert judgements grounded in the benchmarks-2026.md §4
+whether it reads as trustworthy, these are **expert judgements grounded in the benchmarks-2026.md §4
 UI/UX principles** (Nielsen's 10 heuristics, visual hierarchy, consistency/Jakob's Law, aesthetic &
-minimalist design, the aesthetic-usability effect, Stanford Web Credibility) — **not lab metrics**. Label
+minimalist design, the aesthetic-usability effect, Stanford Web Credibility), **not lab metrics**. Label
 them as judgement, never as measurement.
 
 **A true "off-brand" call needs brand guidelines.** Deciding a colour or font is *off-brand* requires the
 company's real **colours, fonts, and logo**. Without them, judge **general design quality + internal
-consistency** only — and **ask the user for their brand guidelines** if they want brand-fit assessed.
+consistency** only, and **ask the user for their brand guidelines** if they want brand-fit assessed.
 
 **If there's no headless browser**, fall back to a **user-provided screenshot**; if none, mark the visual
-read **"not assessed"** and ask for one — never invent what the page looks like.
+read **"not assessed"** and ask for one; never invent what the page looks like.
 
 | To assess… | How | In the report, mark |
 |------------|-----|---------------------|
@@ -3987,24 +4016,35 @@ read **"not assessed"** and ask for one — never invent what the page looks lik
 
 ## The design scan (the correct way to check "how does it look?")
 
-Static HTML tells you nothing about how a page actually looks — that depends on CSS, images, and layout at a
+Static HTML tells you nothing about how a page actually looks; that depends on CSS, images, and layout at a
 real screen width. So render the page and both measure its tokens and capture it for the eye.
 
-**Run it** (needs Playwright — `pip install playwright && playwright install chromium`; it bundles its own Chromium, no browser to install):
+**Run it** (needs Playwright: `pip install playwright && playwright install chromium`; it bundles its own Chromium, no browser to install):
 ```
-python scripts/design-scan.py <URL> --out <folder>
+python scripts/design-scan.py <URL> --pages <one-article,one-service-page,one-case-study> --out <folder>
 ```
-It renders at desktop (1440px) and mobile (390px, 2× density), extracts the design tokens from computed
-styles, and saves full-page screenshots.
+It renders the homepage at desktop (1440px) and mobile (390px, 2× density), extracts the design tokens from
+computed styles, and saves full-page screenshots. With `--pages`, it also renders **one representative page
+per key interior template** (an article, a service/offering page, a case study), screenshots each, and
+measures their readability. Interior templates are where most real design problems live, so always pass them.
 
 **What it produces:**
 
 | Artefact | What it gives you |
 |----------|-------------------|
-| **`design-tokens.json`** | The full measured tokens (raw counts + top colours/fonts/sizes/button styles). |
-| **`design-scan.md`** | A readable summary: typeface(s), # distinct font sizes + weights, # distinct colours, # distinct button styles. |
-| **`design-desktop.png`** | Full-page desktop render — for the visual read. |
-| **`design-mobile.png`** | Full-page phone render — for the mobile visual read. |
+| **`design-tokens.json`** | The full measured homepage tokens (raw counts + top colours/fonts/sizes/button styles). |
+| **`design-scan.md`** | A readable summary: typeface(s), # distinct font sizes + weights, # distinct colours, # distinct button styles, plus the interior-template readability table. |
+| **`design-desktop.png`** / **`design-mobile.png`** | Full-page homepage renders for the visual read. |
+| **`page-<slug>.png`** (with `--pages`) | Full-page render of each interior template for the visual read. |
+| **`design-pages.json`** (with `--pages`) | Cross-page token consistency + **per-page readability** (alignment, chars-per-line, words-per-visual). |
+
+**Interior-template readability thresholds** (from `design-pages.json`; benchmarks-2026.md §4):
+
+| Signal | Good | Flag it |
+|--------|------|---------|
+| **Body text-alignment** | `left` (or `justify` with care) | `center` on long body copy: hard to read (a `DSN-`/`UX-` finding) |
+| **Characters per line** | ~45-75 | > 75 (lines too long) or < 40 (too narrow) |
+| **Words per visual** | mixed (text + graphics) | very high (e.g. 100+): a wall of text with no diagrams or section variety |
 
 **The consistency signals to read off the tokens** (fewer is more coherent; these are guides, not hard
 thresholds):
@@ -4019,17 +4059,17 @@ thresholds):
 **Then LOOK.** Open both screenshots and judge the things the counts can't: does one focal point emerge,
 is the composition aligned and balanced, is there breathing room or is it crammed, is the imagery custom
 and sharp or generic/low-res, does it look current or dated, is the colour harmonious, and does the whole
-read as professional and trustworthy — on desktop **and** on the phone. Turn each problem into a `DSN-`
+read as professional and trustworthy, on desktop **and** on the phone. Turn each problem into a `DSN-`
 finding that pairs the number with the observation.
 
 ---
 
 ## The design fast tests
 
-Run these fast before the full rubric — they surface the biggest issues quickly.
+Run these fast before the full rubric; they surface the biggest issues quickly.
 
 ### The squint test
-Blur your eyes (or mentally squint) at the rendered page. Does **one element — the primary action —
+Blur your eyes (or mentally squint) at the rendered page. Does **one element, the primary action,
 emerge as the clear focal point**, so the eye lands on it first, and does the overall layout feel
 **balanced** (weight distributed, not lopsided or crammed to one side)? If everything competes at the same
 visual weight, nothing stands out, or the composition is unbalanced, the **visual hierarchy** isn't guiding
@@ -4037,8 +4077,8 @@ the visitor. This is the visual analogue of the messaging 5-second test.
 
 ### The 5-second impression
 Glance at the page for five seconds, as a first-time visitor would. Does it look **modern, professional,
-and trustworthy** — or dated, generic, or amateur? First impressions form in well under a second and drive
-credibility (the *aesthetic-usability effect*: a cleaner, more current design is also **trusted** more —
+and trustworthy**, or dated, generic, or amateur? First impressions form in well under a second and drive
+credibility (the *aesthetic-usability effect*: a cleaner, more current design is also **trusted** more;
 Stanford Web Credibility). Note the gut reaction and what drives it (dated gradients, clip-art, clutter, a
 tidy modern grid).
 
@@ -4055,7 +4095,12 @@ will read as inconsistent and unpolished. Quote the numbers.
 Rate each criterion **Pass** (full weight), **Partial** (half), or **Fail** (0). Sum → 0–100 → letter
 grade. Always show this table in the deliverable so the grade is explainable. Criteria marked
 **(measured)** are anchored to a `design-scan.py` token count; the rest are **expert judgement** from the
-rendered screenshots (benchmarks §4 UI/UX) — note that in the finding.
+rendered screenshots (benchmarks §4 UI/UX); note that in the finding.
+
+**Judge each criterion across the homepage AND the sampled interior templates** (see "Read the interior
+templates" in the SKILL). A template-level problem counts against the relevant criterion, e.g. a wall-of-text
+service page hits **Visual hierarchy** and **Whitespace & density**; centred body copy or over-long lines on
+an article hit **Typography**. Don't let a polished homepage hide broken interior templates.
 
 | # | Criterion | What "Pass" looks like | Weight |
 |---|-----------|------------------------|:------:|
@@ -4081,64 +4126,64 @@ Grade bands (from report-format.md): A 90–100 · B 80–89 · C 70–79 · D 6
 
 **DSN-01 — 11 distinct button styles; no coherent design system** · Impact 3 · Effort 3 · **big bet**
 - **Issue:** `design-scan.py` measured **11 distinct button styles** on the homepage (different fills,
-  border radii, and padding), and the screenshots confirm it — the hero CTA, the nav button, and the card
+  border radii, and padding), and the screenshots confirm it: the hero CTA, the nav button, and the card
   buttons all look different. *(Design system = a consistent, reused set of colours, type, and buttons.)*
-- **Impact:** An ad-hoc button set reads as unpolished and makes the primary action harder to spot — every
+- **Impact:** An ad-hoc button set reads as unpolished and makes the primary action harder to spot; every
   button competing dilutes the one that matters, and inconsistency quietly erodes trust (aesthetic-usability
   effect).
-- **Fix:** Collapse to **two button styles** — one primary (the main CTA) and one secondary — with a single
+- **Fix:** Collapse to **two button styles**, one primary (the main CTA) and one secondary, with a single
   shared radius, padding, and colour rule, applied site-wide. Define them once as reusable components.
 - **Evidence:** design-scan: 11 distinct button styles; buttonRadii include 0px, 4px, 8px, 24px, 999px.
 
 **DSN-02 — Dated hero: glossy gradient, bevels, and a 2012-era look** · Impact 4 · Effort 3 · **big bet**
 - **Issue:** The hero (desktop screenshot) uses a glossy top-to-bottom gradient, beveled buttons with
-  drop shadows, and a skeuomorphic badge — visual conventions that read as roughly a decade old.
+  drop shadows, and a skeuomorphic badge: visual conventions that read as roughly a decade old.
 - **Impact:** The 5-second impression is "dated", which via the aesthetic-usability effect lowers perceived
-  quality and trust before the visitor reads a word — costly on the primary entry page. *(Expert judgement
+  quality and trust before the visitor reads a word, costly on the primary entry page. *(Expert judgement
   against benchmarks §4 UI/UX, not a lab metric.)*
 - **Fix:** Modernise the hero to current conventions: flat or subtly-layered colour, a clean sans type
   scale, generous whitespace, a single high-contrast primary button, and a sharp real photograph or a
   simple custom graphic instead of the badge.
-- **Evidence:** `design-desktop.png` — glossy gradient hero + beveled/drop-shadowed buttons.
+- **Evidence:** `design-desktop.png`: glossy gradient hero + beveled/drop-shadowed buttons.
 
 **DSN-03 — Cluttered layout with no clear focal point** · Impact 4 · Effort 3 · **big bet**
-- **Issue:** The squint test fails — on the blurred desktop screenshot nothing stands out; the first screen
+- **Issue:** The squint test fails: on the blurred desktop screenshot nothing stands out; the first screen
   packs a headline, two promo banners, a carousel, and six equal-weight cards with almost no whitespace.
   The scan backs this up: **9 distinct font sizes**, so text weight doesn't rank anything.
 - **Impact:** With no focal point the eye has nowhere to land and the primary action gets lost in the
-  noise — visitors don't know where to look or what to do next, hurting the main conversion.
+  noise; visitors don't know where to look or what to do next, hurting the main conversion.
 - **Fix:** Establish one focal point: give the hero and its single primary CTA room and dominant weight,
   demote the promos below the fold, add generous whitespace, and cut the type scale to ~5 sizes so size
   signals importance.
-- **Evidence:** design-scan: 9 distinct font sizes; `design-desktop.png` — dense first screen, no
+- **Evidence:** design-scan: 9 distinct font sizes; `design-desktop.png`: dense first screen, no
   dominant element.
 
 **DSN-04 — Low-quality generic stock imagery** · Impact 3 · Effort 2 · **fill-in**
 - **Issue:** The three "team"/"service" images are recognisable generic stock photos (a posed handshake, a
   smiling headset agent), one visibly stretched out of its aspect ratio.
 - **Impact:** Generic stock reads as impersonal and less credible than real imagery, and the distortion
-  looks careless — both weaken the professional, trustworthy impression the page needs to make.
+  looks careless; both weaken the professional, trustworthy impression the page needs to make.
 - **Fix:** Replace with real, on-brand photography (the actual team, product, or work) at correct aspect
   ratio and resolution; if stock is unavoidable, choose authentic, non-cliché shots and keep them
   consistent in tone.
-- **Evidence:** `design-desktop.png` — posed-handshake stock image, ~third image stretched horizontally.
+- **Evidence:** `design-desktop.png`: posed-handshake stock image, ~third image stretched horizontally.
 
-**Strength worth noting** (not a finding, but record it): "The palette is controlled — design-scan shows a
-tight core of a brand navy, one warm accent, and neutral greys — and the type is a single clean sans on a
+**Strength worth noting** (not a finding, but record it): "The palette is controlled (design-scan shows a
+tight core of a brand navy, one warm accent, and neutral greys), and the type is a single clean sans on a
 consistent scale; the base design system is coherent."
 
 ### Anti-patterns to catch (each becomes a finding)
-- **Too many fonts / sizes** — 3+ typefaces or a sprawling, scale-less set of font sizes (measured).
-- **Too many colours** — a scatter of unrelated colours with no controlled core palette (measured).
-- **Inconsistent buttons** — many different button styles, radii, and sizes; no reusable component set
+- **Too many fonts / sizes:** 3+ typefaces or a sprawling, scale-less set of font sizes (measured).
+- **Too many colours:** a scatter of unrelated colours with no controlled core palette (measured).
+- **Inconsistent buttons:** many different button styles, radii, and sizes; no reusable component set
   (measured).
-- **Generic stock photos** — cliché, impersonal, or distorted imagery instead of real, on-brand visuals.
-- **Cluttered / dense layout** — everything crammed together, no whitespace, overwhelming first screen.
-- **Poor alignment** — elements off-grid, ragged edges, nothing lining up.
-- **Dated gradients / shadows / bevels** — glossy gradients, heavy drop shadows, skeuomorphic or clip-art
+- **Generic stock photos:** cliché, impersonal, or distorted imagery instead of real, on-brand visuals.
+- **Cluttered / dense layout:** everything crammed together, no whitespace, overwhelming first screen.
+- **Poor alignment:** elements off-grid, ragged edges, nothing lining up.
+- **Dated gradients / shadows / bevels:** glossy gradients, heavy drop shadows, skeuomorphic or clip-art
   styling that reads as a decade old.
-- **No clear focal point** — everything the same visual weight; the eye has nowhere to land.
-- **Low-contrast decoration over text** — decorative imagery or busy backgrounds behind copy that hurt
+- **No clear focal point:** everything the same visual weight; the eye has nowhere to land.
+- **Low-contrast decoration over text:** decorative imagery or busy backgrounds behind copy that hurt
   legibility (ties to §3 Accessibility contrast).
 
 ---
@@ -4192,34 +4237,35 @@ Primary goal audited against: [the site's primary conversion]
 ### File 2: `design.html` (styled, share-ready)
 
 A single **self-contained** `.html` file (all CSS inline in one `<style>` block, **no external assets and
-no JavaScript** — except the two rendered screenshots referenced by relative `src`, which ship in the same
-folder/ZIP). Use the **shared design system** — the exact `<style>` block and page frame from
+no JavaScript**, except the two rendered screenshots referenced by relative `src`, which ship in the same
+folder/ZIP). Use the **shared design system**: the exact `<style>` block and page frame from
 [rules-messaging-clarity.md](../../../2%20Messaging%20Clarity/messaging-clarity/references/rules-messaging-clarity.md),
 reproduced in full below so this skill is self-contained. Only these differ: the `<title>`, the header, the
 `utm_content=design-visual` in the two brand links, and the section content.
 
 Components:
-- **A grade section first** — the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
+- **A grade section first:** the letter grade in a `.grade` chip (class `a`/`b`/`c`/`d`/`f`), the score,
   a one-line verdict, and the **scorecard `<table>`** (criteria × pass/partial/fail × weight × points).
-- **A "Design tokens (measured)" section** — the palette rendered as small inline **swatches** (inline
+- **A "Design tokens (measured)" section:** the palette rendered as small inline **swatches** (inline
   styles), the **typeface(s)**, the **# of distinct font sizes**, and the **# of distinct button styles**.
-- **A "Rendered screenshots" section** — the desktop and mobile full-page renders embedded as `<img>` in a
-  flex row with `<figcaption>` labels. Mid-session use the flat path `<img src="design-desktop.png">` (the PNG
+- **A "Rendered screenshots" section:** the desktop and mobile full-page renders embedded as `<img>` in a
+  flex row, each with its `<figcaption>` label **above** the image (caption first in the `<figure>`, then the
+  `<img>`). Mid-session use the flat path `<img src="design-desktop.png">` (the PNG
   sits beside this file). In the **final bundle** the screenshots move to `assets/`, so the Action Report's
   regeneration repoints them to `assets/design-desktop.png` / `assets/design-mobile.png` (see
   [report-format.md](report-format.md), "Deliverables bundle").
-- **A Findings section** — one `.card` per finding. Card header: the `.id` chip (`DSN-01`), the short
+- **A Findings section:** one `.card` per finding. Card header: the `.id` chip (`DSN-01`), the short
   title, an **Impact meter** (`<span class="scorewrap"><span class="meter"><i style="width:NN%"></i></span><span class="scoreno">Impact X/5</span></span>`,
   width = Impact/5×100), and the **priority `.tag`** (`quickwin` / `bigbet` / `fillin` / `skip`). Body:
   Issue / Impact / Fix as `.row`s (append `· Effort X/5` in the Impact row via `<span class="effort">`),
   and the evidence in a `<blockquote>` (the measured number and/or the screenshot reference). Where a claim
   is a visual call, say **"expert judgement"** in the row.
-- **A "What's working" section** — `.row`s or `ul.clean` of strengths.
-- **A Summary section** — findings count, the measured tokens in one line, a "visual read" note, and the
+- **A "What's working" section:** `.row`s or `ul.clean` of strengths.
+- **A Summary section:** findings count, the measured tokens in one line, a "visual read" note, and the
   top priority (cited by ID).
 
 **Navigation & hints (required):** cross-link other deliverables and tooltip every ID and shorthand term
-(IIF, CRO, SEO, UX, **DSN**, CTA, MSG/CRO/SEO/UX/DSN, quadrant labels) — every occurrence, per
+(IIF, CRO, SEO, UX, **DSN**, CTA, MSG/CRO/SEO/UX/DSN, quadrant labels), every occurrence, per
 [report-format.md](report-format.md). **No `pagenav`** mid-session; end with the Print hint.
 
 Design-tokens block pattern (inline swatches):
@@ -4238,12 +4284,12 @@ Rendered-screenshots block pattern:
 ```html
 <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px">
   <figure style="margin:0;flex:1 1 380px">
+    <figcaption class="verdict-common" style="margin-bottom:6px">Desktop (1440px)</figcaption>
     <img src="design-desktop.png" alt="Full-page desktop render" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:2px">
-    <figcaption class="verdict-common" style="margin-top:6px">Desktop (1440px)</figcaption>
   </figure>
   <figure style="margin:0;flex:0 1 220px">
+    <figcaption class="verdict-common" style="margin-bottom:6px">Mobile (390px)</figcaption>
     <img src="design-mobile.png" alt="Full-page mobile render" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:2px">
-    <figcaption class="verdict-common" style="margin-top:6px">Mobile (390px)</figcaption>
   </figure>
 </div>
 ```
@@ -4261,7 +4307,7 @@ Finding card pattern:
 </article>
 ```
 
-Full page (reproduce the shared `<style>` block verbatim — it is identical suite-wide):
+Full page (reproduce the shared `<style>` block verbatim; it is identical suite-wide):
 
 ```html
 <!DOCTYPE html>
@@ -4431,12 +4477,12 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
     <h2 class="section"><span class="no">3</span> Rendered screenshots</h2>
     <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px">
       <figure style="margin:0;flex:1 1 380px">
+        <figcaption class="verdict-common" style="margin-bottom:6px">Desktop (1440px)</figcaption>
         <img src="design-desktop.png" alt="Full-page desktop render" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:2px">
-        <figcaption class="verdict-common" style="margin-top:6px">Desktop (1440px)</figcaption>
       </figure>
       <figure style="margin:0;flex:0 1 220px">
+        <figcaption class="verdict-common" style="margin-bottom:6px">Mobile (390px)</figcaption>
         <img src="design-mobile.png" alt="Full-page mobile render" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:2px">
-        <figcaption class="verdict-common" style="margin-top:6px">Mobile (390px)</figcaption>
       </figure>
     </div>
   </section>
@@ -4480,7 +4526,7 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ================================================================================
 
@@ -4497,35 +4543,35 @@ matrix**, a **prioritised roadmap** phased into first-two-weeks / 30–60 / 60�
 consolidated **Website Audit Report** the user keeps. This is where a pile of findings becomes "do these
 three things Monday."
 
-Written for **business owners and marketers** — the report leads with the decision, not the detail.
+Written for **business owners and marketers**: the report leads with the decision, not the detail.
 
 ## Inputs
 
 - The **Site Snapshot** (Skill 0), the **Goals & Discovery** brief if it was captured (owner satisfaction,
-  the one goal + success metric, appetite & constraints — context, not findings), and whichever of the five
+  the one goal + success metric, appetite & constraints; context, not findings), and whichever of the five
   analyses were run: **Messaging & Clarity** (`MSG-`), **Conversion (CRO)** (`CRO-`), **SEO & Content**
   (`SEO-`), **UX & Technical** (`UX-`), **Design & Visual** (`DSN-`).
-- Pull the findings, grades, and "what's working" notes from the session — **do not re-analyse**. If some
+- Pull the findings, grades, and "what's working" notes from the session. **Do not re-analyse.** If some
   analyses weren't run, proceed with what exists and say clearly which dimensions are missing.
 
 ## What it produces
 
-1. **Overall scorecard** — the completed dimension grades side by side, plus an **overall grade** (average
+1. **Overall scorecard**: the completed dimension grades side by side, plus an **overall grade** (average
    of the completed dimension scores, mapped to the same A–F bands). See
    [report-format.md](report-format.md).
-1b. **"2026 standard vs your site" scorecard** — a compact table of the key benchmarks from
+1b. **"2026 standard vs your site" scorecard**: a compact table of the key benchmarks from
    [benchmarks-2026.md](benchmarks-2026.md) (Core Web Vitals, mobile/tap targets, WCAG 2.2 AA, title
    tags, HTTPS, clear value prop, trust at the ask, consent) each marked **met / gap / not measured** for
-   this site — so the reader sees exactly where they stand against what a website should be in 2026.
-2. **Impact × Effort matrix** — every finding from every dimension placed in its quadrant
+   this site, so the reader sees exactly where they stand against what a website should be in 2026.
+2. **Impact × Effort matrix**: every finding from every dimension placed in its quadrant
    (**Quick Win / Big Bet / Fill-in / Skip**), cited by ID.
-3. **Prioritised roadmap** — an ordered do-this list: all Quick Wins first (highest impact first), then
+3. **Prioritised roadmap**: an ordered do-this list: all Quick Wins first (highest impact first), then
    Big Bets, then Fill-ins; Skip items are listed but flagged as backlog.
-4. **Phased plan** — first two weeks (the quick wins), days 30–60 (start the big bets, measure), days
+4. **Phased plan**: first two weeks (the quick wins), days 30–60 (start the big bets, measure), days
    60–90 (finish big bets, re-audit).
-5. **Executive summary** — overall grade, the biggest single opportunity (by ID), the top 3 quick wins,
+5. **Executive summary**: overall grade, the biggest single opportunity (by ID), the top 3 quick wins,
    and what's genuinely working.
-6. **The consolidated Website Audit Report** — one merged entry document (`_[site]-website-audit-report`)
+6. **The consolidated Website Audit Report**: one merged entry document (`_[site]-website-audit-report`)
    that carries the whole audit, plus the ZIP bundle.
 
 ## Conversation flow
@@ -4556,25 +4602,28 @@ Overall grade + dimension grades; the biggest single opportunity (highest-impact
 
 ### Step 6: Deliver the Action Report files
 Generate `action-report.md` and a styled `action-report.html` (scorecard, matrix, roadmap, phased plan,
-exec summary, and the one agency CTA block). Format and components — see
+exec summary, and the one agency CTA block). Format and components: see
 [references/rules-action-report.md](references/rules-action-report.md).
 
 ### Step 7: Assemble & deliver the consolidated Website Audit Report
 Now assemble the internal running report into the single merged deliverable
-**`_[site]-website-audit-report`** (`.md` + `.html`) — executive summary at the top, then every section in
+**`_[site]-website-audit-report`** (`.md` + `.html`): executive summary at the top, then every section in
 fixed order with full-substance digests, logo/name header, per-section "Open full document →" buttons.
 Full spec: [report-format.md](report-format.md).
 
 ### Step 8: Final consistency pass (regenerate every page)
 Regenerate **every** `.html` in the pack in sequence order to wire the **Previous/Next walk**, tooltip
 **every** finding ID, ensure the **hover hints** are on every shorthand term, fix cross-links now that all
-files exist, and **reconcile the Site Snapshot's `TBD`s** (backfill any the session answered — never
+files exist, and **reconcile the Site Snapshot's `TBD`s** (backfill any the session answered; never
 invent). The walk: `_[site]-website-audit-report` → `site-snapshot` → `goals` → `messaging` → `conversion` → `seo`
 → `ux-technical` → `design` → `action-report`. (`goals` is in the walk only if Goals & Discovery ran; if
 not, `site-snapshot` links straight to `messaging`.) **Also repoint the screenshots:** since the final pack
 files screenshots under `assets/`, regenerate `design.html` (and the consolidated report's design digest)
-with `<img src="assets/design-desktop.png">` / `assets/design-mobile.png`. Details:
-[report-format.md](report-format.md), "Final consistency pass" and "Deliverables bundle".
+with `<img src="assets/design-desktop.png">` / `assets/design-mobile.png`. **De-AI pass:** while
+regenerating, run the house-style self-check on every page and rewrite any flagged prose: em-dash density
+above ~1/150 words is the main offender ([report-format.md](report-format.md), "Write like a human:
+no AI patterns"). Details: [report-format.md](report-format.md), "Final consistency pass" and
+"Deliverables bundle".
 
 ### Step 9: Bundle the ZIP
 Pack **`[site]-website-audit.zip`** (built with code execution) in the layout from
@@ -4596,7 +4645,7 @@ bundle only what exists and say what's missing.
    adjustment.
 5. **Handle partial runs honestly.** Average and report only the dimensions that ran; name the gaps.
 6. **One CTA, once.** The agency CTA block appears in exactly one place (the Action Report / consolidated
-   report closing) — nowhere else in the pack.
+   report closing), nowhere else in the pack.
 7. **The regenerated pack is canonical.** Mid-session files are working copies; the ZIP's regenerated set
    is the one that ships, with the full walk, tooltips, and reconciled TBDs.
 
@@ -4607,7 +4656,7 @@ bundle only what exists and say what's missing.
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
 
 ---
 
@@ -4629,8 +4678,8 @@ Action Report page and the consolidated report.
 - **Overall score = the mean of the completed dimension scores**, rounded to the nearest whole number.
 - Map to a letter with the shared bands (A 90–100 · B 80–89 · C 70–79 · D 60–69 · F 0–59).
 - If not all five ran, average only what exists and state plainly which dimensions are missing (e.g.
-  "Overall C (74) — from Messaging and SEO only; Conversion and UX/Technical not run").
-- The grade is an **expert judgement**, not a measurement — say so.
+  "Overall C (74), from Messaging and SEO only; Conversion and UX/Technical not run").
+- The grade is an **expert judgement**, not a measurement; say so.
 
 ## Normalising across dimensions
 
@@ -4654,20 +4703,20 @@ List findings in each quadrant by ID, highest impact first. Every finding must a
 ## The prioritised roadmap
 
 A single ordered list the user can work top-down:
-1. **Quick Wins** — impact descending (these are the first-two-weeks list).
-2. **Big Bets** — impact descending (schedule these).
-3. **Fill-ins** — do alongside the above when convenient.
-4. **Skip** — listed as backlog, explicitly deprioritised (don't hide them; just mark them low value).
+1. **Quick Wins:** impact descending (these are the first-two-weeks list).
+2. **Big Bets:** impact descending (schedule these).
+3. **Fill-ins:** do alongside the above when convenient.
+4. **Skip:** listed as backlog, explicitly deprioritised (don't hide them; just mark them low value).
 
 Each roadmap row: ID (linked + tooltipped), the one-line issue, the fix in brief, Impact, Effort, and the
 dimension it came from.
 
 ## The phased plan
 
-- **Your first two weeks** — the Quick Wins, as a checklist. Each item links to the finding's dimension page.
-- **Days 30–60** — kick off the top Big Bets; start measuring against the site's **primary conversion goal**
-  (recommend the user watch the relevant analytics — e.g. GA4 conversions, form completions).
-- **Days 60–90** — finish the Big Bets, action the worthwhile Fill-ins, then **re-run the audit** to see the
+- **Your first two weeks:** the Quick Wins, as a checklist. Each item links to the finding's dimension page.
+- **Days 30–60:** kick off the top Big Bets; start measuring against the site's **primary conversion goal**
+  (recommend the user watch the relevant analytics, e.g. GA4 conversions, form completions).
+- **Days 60–90:** finish the Big Bets, action the worthwhile Fill-ins, then **re-run the audit** to see the
   grades move.
 
 ## The agency CTA block (exactly one, here)
@@ -4683,7 +4732,7 @@ restraint of the rest of the suite). Render a single `.ctablock`:
 </div>
 ```
 
-No email in the block — the footer already carries juicy@ananas-agency.com. Keep the CTA to this page only.
+No email in the block; the footer already carries juicy@ananas-agency.com. Keep the CTA to this page only.
 
 ---
 
@@ -4738,20 +4787,20 @@ Primary goal: [the site's primary conversion]
 Self-contained, using the **shared design system** (full `<style>` block + page frame reproduced below,
 identical suite-wide; only the `<title>`, header, and `utm_content=action-report` differ). Sections:
 
-1. **Overall scorecard** — the overall `.grade` chip + score, and a `<table>` of the five dimensions
+1. **Overall scorecard:** the overall `.grade` chip + score, and a `<table>` of the five dimensions
    (Dimension, Grade chip, Score), with the Overall row bold.
-2. **Executive summary** — biggest opportunity (ID, linked+tooltipped), top 3 quick wins (IDs), what's
+2. **Executive summary:** biggest opportunity (ID, linked+tooltipped), top 3 quick wins (IDs), what's
    working.
-3. **Priority matrix** — the `.matrix` grid of four `.quad` cells (`qw` / `bb` / `fi` / `sk`), each listing
+3. **Priority matrix:** the `.matrix` grid of four `.quad` cells (`qw` / `bb` / `fi` / `sk`), each listing
    its findings by ID as `<li>`s.
-4. **Roadmap** — a `<table>` (# / ID / Issue / Fix / Impact / Effort / From).
-5. **Plan** — the three phases as `.row`s / `ul.clean` checklists.
+4. **Roadmap:** a `<table>` (# / ID / Issue / Fix / Impact / Effort / From).
+5. **Plan:** the three phases as `.row`s / `ul.clean` checklists.
 6. **The single `.ctablock`** (above), then the Print hint. **No `pagenav`** mid-session (the final pass
    adds it).
 
 Cross-link and tooltip **every** finding ID (link to its dimension page: `MSG-`→`messaging.html`,
 `CRO-`→`conversion.html`, `SEO-`→`seo.html`, `UX-`→`ux-technical.html`, `DSN-`→`design.html`) and every shorthand term (IIF, CRO,
-SEO, UX, CTA, quadrant labels) — every occurrence. See [report-format.md](report-format.md).
+SEO, UX, CTA, quadrant labels), every occurrence. See [report-format.md](report-format.md).
 
 Matrix component:
 ```html
@@ -4974,25 +5023,25 @@ header.doc{border-color:#ccc;border-top-color:var(--brand)}
 
 ## Output file format — the consolidated Website Audit Report
 
-The merged entry document **`_[site]-website-audit-report`** (`.md` + `.html`) — the full spec is in
+The merged entry document **`_[site]-website-audit-report`** (`.md` + `.html`): the full spec is in
 [report-format.md](report-format.md); the essentials:
 
 - **Header:** the site's own logo if one is available (header logo / `og:image` / user-provided), embedded
   as a **data URI** so the file stays self-contained; otherwise the site **name** as styled text. Never
-  invent a logo. Attribution: "Website audit of [site] — built with the Website Audit Suite by Ananas
+  invent a logo. Attribution: "Website audit of [site], built with the Website Audit Suite by Ananas
   Agency."
-- **Executive summary first** (unnumbered) — overall grade + the five dimension grades, biggest opportunity,
+- **Executive summary first** (unnumbered): overall grade + the five dimension grades, biggest opportunity,
   top 3 quick wins, what's working.
 - **Then every section in fixed order, full-width, with real substance (not teasers):**
-  1. **Site Snapshot** — the snapshot facts.
-  2. **Messaging & Clarity** — grade + scorecard table + full `MSG-` findings list.
-  3. **Conversion (CRO)** — grade + scorecard + full `CRO-` findings.
-  4. **SEO & Content** — grade + scorecard + full `SEO-` findings.
-  5. **UX & Technical** — grade + scorecard + full `UX-` findings.
-  6. **Design & Visual** — grade + scorecard + design tokens (palette/fonts/button count) + the desktop &amp; mobile renders + full `DSN-` findings.
-  7. **Action Plan** — the matrix + roadmap + phased plan.
+  1. **Site Snapshot:** the snapshot facts.
+  2. **Messaging & Clarity:** grade + scorecard table + full `MSG-` findings list.
+  3. **Conversion (CRO):** grade + scorecard + full `CRO-` findings.
+  4. **SEO & Content:** grade + scorecard + full `SEO-` findings.
+  5. **UX & Technical:** grade + scorecard + full `UX-` findings.
+  6. **Design & Visual:** grade + scorecard + design tokens (palette/fonts/button count) + the desktop &amp; mobile renders + full `DSN-` findings.
+  7. **Action Plan:** the matrix + roadmap + phased plan.
 - Each section heading carries an **"Open full document →"** `.openbtn` linking to that skill's `.html`.
-- Render each section's digest **full-width** — tables as bare `<table style="width:100%">`, text as `.row`s
+- Render each section's digest **full-width**: tables as bare `<table style="width:100%">`, text as `.row`s
   directly in the section; do **not** wrap a section in `.tablewrap` or `.card`.
 - Uses the same `<style>` block and frame; use `utm_content=website-audit-report` in its brand links.
 - End with the single agency `.ctablock` (if not already on the Action Report page you link to) and the
@@ -5009,7 +5058,7 @@ Do these last, per [report-format.md](report-format.md):
   → `design` → `action-report`), tooltipping every ID, ensuring hover hints on every shorthand term, wiring all
   cross-links, and **reconciling the Site Snapshot's `TBD`s** (backfill only what the session actually
   answered; never invent).
-- **Bundle** everything flat into **`[site]-website-audit.zip`** with code execution — the merged report
+- **Bundle** everything flat into **`[site]-website-audit.zip`** with code execution: the merged report
   first by name, then every per-skill `.md` + `.html`. Offer it as the primary download. For partial runs,
   bundle only what exists and name the gaps.
 
@@ -5019,4 +5068,4 @@ Do these last, per [report-format.md](report-format.md):
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)

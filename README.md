@@ -1,36 +1,36 @@
-# Ananas-Agency — Website Audit Suite
+# Ananas-Agency: Website Audit Suite
 
 A suite of **AI agent skills** that turn an assistant (Claude, or any skill-compatible agent) into a
 guided website auditor. You give it a URL; it reads the live site and produces a concrete, prioritised
-audit — messaging clarity, conversion, SEO, and UX/technical health — each graded and each finding
+audit (messaging clarity, conversion, SEO, and UX/technical health), each graded and each finding
 sorted into a do-this-first action plan.
 
 The skills are written as plain Markdown with YAML frontmatter, so they are version-controllable,
 diffable, and editable outside any tool. They also ship as importable `.skill` packages.
 
-> **License:** [MIT](LICENSE) — free to use, adapt, and share. A credit to the author,
+> **License:** [MIT](LICENSE). Free to use, adapt, and share. A credit to the author,
 > **Kostiantyn Ivanov** (Ananas-Agency, [ananas-agency.com](https://ananas-agency.com)), is warmly
 > appreciated but not required.
 
 ---
 
-## Two layers — Basic and Extended (both free)
+## Two layers: Basic and Extended (both free)
 
-The suite runs in two layers. **Both are free** — the only difference is a one-time setup that unlocks
+The suite runs in two layers. **Both are free**. The only difference is a one-time setup that unlocks
 *measured* evidence. You never lose anything by staying on Basic; Extended just fills in hard numbers.
 
-### 🟢 Basic layer — works in any Claude, nothing to install
+### 🟢 Basic layer: works in any Claude, nothing to install
 Runs in the **Claude web app, the Desktop app, or Claude Code**. Claude reads your live site and reasons
-about it, producing the **full graded audit** — findings, priorities, the A–F scorecard, the 2026-standard
+about it, producing the **full graded audit**: findings, priorities, the A–F scorecard, the 2026-standard
 comparison, and the styled report. This is the expert-review layer, and it covers most of the audit.
 
-### 🔵 Extended layer — adds hard, *measured* evidence
-Adds the checks Claude can't do by only *reading* a page — because they need the page to be actually
+### 🔵 Extended layer: adds hard, *measured* evidence
+Adds the checks Claude can't do by only *reading* a page, because they need the page to be actually
 **rendered and timed**: real Core Web Vitals, an accessibility (WCAG) scan, measured mobile fit & tap
 targets, design-token analysis with screenshots, and live tracking/consent behaviour. These run via
 bundled tools and need a real environment.
 
-**Extended setup (one time, any OS — Windows / macOS / Linux):**
+**Extended setup (one time, any OS: Windows / macOS / Linux):**
 ```bash
 # 1. Claude Code (the environment that can run the tools):
 npm install -g @anthropic-ai/claude-code
@@ -38,8 +38,8 @@ npm install -g @anthropic-ai/claude-code
 pip install playwright
 playwright install chromium
 ```
-Then open the suite in Claude Code and ask *"Run the full website audit of https://mysite.com."* — Claude
-runs the measurement tools automatically and fills the measured findings into the report.
+Then open the suite in Claude Code and ask *"Run the full website audit of https://mysite.com."* Claude
+then runs the measurement tools automatically and fills the measured findings into the report.
 
 ### What each layer covers
 | Dimension | 🟢 Basic (no install) | 🔵 Extended adds (needs the setup) |
@@ -53,7 +53,7 @@ runs the measurement tools automatically and fills the measured findings into th
 | Design & Visual | Declared colours/fonts; visual read *if you paste a screenshot* | **Measured design tokens, auto desktop+mobile screenshots, cross-page consistency** |
 | Action Report | Full synthesis + 2026 scorecard | Same, with the measured findings filled in |
 
-In a Basic report, the Extended-only checks are honestly labelled **"not measured — available with the
+In a Basic report, the Extended-only checks are honestly labelled **"not measured, available with the
 Extended layer."** In an Extended report, the tool-backed findings carry a small **`measured`** tag so you
 can see exactly which evidence came from a real render.
 
@@ -99,9 +99,9 @@ Eight skills, each in its own numbered folder, plus one compiled handbook.
   🟢 Basic everywhere · 🔵 Extended adds the * measurements · both free — the only difference is the one-time tool setup.
 ```
 
-Start with **Site Snapshot**. **Goals & Discovery** is intake too — it captures the owner's goals and, being
+Start with **Site Snapshot**. **Goals & Discovery** is intake too; it captures the owner's goals and, being
 paced by the owner answering, runs *concurrently* with the site read/scans (see "Run the interview while the
-analysis runs" below). Skills 2–6 are independent — run one, some, or all. Skill 7 synthesises whatever you
+analysis runs" below). Skills 2–6 are independent; run one, some, or all. Skill 7 synthesises whatever you
 ran into one plan.
 
 ### Run the interview while the analysis runs
@@ -112,23 +112,23 @@ and scans are *machine-paced*.
 
 - **Extended layer (Claude Code):** genuinely parallel. As soon as it has the URL and a Snapshot, Claude
   launches the measured scans (`perf-a11y-scan.py`, `mobile-audit.py`, `design-scan.py`, …) **in the
-  background**, then conducts the interview while they render — hiding the slowest part of the audit behind
+  background**, then conducts the interview while they render, hiding the slowest part of the audit behind
   the conversation. When the interview wraps, the scan results are waiting.
-- **Basic layer (Claude web/desktop app):** no background thread, so it *interleaves* — read a page, ask a
+- **Basic layer (Claude web/desktop app):** no background thread, so it *interleaves*: read a page, ask a
   question, read the next while the owner answers. It feels concurrent and nothing is wasted.
 
-Either way, the owner never watches a progress bar — they're being talked to while the machine works.
+Either way, the owner never watches a progress bar. They're being talked to while the machine works.
 
 ---
 
 ## The Finding format (IIF) and the priority model
 
-Everything is built on one repeatable unit — a **Finding**, written as **Issue · Impact · Fix (IIF)**:
+Everything is built on one repeatable unit, a **Finding**, written as **Issue · Impact · Fix (IIF)**:
 
-- **I — Issue:** the specific problem on the page, with the actual copy or element quoted as evidence.
-- **I — Impact:** what it costs the business (lost conversions, unclear message, missed search traffic,
+- **I (Issue):** the specific problem on the page, with the actual copy or element quoted as evidence.
+- **I (Impact):** what it costs the business (lost conversions, unclear message, missed search traffic,
   friction), rated **1–5**.
-- **F — Fix:** the concrete change to make, ideally with a worked example.
+- **F (Fix):** the concrete change to make, ideally with a worked example.
 
 Each finding also gets an **Effort 1–5**, and the two combine into a **priority quadrant**:
 
@@ -142,32 +142,32 @@ Action Report rolls the four up into an **overall grade** and a single prioritis
 
 ### Graded against the 2026 standard
 
-Findings aren't opinion — every rubric "Pass" and every gap is measured against
+Findings aren't opinion. Every rubric "Pass" and every gap is measured against
 [benchmarks-2026.md](benchmarks-2026.md): **what a website should be in 2026**, with concrete, sourced
-thresholds (Core Web Vitals ≤ 2.5s / 200ms / 0.1, tap targets ≥ 44px, WCAG 2.2 **AA** — legally required
-for many under the EU Accessibility Act since June 2025 — unique 50–60-char titles, HTTPS + HSTS, schema,
+thresholds (Core Web Vitals ≤ 2.5s / 200ms / 0.1, tap targets ≥ 44px, WCAG 2.2 **AA** (legally required
+for many under the EU Accessibility Act since June 2025), unique 50–60-char titles, HTTPS + HSTS, schema,
 AEO-readiness, and more). The Action Report renders a **"2026 standard vs your site"** scorecard so a
-company sees exactly where it stands and what to update. It's a living file — the year is in the name.
+company sees exactly where it stands and what to update. It's a living file. The year is in the name.
 
-> **Honesty by design.** What the bundled Python tools can measure locally — Core Web Vitals, INP (a lab
-> proxy), accessibility, security, mobile fit, design tokens, links, structured data — is **measured, with no
-> API keys**. What only the owner's own analytics can show — conversion rates, traffic, rankings, index
-> status — is **owner-reported** (captured in the Goals & Discovery interview) or left out, never invented or
+> **Honesty by design.** What the bundled Python tools can measure locally is **measured, with no
+> API keys**: Core Web Vitals, INP (a lab proxy), accessibility, security, mobile fit, design tokens, links,
+> and structured data. What only the owner's own analytics can show (conversion rates, traffic, rankings, index
+> status) is **owner-reported** (captured in the Goals & Discovery interview) or left out, never invented or
 > estimated. In the Basic layer (no headless browser) the measured checks simply fall back to "not measured".
 
 ### Measured, not guessed (headless-Chrome tools)
 
 Static HTML can't tell you whether a page *fits a phone*, how *fast* it is, whether it's *accessible*, or
-what its *design system* looks like — those need a real render. So the suite drives **headless Chrome** to
+what its *design system* looks like. Those need a real render. So the suite drives **headless Chrome** to
 **measure** them, and quotes the real numbers as evidence:
 
-- **Mobile-friendliness** (`mobile-audit.py`) — fit-to-screen, oversized elements/images, tap targets ≥ 44px, text ≥ 12px, per width (320/390/414) + screenshots.
-- **Performance + security** (`perf-a11y-scan.py`) — lab Core Web Vitals (LCP, CLS, FCP, TTFB), an **INP lab proxy** (Total Blocking Time), page weight & heaviest resources; plus **HTTPS, TLS version, security headers (HSTS/CSP/…), the redirect chain, and mixed content**.
-- **Accessibility — real WCAG violations** (`perf-a11y-scan.py`, injects **axe-core**) — grouped by impact (critical/serious/moderate/minor) + a **keyboard focus-order pass**.
-- **Design tokens** (`design-scan.py`) — the real palette, fonts, and button-style count + desktop/mobile renders.
-- **Site-wide SEO + schema** (`seo-sweep.py`) — a static per-page sweep of the secondary pages, with **local structured-data validation** (JSON parse + required-field checks per type).
-- **Measurement-readiness** (`tracking-scan.py`) — is GA4 / conversion tracking / a real consent layer actually set up? do trackers fire before consent?
-- **Interaction + links** (`interaction-scan.py`) — does the CTA reach a real destination and does the form validate, across key pages, **plus the HTTP status of every link** — all **without ever submitting**.
+- **Mobile-friendliness** (`mobile-audit.py`): fit-to-screen, oversized elements/images, tap targets ≥ 44px, text ≥ 12px, per width (320/390/414) + screenshots.
+- **Performance + security** (`perf-a11y-scan.py`): lab Core Web Vitals (LCP, CLS, FCP, TTFB), an **INP lab proxy** (Total Blocking Time), page weight & heaviest resources; plus **HTTPS, TLS version, security headers (HSTS/CSP/…), the redirect chain, and mixed content**.
+- **Accessibility, real WCAG violations** (`perf-a11y-scan.py`, injects **axe-core**): grouped by impact (critical/serious/moderate/minor) + a **keyboard focus-order pass**.
+- **Design tokens + interior templates** (`design-scan.py`): the real palette, fonts, and button-style count + desktop/mobile renders; with `--pages`, screenshots of representative interior templates (article, service page, case study) and their **measured readability** (text-alignment, chars-per-line, words-per-visual).
+- **Site-wide SEO + schema** (`seo-sweep.py`): a static per-page sweep of the secondary pages, with **local structured-data validation** (JSON parse + required-field checks per type).
+- **Measurement-readiness** (`tracking-scan.py`): is GA4 / conversion tracking / a real consent layer actually set up? do trackers fire before consent?
+- **Interaction + links** (`interaction-scan.py`): does the CTA reach a real destination and does the form validate, across key pages, **plus the HTTP status of every link**, all **without ever submitting**.
 
 ```bash
 pip install playwright        # one-time
@@ -176,10 +176,9 @@ python scripts/perf-a11y-scan.py https://example.com/ --out out
 ```
 
 The measured tools use **Playwright**, which downloads its own Chromium and runs the same on **Windows,
-macOS, and Linux** — nothing else to install, and **no API keys** (the SEO sweep is pure Python, no browser
+macOS, and Linux**, with nothing else to install and **no API keys** (the SEO sweep is pure Python, no browser
 at all). If Playwright isn't installed, each skill falls back to "not measured" and describes the observable
-signals — it never guesses and never sends you to a third-party service. See real runs in
-[test-runs/](test-runs/) (e.g. [antdata.eu](test-runs/antdata.eu/) and [arpideas.com](test-runs/arpideas.com/)): `perf-a11y.md`, `mobile-metrics.md`, `seo-sweep.md`, `design-tokens.json`.
+signals. It never guesses and never sends you to a third-party service.
 
 ---
 
@@ -234,44 +233,44 @@ signals — it never guesses and never sends you to a third-party service. See r
 These are **Agent Skills for Claude**, the AI assistant by Anthropic. Skills are a native Claude feature,
 so Claude is the recommended way to run them. You can use any of:
 
-- **Claude apps — [claude.ai](https://claude.ai) (web) or the Claude Desktop app.** Easiest, no coding.
+- **Claude apps: [claude.ai](https://claude.ai) (web) or the Claude Desktop app.** Easiest, no coding.
   The Skills feature is available on paid plans.
-- **Claude Code** — Anthropic's command-line/IDE tool, for developers who want the skills in their projects.
-- **Claude API / Agent SDK** — for building the skills into your own application.
+- **Claude Code**: Anthropic's command-line/IDE tool, for developers who want the skills in their projects.
+- **Claude API / Agent SDK**: for building the skills into your own application.
 
 Because the suite is **URL-first**, run it on a setup that can **fetch web pages** (Claude with web access,
 or Claude Code). If your model can't browse, paste the page text or screenshots and the skills work from that.
 
-For the best results, run them on a top-tier model — **Claude Opus** (highest quality) or **Claude Sonnet**
+For the best results, run them on a top-tier model: **Claude Opus** (highest quality) or **Claude Sonnet**
 (faster, still excellent).
 
 ---
 
-## How to use — pick the path that fits you
+## How to use: pick the path that fits you
 
-### Path 1 — Copy & paste (easiest, works on any plan, zero setup)
+### Path 1: Copy & paste (easiest, works on any plan, zero setup)
 1. Open a skill's `SKILL.md`, e.g. [0 Site Snapshot/site-snapshot/SKILL.md](0%20Site%20Snapshot/site-snapshot/SKILL.md).
 2. Copy everything from the first `#` heading down (you can ignore the small `---` metadata block at the top).
-3. Paste it into a new Claude conversation and send: *"Follow these instructions and audit my website — here's the URL: …"*.
+3. Paste it into a new Claude conversation and send: *"Follow these instructions and audit my website, here's the URL: …"*.
 4. Answer the few questions it asks. It produces your finished document.
 
-> Tip: do **Site Snapshot** first — the analyses build on it. When a later skill asks for your snapshot,
+> Tip: do **Site Snapshot** first. The analyses build on it. When a later skill asks for your snapshot,
 > paste the result you got from skill 0.
 
-### Path 2 — Install as a Skill in the Claude app (recommended for most people)
+### Path 2: Install as a Skill in the Claude app (recommended for most people)
 1. In Claude, open **Settings → Capabilities** and turn on **Skills** (and code execution if prompted).
-2. Find the package you want, e.g. `0 Site Snapshot/site-snapshot.skill`. **It's a ZIP** — if the uploader
+2. Find the package you want, e.g. `0 Site Snapshot/site-snapshot.skill`. **It's a ZIP**. If the uploader
    only accepts `.zip`, rename it. Click **Upload skill** and select it. Repeat for each skill.
-3. Start a chat and describe what you need — *"Audit my website"*, *"Is my homepage message clear?"*,
-   *"Give me an SEO review of …"* — and Claude runs the matching skill.
+3. Start a chat and describe what you need (*"Audit my website"*, *"Is my homepage message clear?"*,
+   *"Give me an SEO review of …"*), and Claude runs the matching skill.
 
-### Path 3 — Use in Claude Code (for developers)
+### Path 3: Use in Claude Code (for developers)
 1. Install Claude Code (`npm install -g @anthropic-ai/claude-code`) and open your project.
 2. Copy a skill's **unpacked folder** into your skills directory:
    - For all projects: `~/.claude/skills/site-snapshot/`
    - For one project only: `<your-project>/.claude/skills/site-snapshot/`
 
-   The folder must contain `SKILL.md` and the `references/` folder — which is exactly what the
+   The folder must contain `SKILL.md` and the `references/` folder, which is exactly what the
    `site-snapshot/` folder in this repo already is.
 3. Run `claude` and ask in plain language. Claude invokes the skill by its description.
 
@@ -285,7 +284,7 @@ For the best results, run them on a top-tier model — **Claude Opus** (highest 
   in `data/`.
 
 ### Just want to read the method?
-Open [Website Audit Suite - Handbook by Ananas Agency.md](Website%20Audit%20Suite%20-%20Handbook%20by%20Ananas%20Agency.md) — every skill and reference in one document. No AI or installation required.
+Open [Website Audit Suite - Handbook by Ananas Agency.md](Website%20Audit%20Suite%20-%20Handbook%20by%20Ananas%20Agency.md): every skill and reference in one document. No AI or installation required.
 
 ---
 
@@ -303,7 +302,7 @@ python scripts/build-handbook.py      # regenerates the compiled handbook
 
 ## License & attribution
 
-Licensed under the **MIT License** — see [LICENSE](LICENSE). You may use, adapt, and share it, including
+Licensed under the **MIT License**; see [LICENSE](LICENSE). You may use, adapt, and share it, including
 commercially. Keeping the copyright notice is all that's required; a visible credit is appreciated:
 
 > "Ananas-Agency Website Audit Suite" by **Kostiantyn Ivanov** (Ananas-Agency, ananas-agency.com).

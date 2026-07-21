@@ -1,8 +1,8 @@
-# What a website should be in 2026 — benchmarks & standards
+# What a website should be in 2026: benchmarks & standards
 
 This is the **standard the Website Audit Suite grades against**. Every skill's rubric "Pass" definition
 and every finding's "the standard is X, you're at Y" framing traces back to the thresholds below. It turns
-the audit from opinion into a measurable gap against current, sourced best practice — so a company gets a
+the audit from opinion into a measurable gap against current, sourced best practice, so a company gets a
 concrete update plan, not a matter of taste.
 
 > **Living document.** Web standards move. These figures are current for **early 2026**; the ones most
@@ -12,7 +12,7 @@ concrete update plan, not a matter of taste.
 > accepted convention it's marked *(convention)*.
 
 How to use it: each dimension below lists the **2026 expectation** and the **threshold**. In a finding,
-state both — e.g. *"Largest Contentful Paint should be ≤ 2.5s (Google Core Web Vitals); the bundled
+state both, e.g. *"Largest Contentful Paint should be ≤ 2.5s (Google Core Web Vitals); the bundled
 `perf-a11y-scan.py` measured 9.5s here."* (In the Basic layer, with no headless browser, mark it "not
 measured" instead.) The **Action Report** renders a compact **"2026 standard vs your site"** scorecard from
 these.
@@ -34,7 +34,7 @@ users, 75th percentile), and it's a Google ranking input.
 - Serve images as **WebP/AVIF**, sized to their display box, **lazy-loaded** below the fold; a hero image
   should rarely exceed a few hundred KB. *(convention)*
 - **HTTP/2 or HTTP/3**, **Brotli/gzip** compression, sensible caching. *(convention)*
-- Every 100ms of extra load measurably costs conversions — performance is a revenue issue, not just SEO.
+- Every 100ms of extra load measurably costs conversions; performance is a revenue issue, not just SEO.
 - **Source:** Google `web.dev` / Chrome Core Web Vitals. **Measured** here by the bundled `perf-a11y-scan.py`
   (lab CWV + a Total-Blocking-Time INP proxy). Real-world *field* percentiles need many real users and are
   out of scope; in the Basic layer (no browser) flag these "not measured".
@@ -59,7 +59,7 @@ default; the desktop-crawl transition completed in 2024). The mobile experience 
 businesses.
 
 - **WCAG 2.2 Level AA is the baseline.** In the EU, the **European Accessibility Act (EAA)** applies from
-  **28 June 2025** — many products and services (notably e-commerce, banking, transport, and their
+  **28 June 2025**. Many products and services (notably e-commerce, banking, transport, and their
   websites/apps) must meet AA (harmonised via EN 301 549). Similar pressure exists elsewhere (ADA/Section
   508 in the US).
 - **Text contrast ≥ 4.5:1** (normal text), **≥ 3:1** (large text and UI components).
@@ -80,16 +80,17 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
   no dead ends or orphan pages.
 - **Visual hierarchy:** **one clear focal point per screen** that leads the eye to the primary action;
   size, colour, and spacing used to rank importance (the visual analogue of the 5-second test).
-- **Readability:** body text **≥ 16px**, line length **45–75 characters** (~66 ideal), line height **~1.5**,
+- **Readability:** body text **≥ 16px**, line length **45–75 characters** (~66 ideal), **left- or
+  justified-aligned body copy** (not centred for long text), line height **~1.5**,
   and text contrast **≥ 4.5:1** (ties to §3 Accessibility).
 - **Consistency (Jakob's Law):** the site behaves like the sites users already know; buttons, patterns, and
   wording are internally consistent across pages.
-- **Feedback & response time (Nielsen's limits):** every action gives visible feedback — **< 0.1s** feels
+- **Feedback & response time (Nielsen's limits):** every action gives visible feedback: **< 0.1s** feels
   instant, **< 1s** keeps flow, show a loading state beyond ~1s, and **~10s** is the limit of user
   attention.
 - **Error prevention & recovery:** prevent errors where possible; clear, human error messages; easy undo;
   favour **recognition over recall**.
-- **Aesthetic & minimalist design:** whitespace and restraint over clutter — and via the *aesthetic-usability
+- **Aesthetic & minimalist design:** whitespace and restraint over clutter. Via the *aesthetic-usability
   effect*, a clean, current design is also **trusted** more (Stanford Web Credibility).
 - **Interaction targets:** clickable/tappable elements look interactive and are large enough (**≥ 44px**,
   see §2) and fully **keyboard-operable** (see §3).
@@ -106,13 +107,13 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
 - **Exactly one `<h1>`**, logical H2/H3 hierarchy.
 - **HTTPS**, an **XML sitemap**, a **robots.txt**, and **canonical tags** on every page.
 - **Structured data (schema.org JSON-LD):** Organization/LocalBusiness, plus Product, FAQ, Article,
-  BreadcrumbList as relevant — increasingly what makes a page eligible for rich results **and** citable by
+  BreadcrumbList as relevant, increasingly what makes a page eligible for rich results **and** citable by
   AI answer engines.
-- **Core Web Vitals are a ranking signal** (page experience) — see §1.
+- **Core Web Vitals are a ranking signal** (page experience); see §1.
 - **People-first content** that demonstrates **E-E-A-T** (Experience, Expertise, Authoritativeness, Trust);
   Google's Helpful Content system rewards genuine usefulness over keyword-stuffing.
 - **Clean, descriptive URLs**; descriptive internal-link anchors (no "click here").
-- **New for 2025–26 — AEO / GEO** (Answer-Engine / Generative-Engine Optimization): being **cited by AI
+- **New for 2025–26: AEO / GEO** (Answer-Engine / Generative-Engine Optimization): being **cited by AI
   answer engines** (Google AI Overviews, ChatGPT, Perplexity). Levers: strong structured data, clear
   factual and well-structured content, a solid entity/brand footprint. (An `llms.txt` convention is
   emerging but not yet a standard.)
@@ -121,7 +122,7 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
 ## 6. Messaging & clarity
 
 - A first-time visitor understands **what you offer, for whom, and the next action within ~5 seconds**,
-  from the hero alone — StoryBrand calls this the **"grunt test."** *(convention — the "5-second" / "grunt"
+  from the hero alone. StoryBrand calls this the **"grunt test."** *(convention: the "5-second" / "grunt"
   test)*
 - **One primary call to action**, benefit-led and specific.
 - **A concrete, differentiated value proposition:** it names the customer's problem, your solution, and the
@@ -132,7 +133,7 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
 - **Written the way people actually read online:** users **scan in an F-pattern** and read only ~20–28% of
   the words on a page, so front-load the point, use benefit-led headings, short paragraphs, and bullets
   (Nielsen Norman Group).
-- **Plain, customer-language copy** — no unexplained insider jargon; aim for a general-audience reading
+- **Plain, customer-language copy**: no unexplained insider jargon; aim for a general-audience reading
   level. Standards: **plainlanguage.gov**, **ISO 24495-1:2023 (Plain language)**, and the widely-copied
   **GOV.UK content design / style guide**.
 - **Social proof / trust** near the claims (named testimonials, client logos, numbers).
@@ -145,7 +146,7 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
 - **Minimise form friction:** ask only for what's needed; each extra field costs completions.
 - **Trust at the point of action:** logos, testimonials, guarantees, security/payment badges beside the
   CTA/form.
-- **A mobile-first conversion path**, and **fast load** (see §1) — both directly move conversion rate.
+- **A mobile-first conversion path**, and **fast load** (see §1); both directly move conversion rate.
 - **Clear pricing, or a clear path to it** (B2B: at least an engagement/"how we work" model).
 - **More than one path:** a low-commitment option (lead magnet, newsletter) for visitors who aren't ready
   to buy/book.
@@ -157,7 +158,7 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
   (no `http://` assets on an `https://` page). HTTPS is a baseline ranking and trust signal.
 - **Consent & privacy:** a compliant **cookie-consent** mechanism (GDPR/ePrivacy in the EU), analytics
   **consent mode**, and reachable **privacy & cookie policies**.
-- **Security headers** (CSP, X-Content-Type-Options, Referrer-Policy, etc.) — a plus, not yet universal.
+- **Security headers** (CSP, X-Content-Type-Options, Referrer-Policy, etc.): a plus, not yet universal.
 - **Source:** GDPR / ePrivacy; Google HTTPS-as-a-ranking-signal; OWASP secure-headers.
 
 ---
@@ -181,4 +182,4 @@ The interface should be usable, credible, and low-effort. The recognised evaluat
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)

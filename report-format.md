@@ -1,4 +1,4 @@
-# Website Audit Report — shared format, scoring & assembly
+# Website Audit Report: shared format, scoring & assembly
 
 This is the single shared spec every skill in the **Website Audit Suite** points to. It defines:
 
@@ -9,51 +9,53 @@ This is the single shared spec every skill in the **Website Audit Suite** points
 5. the **cross-linking / navigation** rules for every generated `.html`,
 6. the final **bundle**.
 
-The **standard the audit grades against** — what a website is expected to be, with concrete, sourced
-thresholds — lives in [benchmarks-2026.md](benchmarks-2026.md). Every rubric "Pass" and every "the
+The **standard the audit grades against** (what a website is expected to be, with concrete, sourced
+thresholds) lives in [benchmarks-2026.md](benchmarks-2026.md). Every rubric "Pass" and every "the
 standard is X, you're at Y" finding traces back to it; the Action Report renders a **"2026 standard vs
 your site"** scorecard from it.
 
 If a rule about findings, scoring, grades, matrix, cross-linking, or the bundle is needed anywhere,
-it lives here — the skills reference this file instead of re-stating it.
+it lives here. The skills reference this file instead of re-stating it.
 
 ## Audit depth (two-tier)
 
 The suite spends effort where it matters:
 
-- **The homepage is the main page — it gets the full, in-depth audit** across all five dimensions
+- **The homepage is the main page. It gets the full, in-depth audit** across all five dimensions
   (Messaging, Conversion, SEO, UX/Technical, Design & Visual), including the **measured mobile-friendliness render**
   (UX & Technical) at phone widths.
 - **Secondary pages** (services, products, case studies, articles, about, contact) get **targeted
-  multi-page checks** — broad coverage without a full audit of every page:
-  - **SEO** — a site-wide static sweep (`seo-sweep.py`): titles, metas, H1s, canonicals, indexability,
+  multi-page checks** (broad coverage without a full audit of every page):
+  - **SEO**, a site-wide static sweep (`seo-sweep.py`): titles, metas, H1s, canonicals, indexability,
     word count, alt, schema across a sample (~5 per type).
-  - **Messaging** — a cross-page clarity/consistency read of the key pages (H1, CTA, hero) — reusing the
+  - **Messaging**, a cross-page clarity/consistency read of the key pages (H1, CTA, hero), reusing the
     sweep + interaction data.
-  - **Design** — a cross-page token comparison (`design-scan.py --pages`): same typeface/palette/button
-    system across pages, or drift?
-  - **Conversion** — a multi-page interaction pass (`interaction-scan.py`): CTA reachability + form
+  - **Design & UX**, a template read of representative interior pages (`design-scan.py --pages`): renders
+    and screenshots one article, one service/offering page, and one case study, compares their tokens for
+    consistency, and **measures readability** (text-alignment, chars-per-line, words-per-visual). This
+    catches the layout, text-density and readability problems that live on template pages, not the homepage.
+  - **Conversion**, a multi-page interaction pass (`interaction-scan.py`): CTA reachability + form
     validation on the homepage, contact, and a top page (never submitting).
   This keeps coverage broad and token/time cost low. The user can widen or narrow it (`--per-type`,
   `--pages`, or naming specific pages).
 
 The fetching, rendering, and sweeping run as **tools** (headless-browser render, static crawl) that
-return compact summaries — they cost local compute, not model tokens; only the summaries enter the audit.
+return compact summaries. They cost local compute, not model tokens; only the summaries enter the audit.
 
 ## Basic & Extended layers (both free)
 
-Every skill runs in one of two layers, decided by the environment — **not** by payment (both are free):
+Every skill runs in one of two layers, decided by the environment, **not** by payment (both are free):
 
-- **Basic layer** — Claude reads the live page(s) and reasons. Produces the full graded audit from what's
-  observable in the source + expert judgement. Works in the Claude web app, Desktop, or Claude Code — no
+- **Basic layer**: Claude reads the live page(s) and reasons. Produces the full graded audit from what's
+  observable in the source + expert judgement. Works in the Claude web app, Desktop, or Claude Code, with no
   install. This is the default.
-- **Extended layer** — the bundled tools additionally **render/measure** the page (Playwright + Chromium;
+- **Extended layer**: the bundled tools additionally **render/measure** the page (Playwright + Chromium;
   `pip install playwright && playwright install chromium`). Adds the hard numbers a static read can't
   produce.
 
 **How each skill behaves:** every measured step already says *"if the bundled tool can run, measure it;
 otherwise mark it 'not measured' (Basic layer) and describe the observable signals."* That fallback **is**
-the layer switch — the same skill file produces a Basic report where the tool can't run and an Extended
+the layer switch. The same skill file produces a Basic report where the tool can't run and an Extended
 report where it can. The bundled tools need no API keys; they never point the reader at a third-party
 service.
 
@@ -62,7 +64,7 @@ mobile fit/tap-targets, design tokens, tracking/consent, interaction), mark it i
 small **`measured`** chip:
 `<span class="chip-measured" style="font-size:11px;font-weight:650;border-radius:2px;padding:2px 7px;background:#dce4f5;color:#1c3f7c;letter-spacing:.02em">measured</span>`
 (rendered inline in the finding-card header, after the priority tag). Findings that are reasoning-only
-(Basic) carry no chip. In a Basic report, the Extended-only checks are listed as **"not measured —
+(Basic) carry no chip. In a Basic report, the Extended-only checks are listed as **"not measured,
 available with the Extended layer,"** so the reader sees exactly what an Extended run would add.
 
 **Run-mode line.** Note the layer in the report header meta of the consolidated report and Action Report,
@@ -72,22 +74,22 @@ e.g. `Run mode: Extended (measured tools ran)` or `Run mode: Basic (reasoning on
 
 ## The Finding format (Issue · Impact · Fix)
 
-Every observation any analysis skill makes is a **Finding** — the core unit of this suite (its
+Every observation any analysis skill makes is a **Finding**, the core unit of this suite (its
 equivalent of a value proposition). A finding is a triple plus two ratings:
 
-- **I — Issue.** The concrete, specific problem observed on the page, with **evidence**: quote the
+- **I (Issue).** The concrete, specific problem observed on the page, with **evidence**: quote the
   actual copy, name the element, or give the page/location. Not "the messaging is weak" but
   "the homepage H1 reads 'Welcome to our website', which says nothing about what you do or for whom."
-- **I — Impact.** What the issue **costs the business** — lost conversions, an unclear message,
+- **I (Impact).** What the issue **costs the business**: lost conversions, an unclear message,
   missed search traffic, added friction, eroded trust. Rated **Impact 1–5** (see below).
-- **F — Fix.** The specific, actionable recommendation — what to change and, where useful, to what.
-  Not "improve the headline" but "replace with a benefit-led H1, e.g. 'Bookkeeping for tradespeople —
+- **F (Fix).** The specific, actionable recommendation: what to change and, where useful, to what.
+  Not "improve the headline" but "replace with a benefit-led H1, e.g. 'Bookkeeping for tradespeople:
   sorted in an hour a week'."
 
 Plus:
 
-- **Effort 1–5** — how hard the fix is to implement (see below).
-- **Priority** — derived from Impact × Effort (the quadrant, below).
+- **Effort 1–5**: how hard the fix is to implement (see below).
+- **Priority**: derived from Impact × Effort (the quadrant, below).
 
 ### Impact scale (1–5)
 | Score | Meaning |
@@ -118,14 +120,49 @@ Split each axis at its midpoint: **Impact High = 4–5, Low = 1–3**; **Effort 
 Within a quadrant, rank by Impact descending, then Effort ascending. Every finding carries exactly
 one quadrant label: `quickwin`, `bigbet`, `fillin`, or `skip`.
 
-> **Honesty rule (applies to every skill).** Report only what you can actually verify — from the page you
+> **Honesty rule (applies to every skill).** Report only what you can actually verify: from the page you
 > fetched (its copy, HTML, headings, meta tags, alt text, links, structure), from what renders, and from the
 > bundled measurement tools (which run locally, no API keys). Page-load time, Core Web Vitals, INP (lab
 > proxy), accessibility, security, mobile fit, design tokens, links and structured data are **measured** when
 > the tools can run; in the **Basic layer** (no browser) mark them **"not measured"** and describe the
-> observable signals — don't point at a third-party service. Metrics only the owner's analytics can show —
-> conversion rates, traffic, rankings, index status — are **owner-reported** (from Goals & Discovery) or left
-> out, never invented or estimated. A grade is an expert judgement, not a lab measurement — label it as such.
+> observable signals. Don't point at a third-party service. Metrics only the owner's analytics can show
+> (conversion rates, traffic, rankings, index status) are **owner-reported** (from Goals & Discovery) or left
+> out, never invented or estimated. A grade is an expert judgement, not a lab measurement; label it as such.
+
+---
+
+## Write like a human: no AI patterns (every deliverable)
+
+Every `.md` and `.html` this suite generates is read by a business owner, so it must not read as
+machine-written. Before delivering any file, self-check the connective prose against the list below. These
+are the fingerprints the **[AI Pattern Detector](https://github.com/ananas-agency/ai-pattern-detector)**
+flags; run that skill on the finished deliverables as a final QA if it's available. The findings themselves
+(Issue · Impact · Fix) are already concrete, so keep the sentences around them just as plain.
+
+**Punctuation (the biggest tell).**
+- **Em-dashes: rare.** At most one per ~150 words, and never two in a paragraph (the detector calls em-dash
+  density its single most reliable AI signal). Prefer a full stop, a comma, or brackets. Never the dramatic
+  pivot "not X, it's Y".
+- **Vary sentence length.** Mix short (3–6 words) with longer ones; don't cluster every sentence at 15–25 words.
+- Don't stack hyphenated compounds (ever-evolving, cutting-edge, best-in-class).
+
+**Banned vocabulary.** leverage, delve, robust, seamless(ly), elevate, unlock, empower, transformative,
+cutting-edge, myriad, paradigm, boasts, foster, streamline, harness, holistic, "at its core", "when it comes
+to", "in the realm of", "navigate the". Use the plain word instead.
+
+**Banned constructions.**
+- Stock openers ("In today's fast-paced world", "Let's dive in").
+- Antithesis ("It's not X, it's Y"), rule-of-three triples, self-answered questions ("The result? …").
+- Closers ("In conclusion", "At the end of the day", "The bottom line").
+- Hedges and throat-clearing ("It's worth noting", "It's important to note").
+- Meta-commentary ("Here's the thing", "Plot twist:").
+
+**Structure and voice.**
+- Vary list length; don't default every list to 3, 5, or 7 items.
+- Name the actor. "The 11-field form loses visitors", not "friction emerges" (no false agency).
+- Concrete beats abstract: a number or a quoted element beats "significant implications".
+
+If a sentence could open any agency's report, cut it or rewrite it. When in doubt, remove a word.
 
 ---
 
@@ -137,7 +174,7 @@ lists ~8–12 weighted **criteria**; rate each **Pass** (full weight), **Partial
 (zero), sum the weights, and normalise to 0–100. Always show the reader the criteria table so the grade
 is explainable, not a black box.
 
-**Each criterion's "Pass" is the 2026 standard**, not a subjective preference — the thresholds come from
+**Each criterion's "Pass" is the 2026 standard**, not a subjective preference. The thresholds come from
 [benchmarks-2026.md](benchmarks-2026.md) (Core Web Vitals ≤ 2.5s/200ms/0.1, tap targets ≥ 44px, WCAG 2.2
 AA, 50–60-char unique titles, and so on). Where a finding states a gap, cite the benchmark: "the standard
 is X, this site is at Y." That's what makes the audit a concrete update plan rather than an opinion.
@@ -160,18 +197,18 @@ scores, mapped to the same bands. If a dimension wasn't run, say so and average 
 Findings get stable IDs, prefixed by dimension, numbered within the dimension in the order they appear
 (strongest impact first):
 
-- `MSG-` — Messaging & Clarity
-- `CRO-` — Conversion (CRO)
-- `SEO-` — SEO & Content
-- `UX-`  — UX & Technical
-- `DSN-` — Design & Visual
+- `MSG-`: Messaging & Clarity
+- `CRO-`: Conversion (CRO)
+- `SEO-`: SEO & Content
+- `UX-`: UX & Technical
+- `DSN-`: Design & Visual
 
 e.g. `MSG-01`, `CRO-03`, `SEO-07`, `UX-02`. IDs are cited (with a tooltip) everywhere a finding is
-referenced outside its own list — especially in the Action Report roadmap and the dossier.
+referenced outside its own list, especially in the Action Report roadmap and the dossier.
 
 ---
 
-## The Website Audit Report (consolidated dossier) — how it accretes
+## The Website Audit Report (consolidated dossier): how it accretes
 
 The **Website Audit Report** is the single consolidated document that accretes as you move through the
 skills in one continuous session. Each analysis skill records its own section as it completes; the
@@ -179,36 +216,36 @@ final skill (**Action Report**) generates the executive summary + priority plan 
 the whole thing.
 
 - The report is an **internal, running working document** kept across the session. It is **NOT a
-  deliverable mid-run** — do **not** create, show, or hand the user a report/dossier file mid-session.
+  deliverable mid-run**. Do **not** create, show, or hand the user a report/dossier file mid-session.
   **Each skill delivers only its own two files** (`.md` + `.html`); the consolidated report is
   assembled and delivered **only at the very end**, by the Action Report skill.
 - As each skill completes, **record its section into that internal running document** (order below).
   If the user revisits a skill or changes an input, refresh that section so it stays current.
 - Sections not produced yet are marked `— not yet completed —`.
 - **Place each section in its fixed slot** (order below) regardless of the order you complete skills.
-  (Messaging, Conversion, SEO, UX/Technical, and Design & Visual are interchangeable — completion order won't always
+  (Messaging, Conversion, SEO, UX/Technical, and Design & Visual are interchangeable; completion order won't always
   match the slots.)
 
 ### Section order
-- **Executive summary** (unnumbered) — generated at the end by the Action Report (see below).
-1. **Site Snapshot** — what the site is, who it's for, the primary conversion goal, the page inventory.
-2. **Goals & Discovery** — the owner's voice, cross-examined against the site: a compressed owner brief, a
+- **Executive summary** (unnumbered), generated at the end by the Action Report (see below).
+1. **Site Snapshot**: what the site is, who it's for, the primary conversion goal, the page inventory.
+2. **Goals & Discovery**: the owner's voice, cross-examined against the site: a compressed owner brief, a
    **"Stated vs. observed"** reality-check (each belief vs. what the page + scans show, with the gap named),
    the **tensions**, and a prioritised **"How to reach your goal"** advice block. *Diagnostic intake, not
-   graded analysis — no letter grade and no IIF findings; it orients the reader, the five analyses verify it.*
-3. **Messaging & Clarity** — grade + criteria, and the `MSG-` findings.
-4. **Conversion (CRO)** — grade + criteria, and the `CRO-` findings.
-5. **SEO & Content** — grade + criteria, the `SEO-` findings, and the **site-wide SEO sweep table**
-   (the homepage is audited in full; secondary pages get a quick per-page sweep — see below).
-6. **UX & Technical** — grade + criteria, the `UX-` findings, and the **measured mobile-friendliness**
+   graded analysis. No letter grade and no IIF findings; it orients the reader, the five analyses verify it.*
+3. **Messaging & Clarity**: grade + criteria, and the `MSG-` findings.
+4. **Conversion (CRO)**: grade + criteria, and the `CRO-` findings.
+5. **SEO & Content**: grade + criteria, the `SEO-` findings, and the **site-wide SEO sweep table**
+   (the homepage is audited in full; secondary pages get a quick per-page sweep, see below).
+6. **UX & Technical**: grade + criteria, the `UX-` findings, and the **measured mobile-friendliness**
    results (rendered at phone widths).
-7. **Design & Visual** — grade + criteria, the `DSN-` findings, the **measured design tokens** (palette,
+7. **Design & Visual**: grade + criteria, the `DSN-` findings, the **measured design tokens** (palette,
    fonts, button-style count), and the rendered desktop + mobile screenshots.
-8. **Action Plan** — the Impact × Effort matrix, the overall scorecard, the prioritised roadmap, and
+8. **Action Plan**: the Impact × Effort matrix, the overall scorecard, the prioritised roadmap, and
    the "first two weeks / 30–60 / 60–90" plan.
 
 The **Goals & Discovery** section is optional (it appears only if that skill ran) and carries no grade; it
-gives the reader the owner's own goals and satisfaction — plus its **"How to reach your goal"** advice — as
+gives the reader the owner's own goals and satisfaction (plus its **"How to reach your goal"** advice) as
 context and direction for everything below it.
 
 Each section reuses the content the skill already delivered. Don't re-analyse; pull from the session.
@@ -216,9 +253,9 @@ Each section reuses the content the skill already delivered. Don't re-analyse; p
 ### Executive summary (generated at the end)
 A short synthesis placed at the top once the sequence is complete (refresh it if sections change later):
 - **Overall grade** and the five dimension grades at a glance.
-- **The single biggest opportunity** — the highest-impact issue found, cited by ID.
-- **Top 3 quick wins** — highest-impact, lowest-effort fixes, cited by ID.
-- **What's working** — 1–2 genuine strengths (don't only list problems).
+- **The single biggest opportunity**: the highest-impact issue found, cited by ID.
+- **Top 3 quick wins**: highest-impact, lowest-effort fixes, cited by ID.
+- **What's working**: 1–2 genuine strengths (don't only list problems).
 
 ---
 
@@ -231,21 +268,21 @@ sorts it to the top of the folder. There is no other hub file.
 
 Structure:
 - **Header.** If the audited site yields a usable logo (header logo, `og:image`, or one the user
-  provides), show it in the header alongside (or instead of) the site name — embed it as a data URI so
+  provides), show it in the header alongside (or instead of) the site name, embedded as a data URI so
   the file stays self-contained; otherwise fall back to the site **name** as styled text. Never invent
-  a logo. Attribution line phrased "**by Ananas Agency**" (e.g. "Website audit of [site] — built with
+  a logo. Attribution line phrased "**by Ananas Agency**" (e.g. "Website audit of [site], built with
   the Website Audit Suite by Ananas Agency").
-- **Executive summary first** — overall grade, the five dimension grades, the biggest opportunity, the
+- **Executive summary first**: overall grade, the five dimension grades, the biggest opportunity, the
   top 3 quick wins, what's working. The executive-summary section is **unnumbered**; numbering starts at
   **Site Snapshot = 1**.
-- **Then every section in the fixed order above — with real substance, not teasers.** Each section
+- **Then every section in the fixed order above, with real substance, not teasers.** Each section
   carries a meaningful digest: the Site Snapshot facts, each dimension's grade + criteria table + full
   findings list (ID, issue, impact, fix, quadrant), and the Action Plan's matrix + roadmap. A reader who
   never clicks a link still gets the whole audit.
 - **Each section heading carries an "Open full document →" button** (`<a class="openbtn" …>`,
   right-aligned in the heading) linking to that skill's `.html`.
 - **Every section digest renders full-width.** Each section spans the full content column (`.wrap`).
-  Render tables as a bare `<table style="width:100%">` and text as `.row`s directly in the section — do
+  Render tables as a bare `<table style="width:100%">` and text as `.row`s directly in the section. Do
   **not** wrap a section's digest in `.tablewrap` or `.card` (their inset padding makes that section
   render narrower than its neighbours).
 
@@ -263,13 +300,13 @@ Every generated `.html` is part of one navigable pack. These rules apply to all 
    back to that dimension's page with a `title` tooltip carrying the finding's issue in brief, e.g.
    `<a href="messaging.html" title="MSG-01 — vague homepage headline">MSG-01</a>`. No bare ID codes
    anywhere.
-2. **Hover hints on short terms — every occurrence, consistently.** Give a plain-language `title`
-   tooltip to **every** appearance (not just the first) of the fixed shorthand set — **IIF, CRO, SEO,
+2. **Hover hints on short terms, every occurrence, consistently.** Give a plain-language `title`
+   tooltip to **every** appearance (not just the first) of the fixed shorthand set: **IIF, CRO, SEO,
    UX, CTA, the ID prefixes (MSG/CRO/SEO/UX), and the quadrant labels
-   (quick win / big bet / fill-in / skip)** — e.g.
+   (quick win / big bet / fill-in / skip)**. For example,
    `<abbr title="Issue · Impact · Fix — the finding format">IIF</abbr>`. Apply it uniformly across
    every page; the final regeneration pass verifies the hints are present pack-wide.
-3. **Previous / Next buttons — final pack only.** Mid-session, the per-skill `.html` files are working
+3. **Previous / Next buttons: final pack only.** Mid-session, the per-skill `.html` files are working
    copies and carry **no `pagenav`** (they end with the Print hint instead). The prev/next walk is added
    **only by the final regeneration pass** (the Action Report skill), which wires every page in the fixed
    sequence: `site-snapshot.html` → `goals.html` → `messaging.html` → `conversion.html` → `seo.html` →
@@ -279,19 +316,22 @@ Every generated `.html` is part of one navigable pack. These rules apply to all 
    in the walk only if the Goals & Discovery skill ran; if it didn't, Site Snapshot's Next leads straight
    to `messaging.html`.)
 4. **Print hint on every page.** Every generated `.html` ends (after the last section, inside the content
-   column) with a no-JavaScript Print hint —
-   `<p class="printhint">🖨 Print / Save as PDF — press <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>⌘</kbd>+<kbd>P</kbd> on Mac)</p>` —
+   column) with a no-JavaScript Print hint,
+   `<p class="printhint">🖨 Print / Save as PDF — press <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>⌘</kbd>+<kbd>P</kbd> on Mac)</p>`,
    which relies on the browser's own print and hides itself when printing. No button, no script.
 5. **Section numbering.** Give section headings a number chip (`<span class="no">N</span>`) only when
    the page has **two or more** sections; a single-section page uses an unnumbered heading. In the
    consolidated report, the executive summary is unnumbered and numbering starts at Site Snapshot = 1.
+6. **Write like a human.** Every deliverable's prose follows the house style above ("Write like a human:
+   no AI patterns"). Keep em-dashes rare, with no banned vocabulary or stock constructions. The Action Report's final
+   pass re-checks the whole pack.
 
 **Final consistency pass.** Deliverables are generated as the session progresses, so links can point at
 files that don't exist yet. The Action Report skill therefore **regenerates every `.html`** right before
-bundling — adding the prev/next walk to every page (mid-session pages carried none), tooltipping every ID,
+bundling: adding the prev/next walk to every page (mid-session pages carried none), tooltipping every ID,
 ensuring the hover hints are present on every term, and wiring the complete cross-link graph. It also
-**reconciles the Site Snapshot's open `TBD`s** — backfilling any the session has since answered (from what
-was actually captured, never invented) — so the finished pack never ships stale `TBD`s. Mid-session files
+**reconciles the Site Snapshot's open `TBD`s**, backfilling any the session has since answered (from what
+was actually captured, never invented), so the finished pack never ships stale `TBD`s. Mid-session files
 are working copies; the regenerated set in the ZIP is the canonical pack.
 
 ### Canonical filenames
@@ -315,7 +355,7 @@ Because the skills deliver files one at a time through the chat, the closing ste
 **packs everything into a single ZIP** so the pack travels as one unit and the links work after unzip. The
 report `.html` files cross-link each other by bare filename (and share the prev/next walk), so **every
 `.md`/`.html` deliverable sits flat at the ZIP root**; the measured **screenshots** and **raw JSON** are
-filed into two subfolders so the pack stays tidy — reports on top, evidence beneath.
+filed into two subfolders so the pack stays tidy: reports on top, evidence beneath.
 
 - **Name:** `[site]-website-audit.zip` (e.g. `acme-website-audit.zip`).
 - **Layout:**
@@ -335,22 +375,22 @@ filed into two subfolders so the pack stays tidy — reports on top, evidence be
       ├── design-tokens.json · design-pages.json
       └── seo-sweep.json · interaction.json · tracking.json
   ```
-  The `.md`/`.html` deliverables **must stay flat at the root** — that's what keeps their cross-links and the
+  The `.md`/`.html` deliverables **must stay flat at the root**. That's what keeps their cross-links and the
   prev/next walk resolving. Only the screenshots (`assets/`) and the JSON (`data/`) go in subfolders.
 - **Screenshot paths:** `design.html` embeds the renders with `<img src="…">`. In the final pack the
   screenshots live in `assets/`, so the Action Report's final regeneration writes them as
   `<img src="assets/design-desktop.png">` / `assets/design-mobile.png` (same for the design digest in the
-  consolidated report). Mid-session working copies keep the flat `design-desktop.png` path — the PNG sits
-  beside the file — so both contexts resolve.
+  consolidated report). Mid-session working copies keep the flat `design-desktop.png` path (the PNG sits
+  beside the file), so both contexts resolve.
 - **Contents:**
   - **Root:** the merged report (`_[site]-website-audit-report.md` + `.html`, first by name) and every
     per-skill deliverable produced (`.md` + `.html`; the suite ships no `.txt`): `site-snapshot`, `goals`,
     `messaging`, `conversion`, `seo`, `ux-technical`, `design`, `action-report`.
-  - **`assets/`:** every screenshot produced — `design-desktop.png`, `design-mobile.png`, and the mobile
-    renders `mobile-320.png` / `mobile-390.png` / `mobile-414.png`.
-  - **`data/`:** every raw measured JSON produced — `perf-a11y.json`, `mobile-metrics.json`,
+  - **`assets/`:** every screenshot produced: `design-desktop.png`, `design-mobile.png`, the interior
+    template renders `page-<slug>.png`, and the mobile renders `mobile-320.png` / `mobile-390.png` / `mobile-414.png`.
+  - **`data/`:** every raw measured JSON produced: `perf-a11y.json`, `mobile-metrics.json`,
     `design-tokens.json`, `design-pages.json`, `seo-sweep.json`, `interaction.json`, `tracking.json`.
-- **How:** build it with code execution (the same capability used to write the files) — create the `assets/`
+- **How:** build it with code execution (the same capability used to write the files). Create the `assets/`
   and `data/` subfolders and place each file accordingly. If code execution isn't available, list the files
   with their folders and tell the user to recreate that structure so the links and images work.
 - **Partial runs:** bundle only what was actually produced (skip any missing deliverable, screenshot, or
@@ -364,4 +404,4 @@ Offer the ZIP as the primary download: "Open `_[site]-website-audit-report.html`
 
 Copyright (c) 2026 Kostiantyn Ivanov (Ananas-Agency, ananas-agency.com).
 
-Released under the MIT License — keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
+Released under the MIT License. Keeping the copyright notice is all that is required, and a credit to the author is warmly appreciated. Full license text: [LICENSE](LICENSE)
