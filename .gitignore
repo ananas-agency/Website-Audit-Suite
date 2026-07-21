@@ -1,0 +1,15 @@
+# Internal research / working notes — not part of the published suite
+misc/
+
+# Python caches (from the bundled tools & scripts)
+__pycache__/
+*.pyc
+
+# website and test runs
+website/
+test-runs/
+misc/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
