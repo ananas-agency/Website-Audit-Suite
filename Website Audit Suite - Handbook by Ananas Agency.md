@@ -4554,6 +4554,14 @@ Written for **business owners and marketers**: the report leads with the decisio
 - Pull the findings, grades, and "what's working" notes from the session. **Do not re-analyse.** If some
   analyses weren't run, proceed with what exists and say clearly which dimensions are missing.
 
+> **Precondition — check before you assemble anything.** The report's section 2 cites `goals.md` as its
+> source, so that file must exist. If **Goals & Discovery never ran**, stop and run it now (it's a short
+> interview; the scans are already done, so it costs only the owner's answers) — then assemble. Do not
+> paper over it by writing section 2 from the scans: an owner brief you inferred yourself is fabrication,
+> and every grade in the report is supposed to be judged against a goal *the owner stated*. Only if the
+> owner is genuinely unavailable do you proceed, with section 2 marked **NOT CAPTURED** and a line in the
+> executive summary saying the audit is ungrounded.
+
 ## What it produces
 
 1. **Overall scorecard**: the completed dimension grades side by side, plus an **overall grade** (average
@@ -4578,7 +4586,9 @@ Written for **business owners and marketers**: the report leads with the decisio
 
 ### Step 1: Gather everything from the session
 Collect every finding (ID, issue, impact, effort, quadrant) and every dimension grade produced so far,
-plus the Site Snapshot. Note which analyses are missing.
+plus the Site Snapshot. Note which analyses are missing. **Check the Goals & Discovery brief is actually
+there** (see the precondition under "Inputs") — if the owner was never interviewed, interview them now,
+before you build the scorecard.
 
 ### Step 2: Build the overall scorecard
 Show the completed dimension grades and compute the **overall grade** (average of completed dimension
@@ -4644,6 +4654,8 @@ bundle only what exists and say what's missing.
 4. **Consistency across dimensions.** Normalise Impact/Effort so a "5" means the same everywhere; note any
    adjustment.
 5. **Handle partial runs honestly.** Average and report only the dimensions that ran; name the gaps.
+5b. **No report without an owner brief.** If Goals & Discovery never ran, run it before assembling; never
+   write section 2 from your own inference. The grades mean nothing against a goal nobody stated.
 6. **One CTA, once.** The agency CTA block appears in exactly one place (the Action Report / consolidated
    report closing), nowhere else in the pack.
 7. **The regenerated pack is canonical.** Mid-session files are working copies; the ZIP's regenerated set
@@ -5043,6 +5055,10 @@ The merged entry document **`_[site]-website-audit-report`** (`.md` + `.html`): 
 - Each section heading carries an **"Open full document →"** `.openbtn` linking to that skill's `.html`.
 - Render each section's digest **full-width**: tables as bare `<table style="width:100%">`, text as `.row`s
   directly in the section; do **not** wrap a section in `.tablewrap` or `.card`.
+- **Findings tables use the fixed `<colgroup>` from [report-format.md](report-format.md)** ("the findings
+  table uses this exact colgroup"): six percentage widths, `8 / 19 / 28 / 28 / 6 / 11`, summing to 100,
+  with `min-width:860px`. Do not invent column widths and never mix `px` with `%` in one colgroup — a
+  mixed set over-constrains the table, gets ignored, and squeezes `ID` and `Priority` to min-content.
 - Uses the same `<style>` block and frame; use `utm_content=website-audit-report` in its brand links.
 - End with the single agency `.ctablock` (if not already on the Action Report page you link to) and the
   Print hint. The final pass makes this the **entry** file of the walk (sorts first; no Previous; Next →

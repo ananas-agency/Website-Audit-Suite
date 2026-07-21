@@ -285,6 +285,23 @@ Structure:
   Render tables as a bare `<table style="width:100%">` and text as `.row`s directly in the section. Do
   **not** wrap a section's digest in `.tablewrap` or `.card` (their inset padding makes that section
   render narrower than its neighbours).
+- **The findings table uses this exact `<colgroup>`.** Don't improvise column widths:
+
+  ```html
+  <table style="width:100%;min-width:860px">
+  <colgroup><col style="width:8%"><col style="width:19%"><col style="width:28%">
+  <col style="width:28%"><col style="width:6%"><col style="width:11%"></colgroup>
+  <tr><th>ID</th><th>Finding</th><th>Issue</th><th>Fix</th>
+      <th style="text-align:center">I&nbsp;/&nbsp;E</th><th>Priority</th></tr>
+  ```
+
+  **All six widths are percentages and they sum to exactly 100.** Never mix `px` and `%` here. A
+  colgroup like `76px + 20% + 33% + 33% + 56px + 92px` looks reasonable and is impossible — it demands
+  86% + 224px, so the browser ignores it and collapses `ID`, `I / E` and `Priority` to bare min-content
+  (measured: 65 / 40 / 82px against the 76 / 56 / 92px asked for). The short columns then have nothing
+  but their 12px cell padding around them and the table reads as cramped. Percentages that total 100
+  scale correctly at every width, and `min-width:860px` stops them collapsing on narrow screens.
+  Keep `white-space:nowrap` on the `ID`, `I / E` and `Priority` cells.
 
 Deliver as two files (`.md` + `.html`), reusing the shared style block and page frame (brand band,
 gold-top header card, footer band) so it matches every other deliverable.

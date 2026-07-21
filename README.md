@@ -66,13 +66,18 @@ Eight skills, each in its own numbered folder, plus one compiled handbook.
 | # | Skill | What it produces | Needs first |
 |---|-------|------------------|-------------|
 | 0 | **Site Snapshot** | Fetches the URL and captures what the site is, who it's for, its **primary conversion goal**, and its key pages — the reusable foundation. | — (start here) |
-| 1 | **Goals & Discovery** | The owner's voice: are they happy with the site, and what do they want it to achieve? A short interview capturing satisfaction, the one goal + a success number, frustrations, appetite & constraints — then directional advice on how to reach them. Runs *while* the site is analysed. | 0 |
-| 2 | **Messaging & Clarity** | Is the value proposition, headline, and call to action instantly clear? Graded, with `MSG-` findings. | 0 |
-| 3 | **Conversion (CRO)** | Funnel, CTAs, forms, trust signals, distractions, pricing clarity. Graded, with `CRO-` findings. | 0 |
-| 4 | **SEO & Content** | Titles, meta, headings, keywords/intent, content depth, schema, indexability. Graded, with `SEO-` findings. | 0 |
-| 5 | **UX & Technical** | Navigation, **measured** mobile-friendliness (fit-to-screen, tap-target & text sizes via a real headless-browser render), speed signals, accessibility, links, security. Graded, with `UX-` findings. | 0 |
-| 6 | **Design & Visual** | Renders the site (desktop + mobile) and judges the visual design: hierarchy, typography, colour, whitespace, imagery, modern-vs-dated — plus **measured** design tokens (palette, fonts, button-style count). `DSN-` findings. | 0 |
-| 7 | **Action Report** | Overall scorecard, an Impact × Effort priority matrix, a phased roadmap, and the single consolidated **Website Audit Report**. | 2–6 |
+| 1 | **Goals & Discovery** | The owner's voice: are they happy with the site, and what do they want it to achieve? A short interview capturing satisfaction, the one goal + a success number, frustrations, appetite & constraints — then directional advice on how to reach them. Runs *while* the site is analysed. | 0 — **blocks 2–7** |
+| 2 | **Messaging & Clarity** | Is the value proposition, headline, and call to action instantly clear? Graded, with `MSG-` findings. | 0 **+ 1** |
+| 3 | **Conversion (CRO)** | Funnel, CTAs, forms, trust signals, distractions, pricing clarity. Graded, with `CRO-` findings. | 0 **+ 1** |
+| 4 | **SEO & Content** | Titles, meta, headings, keywords/intent, content depth, schema, indexability. Graded, with `SEO-` findings. | 0 **+ 1** |
+| 5 | **UX & Technical** | Navigation, **measured** mobile-friendliness (fit-to-screen, tap-target & text sizes via a real headless-browser render), speed signals, accessibility, links, security. Graded, with `UX-` findings. | 0 **+ 1** |
+| 6 | **Design & Visual** | Renders the site (desktop + mobile) and judges the visual design: hierarchy, typography, colour, whitespace, imagery, modern-vs-dated — plus **measured** design tokens (palette, fonts, button-style count). `DSN-` findings. | 0 **+ 1** |
+| 7 | **Action Report** | Overall scorecard, an Impact × Effort priority matrix, a phased roadmap, and the single consolidated **Website Audit Report**. | 2–6, **and 1** |
+
+> **Skill 1 is not optional and not a side-quest.** "Runs in parallel" describes its *timing*, not its
+> priority: it must be **started before any of 2–6 is written**, because every finding in 2–6 is graded
+> against the owner's stated goal. A plan that lists 0, 2, 3, 4, 5, 6, 7 and omits 1 is a broken plan —
+> if you are building a task list for this suite, **1 goes in it**.
 
 ### Recommended order
 
@@ -99,10 +104,10 @@ Eight skills, each in its own numbered folder, plus one compiled handbook.
   🟢 Basic everywhere · 🔵 Extended adds the * measurements · both free — the only difference is the one-time tool setup.
 ```
 
-Start with **Site Snapshot**. **Goals & Discovery** is intake too; it captures the owner's goals and, being
-paced by the owner answering, runs *concurrently* with the site read/scans (see "Run the interview while the
-analysis runs" below). Skills 2–6 are independent; run one, some, or all. Skill 7 synthesises whatever you
-ran into one plan.
+Start with **Site Snapshot**, then **Goals & Discovery** — intake too, and mandatory: it captures the
+owner's goals and, being paced by the owner answering, runs *concurrently* with the site read/scans (see
+"Run the interview while the analysis runs" below). Skills 2–6 are independent; run one, some, or all.
+Skill 7 synthesises whatever you ran into one plan.
 
 ### Run the interview while the analysis runs
 
@@ -118,6 +123,20 @@ and scans are *machine-paced*.
   question, read the next while the owner answers. It feels concurrent and nothing is wasted.
 
 Either way, the owner never watches a progress bar. They're being talked to while the machine works.
+
+### Never write the audit without asking the owner first
+
+Even when the request sounds fully automatic ("run the full audit of mysite.com"), the interview still
+happens — an audit graded against a goal nobody stated is guesswork wearing a grade. Concretely:
+
+- **Ask the first question before writing any of skills 2–6.** Launch the scans, then ask. Not afterwards,
+  and not once the analyses are already written.
+- **Never infer, assume, or invent the owner's answers** from the page, the scans, or the industry. The
+  value of the brief is the *gap* between what the owner believes and what the site shows; a brief you
+  wrote yourself has no gap in it.
+- **If you genuinely cannot ask** (a headless or scheduled run with no one to answer), don't fake it:
+  produce the brief with every field marked **NOT CAPTURED**, say at the top of the report that the audit
+  is ungrounded because no owner input was available, and note what the interview would have changed.
 
 ---
 

@@ -377,6 +377,10 @@ The merged entry document **`_[site]-website-audit-report`** (`.md` + `.html`): 
 - Each section heading carries an **"Open full document →"** `.openbtn` linking to that skill's `.html`.
 - Render each section's digest **full-width**: tables as bare `<table style="width:100%">`, text as `.row`s
   directly in the section; do **not** wrap a section in `.tablewrap` or `.card`.
+- **Findings tables use the fixed `<colgroup>` from [report-format.md](report-format.md)** ("the findings
+  table uses this exact colgroup"): six percentage widths, `8 / 19 / 28 / 28 / 6 / 11`, summing to 100,
+  with `min-width:860px`. Do not invent column widths and never mix `px` with `%` in one colgroup — a
+  mixed set over-constrains the table, gets ignored, and squeezes `ID` and `Priority` to min-content.
 - Uses the same `<style>` block and frame; use `utm_content=website-audit-report` in its brand links.
 - End with the single agency `.ctablock` (if not already on the Action Report page you link to) and the
   Print hint. The final pass makes this the **entry** file of the walk (sorts first; no Previous; Next →
