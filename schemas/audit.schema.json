@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audit run header (audit.json)",
+  "description": "The first file of every run. It names the site, its URL and the main goal the audit is judged against. The report builder rejects any field not listed here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["site", "url", "primary_goal"],
+  "properties": {
+    "site": {
+      "type": "string",
+      "pattern": "\\S",
+      "description": "Display name of the site or business."
+    },
+    "url": {
+      "type": "string",
+      "pattern": "\\S",
+      "description": "Address of the audited site, for example https://example.com."
+    },
+    "primary_goal": {
+      "type": "string",
+      "pattern": "\\S",
+      "description": "What the site is meant to achieve. Later findings are judged against it."
+    },
+    "tagline": {
+      "type": "string",
+      "description": "Optional short line shown under the site name. May be empty."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^([a-z0-9][a-z0-9-]*)?$",
+      "description": "Optional folder name part (audit-<slug>): lowercase letters, digits and hyphens. When empty or missing, the builder derives it from the URL."
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^([0-9]{4}-[0-9]{2}-[0-9]{2})?$",
+      "description": "Optional audit date as YYYY-MM-DD. When empty or missing, the builder uses today. It must also be a real calendar date, which a schema cannot check."
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["extended", "basic", ""],
+      "description": "extended means browser scans were available; basic means they were not. When empty or missing, the builder picks extended if any scan file exists."
+    },
+    "logo": {
+      "type": "string",
+      "description": "Optional file name of an image saved in the run folder. Leave it out if there is none."
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "verdict": "The offer is clear to insiders but the **hero** does not say who it is for or what changes.",
+  "rubric": [
+    {
+      "criterion": "Hero states the offer",
+      "result": "Fail",
+      "weight": 45
+    },
+    {
+      "criterion": "Audience is named",
+      "result": "Partial",
+      "weight": 25
+    },
+    {
+      "criterion": "Proof is near the claim",
+      "result": "Pass",
+      "weight": 30
+    }
+  ],
+  "findings": [
+    {
+      "key": "hero",
+      "title": "Hero headline is generic",
+      "issue": "The headline reads \"We build digital experiences\", which fits *any* agency and names no audience.",
+      "impact_text": "Visitors cannot tell in five seconds whether the site is for them.",
+      "fix": "Rewrite the headline around one outcome for one audience, then support it with a one-line subhead.",
+      "impact": 5,
+      "effort": 2,
+      "evidence": "Headline text on the home page, `h1` element."
+    },
+    {
+      "key": "proof-distance",
+      "title": "Proof sits far below the claims",
+      "issue": "Case-study numbers appear three screens below the first claim.",
+      "impact_text": "Claims are read before proof, so they land as marketing talk.",
+      "fix": "Move one strong result next to the hero claim and link to the full story at [the case studies](https://ananas-agency.com/work/).",
+      "impact": 3,
+      "effort": 2
+    },
+    {
+      "key": "voice-mix",
+      "title": "Voice shifts between pages",
+      "issue": "The home page speaks as \"we\" while service pages use the third person.",
+      "impact_text": "A mixed voice weakens trust.",
+      "fix": "Pick the first-person voice and apply it to the service pages.",
+      "impact": 2,
+      "effort": 3
+    }
+  ],
+  "strengths": [
+    "Plain language, little jargon",
+    "Testimonials name real clients"
+  ],
+  "notes": "The page `<title>` says \"Ananas Agency | Digital Studio\", which repeats the vague hero wording.",
+  "extra": [
+    {
+      "title": "Voice sample",
+      "body": "The team says \"we\" on the About page and \"Ananas\" in the footer."
+    }
+  ]
+}

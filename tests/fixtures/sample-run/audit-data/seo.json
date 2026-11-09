@@ -1,0 +1,52 @@
+{
+  "verdict": "Basics are in place; structure and titles leave traffic on the table.",
+  "rubric": [
+    {
+      "criterion": "Unique titles",
+      "result": "Partial",
+      "weight": 50
+    },
+    {
+      "criterion": "Headings are structured",
+      "result": "Fail",
+      "weight": 33
+    },
+    {
+      "criterion": "Sitemap present",
+      "result": "Pass",
+      "weight": 17
+    }
+  ],
+  "findings": [
+    {
+      "key": "title-tags",
+      "title": "Title tags are duplicated",
+      "issue": "Four pages share the title \"Ananas Agency\".",
+      "impact_text": "Search results look identical, which lowers clicks. It echoes the vague wording in [[hero]].",
+      "fix": "Write a unique title under 60 characters for each page, starting with the topic.",
+      "impact": 4,
+      "effort": 2
+    },
+    {
+      "key": "heading-order",
+      "title": "Heading levels skip",
+      "issue": "Several pages jump from `h1` to `h4`.",
+      "impact_text": "Skipped levels confuse screen readers and search engines.",
+      "fix": "Use the levels in order and style them in CSS instead.",
+      "impact": 2,
+      "effort": 2
+    },
+    {
+      "key": "schema",
+      "title": "No structured data",
+      "issue": "The site has no Organization or Service markup.",
+      "impact_text": "Search engines get less context about the business.",
+      "fix": "Add Organization markup first, then Service markup per offer.",
+      "impact": 3,
+      "effort": 4
+    }
+  ],
+  "strengths": [
+    "A sitemap is published and listed in robots.txt"
+  ]
+}

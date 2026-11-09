@@ -1,0 +1,25 @@
+{
+  "name": "website-audit-suite",
+  "displayName": "Website Audit Suite",
+  "version": "1.1.0",
+  "description": "Nine skills that audit a website's messaging, conversion, SEO, UX, design and security, then deliver a graded action report. By Ananas Agency.",
+  "author": {
+    "name": "Ananas Agency",
+    "url": "https://ananas-agency.com"
+  },
+  "homepage": "https://github.com/ananas-agency/Website-Audit-Suite",
+  "repository": "https://github.com/ananas-agency/Website-Audit-Suite",
+  "license": "MIT",
+  "keywords": ["website-audit", "seo", "cro", "ux", "accessibility", "design", "messaging"],
+  "skills": [
+    "./0 Site Snapshot/",
+    "./1 Goals Discovery/",
+    "./2 Messaging Clarity/",
+    "./3 Conversion CRO/",
+    "./4 SEO Content/",
+    "./5 UX Technical/",
+    "./6 Design Visual/",
+    "./7 Action Report/",
+    "./8 Security/"
+  ]
+}

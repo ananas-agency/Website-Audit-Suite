@@ -7,12 +7,10 @@ big enough, is text legible. Saves a full-page screenshot per width and prints a
 
 Engine: **Playwright** (bundles its own Chromium — no browser to install, works on Windows/macOS/Linux).
 
-Setup (one time):
-    pip install playwright
-    playwright install chromium
+Setup: run the setup check: python scripts/setup-check.py
 
 Usage:
-    python scripts/mobile-audit.py https://example.com/ [--out DIR] [--widths 320,390,414]
+    python scripts/mobile-audit.py <URL> [--out DIR] [--widths 320,390,414]
 
 If Playwright isn't installed, the UX skill falls back to marking these checks "not measured".
 Thresholds: fits = scroll width <= viewport (+2px); tap target min 44x44 CSS px; legible text min 12px.
@@ -21,7 +19,7 @@ import json, os, sys
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
-    print(json.dumps({"error": "Playwright not installed — run: pip install playwright && playwright install chromium"})); sys.exit(3)
+    print(json.dumps({"error": "Playwright not installed. Run the setup check: python scripts/setup-check.py"})); sys.exit(3)
 
 TAP_MIN = 44
 TEXT_MIN = 12
@@ -117,7 +115,9 @@ def summarize_md(out):
     return "\n".join(lines)
 
 def main():
-    url = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "https://example.com/"
+    if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
+        print("usage: mobile-audit.py <URL> [--out DIR] [--widths 320,390,414]"); return 2
+    url = sys.argv[1]
     outdir = "."; widths = [320, 390, 414]
     for i, a in enumerate(sys.argv):
         if a == "--out" and i+1 < len(sys.argv): outdir = sys.argv[i+1]

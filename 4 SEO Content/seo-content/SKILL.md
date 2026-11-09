@@ -20,7 +20,7 @@ description: >
 
 Judge how well the website can be **found in search and understood once found** (by both search engines
 and the people typing queries), and turn every weakness into a prioritised, fixable **Finding**. Deliver
-a graded SEO scorecard (0–100 → letter grade) and a list of `SEO-` findings in **Issue · Impact · Fix**
+a graded SEO scorecard (0–100 → letter grade) and a list of findings in **Issue · Impact · Fix**
 format, each rated on Impact and Effort so the user knows what to fix first.
 
 This is **URL-first**: read the live pages and quote what's actually in them: the `<title>`, the meta
@@ -51,7 +51,8 @@ short:
   to add).
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
-Give each finding an ID: `SEO-01`, `SEO-02`, … in impact order.
+Give each finding a short `key` (for example `missing-meta`; keys must be unique across all the files, and each skill has its own example). The builder numbers the findings, and you refer
+to another finding as `[[key]]`, never by a typed ID.
 
 ## Conversation flow
 
@@ -83,10 +84,14 @@ Apply the fast diagnostic tests before the full rubric. Details and examples in
 
 ### Step 2b: Site-wide quick SEO sweep (the secondary pages)
 
+The suite's scripts live in `${CLAUDE_PLUGIN_ROOT}/scripts/`. Wherever these instructions or the rules
+files say `python scripts/<name>.py`, run `python "${CLAUDE_PLUGIN_ROOT}/scripts/<name>.py"` (use
+`python3` where `python` isn't available).
+
 Don't hand-audit every page; **sweep them**. Run the bundled tool (pure Python, no browser needed):
 
 ```
-python scripts/seo-sweep.py <homepage-URL> --per-type 5 --out <folder>
+python "${CLAUDE_PLUGIN_ROOT}/scripts/seo-sweep.py" <homepage-URL> --per-type 5 --out "audit-<slug>"
 ```
 
 It discovers pages from the homepage nav and the sitemap, classifies them (services / products /
@@ -98,9 +103,10 @@ type, e.g. Organization/Product/Article/FAQPage), including the homepage's schem
 whether the H1 and title share keywords. Full detail and thresholds:
 [references/rules-seo.md](references/rules-seo.md), "Site-wide quick SEO sweep".
 
-Turn the sweep into **a few site-wide `SEO-` findings** (not one per page): e.g. "9 of 15 pages have
+Turn the sweep into **a few site-wide findings** (not one per page): e.g. "9 of 15 pages have
 titles under 30 chars", "the homepage title is duplicated on N pages", "2 pages carry no canonical",
-"the homepage Product schema is missing required fields". Put the full table in the deliverable as reference.
+"the homepage Product schema is missing required fields". The builder renders the sweep table from
+`seo-sweep.json`, so don't copy it into the JSON.
 If the tool can't run (no Python), fall back to spot-checking a couple of pages by hand, and say the sweep
 was not run.
 
@@ -122,19 +128,19 @@ to a **letter grade** (A–F, bands in [report-format.md](../../report-format.md
 the grade is explainable. State plainly that the grade is an **expert judgement of on-page SEO**, not a
 ranking report; it doesn't measure where the site actually ranks.
 
-### Step 5: Deliver the files
+### Step 5: Build the report page and hand off
 
-Generate `seo.md` and a styled, self-contained `seo.html` and share them. Format, the finding card
-component, and the scorecard layout: see the reference, "Output file format". End the HTML with the
-Print hint; **no `pagenav`** mid-session.
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/seo.json` ([audit-data-format.md](../../audit-data-format.md), "Dimension files").
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page seo` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `seo.html` and `seo.md` from the run folder.
 
-### Step 6: Add to the Website Audit Report & hand off
-
-Record the **SEO & Content** section (grade + criteria + findings) into the internal running **Website
-Audit Report** (do not create/show a report file now; that's the Action Report skill's job at the end).
-Format and section order: [report-format.md](../../report-format.md). Tell the user the next skill is any of
-**Messaging & Clarity**, **Conversion (CRO)**, or **UX & Technical**, and that **Action Report** ties them
-together at the end.
+Tell the user the next skill is any of **Messaging & Clarity**, **Conversion (CRO)**, or
+**UX & Technical**, and that **Action Report** ties them together at the end.
 
 ## Critical rules
 

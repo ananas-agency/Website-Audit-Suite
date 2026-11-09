@@ -1,15 +1,65 @@
-# Internal research / working notes — not part of the published suite
+# --- Kept locally by the maintainers, not published ---
+# Design notes, plans and handoff notes
+docs/superpowers/
+# Before/after measurement tools and their tests
+dev/
+# Plan-execution workspaces
+.superpowers/
+# Research and working notes
 misc/
 
-# Python caches (from the bundled tools & scripts)
-__pycache__/
-*.pyc
-
-# website and test runs
+# --- Audit output and local runs ---
+# A run writes its files into audit-<slug>/ (see audit-data-format.md). The leading slash keeps this to the
+# repo root, so the tracked tests/fixtures/sample-run/audit-data/ isn't caught.
+/audit-*/
 website/
 test-runs/
-misc/
+# What a scan leaves in the repo root when it runs without --out
+/perf-a11y.json
+/mobile-metrics.json
+/design-tokens.json
+/design-pages.json
+/seo-sweep.json
+/tracking.json
+/interaction.json
+/security-scan.json
+/security.md
+/assets/
+/*.png
 
-# OS / editor cruft
+# --- Personal Claude Code settings ---
+.claude/settings.local.json
+CLAUDE.local.md
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.python-version
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# --- Logs and temporary files ---
+*.log
+*.tmp
+
+# --- OS and editor files ---
 .DS_Store
 Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

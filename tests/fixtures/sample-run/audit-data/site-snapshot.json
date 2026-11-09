@@ -1,0 +1,39 @@
+{
+  "description": "A small agency site that sells web design and marketing to local businesses.",
+  "sections": [
+    {
+      "title": "Site & business",
+      "rows": [
+        [
+          "Business",
+          "Digital agency"
+        ],
+        [
+          "Audience",
+          "Small-business owners"
+        ],
+        [
+          "Offer",
+          "Web design and marketing"
+        ]
+      ]
+    },
+    {
+      "title": "Platform & signals",
+      "rows": [
+        [
+          "Platform / CMS",
+          "TBD"
+        ],
+        [
+          "Analytics",
+          "Google Analytics 4"
+        ],
+        [
+          "Language",
+          "English"
+        ]
+      ]
+    }
+  ]
+}

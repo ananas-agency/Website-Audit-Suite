@@ -8,7 +8,7 @@ Renders the page (mobile-emulated, as Google measures) and captures — all loca
  3. SECURITY — HTTPS, TLS version, HSTS, key response headers, the redirect chain, and mixed content.
 
 Engine: **Playwright** (bundled Chromium — no browser to install; Windows/macOS/Linux).
-Setup:  pip install playwright  &&  playwright install chromium
+Setup:  run the setup check: python scripts/setup-check.py
 Usage:  python scripts/perf-a11y-scan.py <URL> [--out DIR]
 
 Honesty: LAB measurement (one emulated run). Lab CWV + a Total-Blocking-Time INP proxy are measured here;
@@ -19,7 +19,7 @@ import json, os, sys
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
-    print(json.dumps({"error": "Playwright not installed — run: pip install playwright && playwright install chromium"})); sys.exit(3)
+    print(json.dumps({"error": "Playwright not installed. Run the setup check: python scripts/setup-check.py"})); sys.exit(3)
 
 AXE_URLS = ["https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.2/axe.min.js",
             "https://cdn.jsdelivr.net/npm/axe-core@4.10.2/axe.min.js"]
@@ -117,7 +117,9 @@ def security_scan(resp, page):
     return sec
 
 def main():
-    url = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "https://example.com/"
+    if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
+        print("usage: perf-a11y-scan.py <URL> [--out DIR]"); return 2
+    url = sys.argv[1]
     outdir = "."
     for i, a in enumerate(sys.argv):
         if a == "--out" and i+1 < len(sys.argv): outdir = sys.argv[i+1]

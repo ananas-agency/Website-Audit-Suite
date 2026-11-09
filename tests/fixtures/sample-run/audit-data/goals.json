@@ -1,0 +1,31 @@
+{
+  "framing": "The owner wants more booked calls and says the site should *show* the work.",
+  "brief": [
+    [
+      "Primary goal",
+      "Book discovery calls"
+    ],
+    [
+      "Audience",
+      "Small-business owners"
+    ]
+  ],
+  "stated_vs_observed": [
+    {
+      "said": "We want more calls",
+      "observed": "The only contact path is a nine-field form",
+      "gap": "The path is longer than the goal needs. See [[long-form]]."
+    }
+  ],
+  "tensions": [
+    "Showing the work competes with a short, clear pitch"
+  ],
+  "advice": [
+    {
+      "headline": "Lead with one outcome",
+      "detail": "Rewrite the hero, then move proof beside it.",
+      "analysis": "This fixes [[hero]] and shortens the path to the call."
+    }
+  ],
+  "shapes": "Narrow the offer first, then widen it once calls are steady."
+}

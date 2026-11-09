@@ -1,0 +1,45 @@
+{
+  "verdict": "There is one clear call to action, but the path to it is long.",
+  "rubric": [
+    {
+      "criterion": "Primary CTA above the fold",
+      "result": "Pass",
+      "weight": 50
+    },
+    {
+      "criterion": "Form is short",
+      "result": "Partial",
+      "weight": 33
+    },
+    {
+      "criterion": "Contact options are visible",
+      "result": "Fail",
+      "weight": 17
+    }
+  ],
+  "findings": [
+    {
+      "key": "cta-clarity",
+      "title": "Buttons use vague labels",
+      "issue": "Three buttons say \"Learn more\" and none says what happens next.",
+      "impact_text": "Visitors hesitate when a button does not promise an outcome.",
+      "fix": "Rename the primary button to \"Book a discovery call\" and keep the label consistent.",
+      "impact": 4,
+      "effort": 1,
+      "measured": true,
+      "evidence": "Click-through on the primary button was measured at 1.2% in the sample data."
+    },
+    {
+      "key": "long-form",
+      "title": "Contact form asks for nine fields",
+      "issue": "The form asks for budget, timeline and phone before a name.",
+      "impact_text": "Every extra field costs completions.",
+      "fix": "Cut the form to name, email and one open question.",
+      "impact": 3,
+      "effort": 2
+    }
+  ],
+  "strengths": [
+    "The primary action is visible on load"
+  ]
+}

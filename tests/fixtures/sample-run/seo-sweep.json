@@ -1,0 +1,16 @@
+{
+  "base": "https://ananas-agency.com/",
+  "discovered": 0,
+  "swept": 0,
+  "per_type": 5,
+  "by_type": {},
+  "home_schema": {
+    "blocks": 1,
+    "invalid_json": 0,
+    "types": [
+      "Organization"
+    ],
+    "issues": []
+  },
+  "rows": []
+}

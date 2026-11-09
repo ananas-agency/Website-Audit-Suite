@@ -1,0 +1,45 @@
+{
+  "verdict": "Pages load quickly on desktop but the mobile experience needs work.",
+  "rubric": [
+    {
+      "criterion": "Mobile layout holds at 320px",
+      "result": "Fail",
+      "weight": 35
+    },
+    {
+      "criterion": "Core pages load fast",
+      "result": "Pass",
+      "weight": 35
+    },
+    {
+      "criterion": "Keyboard focus is visible",
+      "result": "Partial",
+      "weight": 30
+    }
+  ],
+  "findings": [
+    {
+      "key": "mobile-overflow",
+      "title": "Horizontal scroll at 320px",
+      "issue": "The services table is wider than the screen on small phones.",
+      "impact_text": "Mobile visitors must scroll sideways to read prices.",
+      "fix": "Let the table scroll inside its own container or stack its rows.",
+      "impact": 4,
+      "effort": 2,
+      "measured": true
+    },
+    {
+      "key": "focus-ring",
+      "title": "Focus outline is removed",
+      "issue": "The CSS sets `outline: none` on links and buttons.",
+      "impact_text": "Keyboard users lose track of where they are.",
+      "fix": "Restore a visible focus style on all interactive elements.",
+      "impact": 3,
+      "effort": 1
+    }
+  ],
+  "strengths": [
+    "Fast server response",
+    "Images are compressed"
+  ]
+}

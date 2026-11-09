@@ -1,0 +1,41 @@
+{
+  "url": "https://ananas-agency.com/",
+  "analytics": {
+    "ga4": [
+      "G-6TD7EEJBBS"
+    ],
+    "gtm": [],
+    "hasDataLayer": true,
+    "gtag": true,
+    "fbq": false
+  },
+  "detected": {
+    "Google gtag (GA4)": 1,
+    "Microsoft Clarity": 5,
+    "Google Analytics": 1
+  },
+  "firedOnLoadByCategory": {
+    "analytics": 2,
+    "marketing": 0,
+    "session": 5,
+    "tag-manager": 0,
+    "consent": 0
+  },
+  "cmp": [],
+  "consentMode": false,
+  "conversionSignals": {
+    "dataLayerEvents": [],
+    "fbq": false
+  },
+  "cookies": {
+    "total": 2,
+    "analytics": 2,
+    "marketing": 0,
+    "thirdParty": 0,
+    "names": [
+      "_ga_6TD7EEJBBS",
+      "_ga"
+    ]
+  },
+  "consentRisk": false
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audit dimension (messaging, conversion, seo, ux-technical, design, security)",
+  "description": "One rated area of the audit: a verdict, a weighted rubric, findings and strengths. The same shape is used by messaging.json, conversion.json, seo.json, ux-technical.json, design.json and security.json. Two rules a schema cannot express: rubric weights must add up to 100, and every finding key must be unique across all dimension files.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "rubric", "findings", "strengths"],
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "pattern": "\\S",
+      "description": "One or two sentences summing up the area."
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 1,
+      "description": "One row per criterion. Weights are whole numbers and must sum to 100.",
+      "items": {"$ref": "#/$defs/rubricRow"}
+    },
+    "findings": {
+      "type": "array",
+      "description": "Problems found. May be an empty list.",
+      "items": {"$ref": "#/$defs/finding"}
+    },
+    "strengths": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Short statements of what already works.",
+      "items": {"type": "string", "pattern": "\\S"}
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional. What could not be assessed and why. May be empty."
+    },
+    "extra": {
+      "type": "array",
+      "description": "Optional extra text blocks shown on the page.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "body"],
+        "properties": {
+          "title": {"type": "string", "pattern": "\\S", "description": "Block heading."},
+          "body": {"type": "string", "pattern": "\\S", "description": "Block text."}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rubricRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["criterion", "result", "weight"],
+      "properties": {
+        "criterion": {"type": "string", "pattern": "\\S", "description": "Name of the criterion."},
+        "result": {"type": "string", "enum": ["Pass", "Partial", "Fail"], "description": "How the site fares on this criterion."},
+        "weight": {"type": "integer", "minimum": 1, "description": "Whole-number weight; all weights in the file sum to 100."}
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "title", "issue", "impact_text", "fix", "impact", "effort"],
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "description": "Unique id in lowercase letters, digits and hyphens. Other text refers to it as [[key]]. Never type a report ID such as MSG-01; the builder assigns those."
+        },
+        "title": {"type": "string", "pattern": "\\S", "description": "Short name of the problem."},
+        "issue": {"type": "string", "pattern": "\\S", "description": "What is wrong, in plain words."},
+        "impact_text": {"type": "string", "pattern": "\\S", "description": "Why it matters to the goal of the site."},
+        "fix": {"type": "string", "pattern": "\\S", "description": "What to change."},
+        "impact": {"type": "integer", "minimum": 1, "maximum": 5, "description": "Business impact from 1 (low) to 5 (high). 3-5 counts as high."},
+        "effort": {"type": "integer", "minimum": 1, "maximum": 5, "description": "Work needed from 1 (little) to 5 (a lot). 1-2 counts as low."},
+        "evidence": {"type": "string", "description": "Optional. What was seen, such as a quote or a measured value. May be empty."},
+        "measured": {"type": "boolean", "description": "Optional, default false. True only when a scan file in the run folder backs the finding; the builder rejects it otherwise."},
+        "fix_brief": {"type": "string", "description": "Optional shorter version of fix. When empty or missing, the builder shortens fix itself."}
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ Renders pages and gives the design/UX read the inputs a static crawl can't:
     (a "wall of text" signal). This is what lets the audit judge template pages, not just the homepage.
 
 Engine: Playwright (bundled Chromium; no browser to install; Windows/macOS/Linux).
-Setup:  pip install playwright  &&  playwright install chromium
+Setup:  run the setup check: python scripts/setup-check.py
 Usage:  python scripts/design-scan.py <homepage-URL> [--pages url1,url2,...] [--out DIR]
 """
 import json, os, re, sys
@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
-    print(json.dumps({"error": "Playwright not installed. Run: pip install playwright && playwright install chromium"})); sys.exit(3)
+    print(json.dumps({"error": "Playwright not installed. Run the setup check: python scripts/setup-check.py"})); sys.exit(3)
 
 TOKENS_JS = r"""() => {
   const els = Array.from(document.querySelectorAll('body *'));
@@ -67,7 +67,7 @@ def slug(u):
     return s[:24] or "page"
 
 def main():
-    if len(sys.argv) < 2 or sys.argv[1].startswith("--"):
+    if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
         print("usage: design-scan.py <homepage-URL> [--pages a,b,c] [--out DIR]"); return 2
     url = sys.argv[1]; outdir = "."; extra = []
     for i, a in enumerate(sys.argv):

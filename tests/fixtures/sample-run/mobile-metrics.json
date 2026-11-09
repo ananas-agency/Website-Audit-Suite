@@ -1,0 +1,138 @@
+{
+  "url": "https://ananas-agency.com/",
+  "browser": "playwright-chromium",
+  "widths": {
+    "320": {
+      "vw": 362,
+      "vh": 955,
+      "scrollW": 362,
+      "overflow": 0,
+      "fits": true,
+      "vpMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "overflowCount": 0,
+      "overflowing": [],
+      "clippedWideCount": 0,
+      "clippedWide": [],
+      "oversizedImgCount": 0,
+      "oversizedImgs": [],
+      "smallTapCount": 4,
+      "smallTaps": [
+        {
+          "tag": "a",
+          "w": 189,
+          "h": 19,
+          "text": "juicy@ananas-agency.com"
+        },
+        {
+          "tag": "a",
+          "w": 108,
+          "h": 19,
+          "text": "+40736714857"
+        },
+        {
+          "tag": "a",
+          "w": 72,
+          "h": 19,
+          "text": "Whatsapp"
+        },
+        {
+          "tag": "button",
+          "w": 280,
+          "h": 42,
+          "text": "Send"
+        }
+      ],
+      "smallTextCount": 0,
+      "smallText": [],
+      "screenshot": "mobile-320.png"
+    },
+    "390": {
+      "vw": 390,
+      "vh": 844,
+      "scrollW": 390,
+      "overflow": 0,
+      "fits": true,
+      "vpMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "overflowCount": 0,
+      "overflowing": [],
+      "clippedWideCount": 0,
+      "clippedWide": [],
+      "oversizedImgCount": 0,
+      "oversizedImgs": [],
+      "smallTapCount": 4,
+      "smallTaps": [
+        {
+          "tag": "a",
+          "w": 189,
+          "h": 19,
+          "text": "juicy@ananas-agency.com"
+        },
+        {
+          "tag": "a",
+          "w": 108,
+          "h": 19,
+          "text": "+40736714857"
+        },
+        {
+          "tag": "a",
+          "w": 72,
+          "h": 19,
+          "text": "Whatsapp"
+        },
+        {
+          "tag": "button",
+          "w": 350,
+          "h": 42,
+          "text": "Send"
+        }
+      ],
+      "smallTextCount": 0,
+      "smallText": [],
+      "screenshot": "mobile-390.png"
+    },
+    "414": {
+      "vw": 414,
+      "vh": 844,
+      "scrollW": 414,
+      "overflow": 0,
+      "fits": true,
+      "vpMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "overflowCount": 0,
+      "overflowing": [],
+      "clippedWideCount": 0,
+      "clippedWide": [],
+      "oversizedImgCount": 0,
+      "oversizedImgs": [],
+      "smallTapCount": 4,
+      "smallTaps": [
+        {
+          "tag": "a",
+          "w": 189,
+          "h": 19,
+          "text": "juicy@ananas-agency.com"
+        },
+        {
+          "tag": "a",
+          "w": 108,
+          "h": 19,
+          "text": "+40736714857"
+        },
+        {
+          "tag": "a",
+          "w": 72,
+          "h": 19,
+          "text": "Whatsapp"
+        },
+        {
+          "tag": "button",
+          "w": 374,
+          "h": 42,
+          "text": "Send"
+        }
+      ],
+      "smallTextCount": 0,
+      "smallText": [],
+      "screenshot": "mobile-414.png"
+    }
+  }
+}

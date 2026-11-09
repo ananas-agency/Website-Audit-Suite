@@ -1,0 +1,43 @@
+{
+  "verdict": "A tidy visual base with inconsistent spacing and too many type sizes.",
+  "rubric": [
+    {
+      "criterion": "Type scale is consistent",
+      "result": "Partial",
+      "weight": 30
+    },
+    {
+      "criterion": "Colour contrast meets AA",
+      "result": "Pass",
+      "weight": 42
+    },
+    {
+      "criterion": "Spacing follows a scale",
+      "result": "Fail",
+      "weight": 28
+    }
+  ],
+  "findings": [
+    {
+      "key": "type-sizes",
+      "title": "Eleven font sizes in use",
+      "issue": "The design tokens list eleven distinct sizes, several only 1px apart.",
+      "impact_text": "Near-identical sizes read as mistakes.",
+      "fix": "Reduce to a six-step scale and map every style to it.",
+      "impact": 3,
+      "effort": 3
+    },
+    {
+      "key": "spacing-scale",
+      "title": "Spacing values are ad hoc",
+      "issue": "Margins range over 23 values with no pattern.",
+      "impact_text": "Rhythm feels uneven from section to section.",
+      "fix": "Adopt an 8px scale and replace one-off values.",
+      "impact": 2,
+      "effort": 3
+    }
+  ],
+  "strengths": [
+    "Contrast passes AA on body text"
+  ]
+}

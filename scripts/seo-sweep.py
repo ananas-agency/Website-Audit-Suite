@@ -220,7 +220,7 @@ def flags(row):
 
 
 def main():
-    if len(sys.argv) < 2 or sys.argv[1].startswith("--"):
+    if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
         print("usage: seo-sweep.py <homepage-url> [--per-type N] [--out DIR]"); return 2
     base = sys.argv[1].rstrip("/") + "/"
     per_type, outdir = 5, "."

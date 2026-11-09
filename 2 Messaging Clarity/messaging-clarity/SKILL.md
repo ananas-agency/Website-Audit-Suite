@@ -18,7 +18,7 @@ description: >
 
 Judge how clearly the website communicates **what it offers, who it's for, and why to choose it**, and
 turn every weakness into a prioritised, fixable **Finding**. Deliver a graded messaging scorecard
-(0–100 → letter grade) and a list of `MSG-` findings in **Issue · Impact · Fix** format, each rated on
+(0–100 → letter grade) and a list of findings in **Issue · Impact · Fix** format, each rated on
 Impact and Effort so the user knows what to fix first.
 
 This is **URL-first**: read the live pages and quote what's actually on them. Written for **business
@@ -43,7 +43,8 @@ short:
 - **Fix:** the concrete rewrite or change, ideally with an example.
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
-Give each finding an ID: `MSG-01`, `MSG-02`, … in impact order.
+Give each finding a short `key` (for example `vague-headline`; keys must be unique across all the files, and each skill has its own example). The builder numbers the findings, and you refer
+to another finding as `[[key]]`, never by a typed ID.
 
 ## Conversation flow
 
@@ -77,7 +78,7 @@ the hero line. Compare them:
 
 You already have most of this data if the SEO sweep (Skill 4, `seo-sweep.py`) and the interaction scan
 (Skill 3, `interaction-scan.py`) ran; reuse their per-page H1s and CTAs. Turn a systemic weakness into
-one cross-page `MSG-` finding (e.g. "every interior page leads with a product-label H1, not a benefit"),
+one cross-page finding (e.g. "every interior page leads with a product-label H1, not a benefit"),
 not one finding per page. This feeds the **Cross-page consistency** rubric criterion.
 
 ### Step 3: Work the rubric and generate findings
@@ -96,19 +97,19 @@ you're at Y"), then apply the weights, and total to a **0–100 score**; map
 to a **letter grade** (A–F, bands in [report-format.md](../../report-format.md)). Show the criteria table so
 the grade is explainable. State plainly that the grade is an **expert judgement**, not a lab measurement.
 
-### Step 5: Deliver the files
+### Step 5: Build the report page and hand off
 
-Generate `messaging.md` and a styled, self-contained `messaging.html` and share them. Format, the finding
-card component, and the scorecard layout. See the reference, "Output file format". End the HTML with the
-Print hint; **no `pagenav`** mid-session.
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/messaging.json` ([audit-data-format.md](../../audit-data-format.md), "Dimension files").
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page messaging` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `messaging.html` and `messaging.md` from the run folder.
 
-### Step 6: Add to the Website Audit Report & hand off
-
-Record the **Messaging & Clarity** section (grade + criteria + findings) into the internal running
-**Website Audit Report** (do not create/show a report file now; that's the Action Report skill's job at
-the end). Format and section order: [report-format.md](../../report-format.md). Tell the user the next skill
-is any of **Conversion (CRO)**, **SEO & Content**, or **UX & Technical**, and that **Action Report** ties
-them together at the end.
+Tell the user the next skill is any of **Conversion (CRO)**, **SEO & Content**, or **UX & Technical**, and
+that **Action Report** ties them together at the end.
 
 ## Critical rules
 

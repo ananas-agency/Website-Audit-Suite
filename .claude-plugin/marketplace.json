@@ -1,0 +1,14 @@
+{
+  "name": "ananas-agency",
+  "description": "Claude Code plugins by Ananas Agency.",
+  "owner": {
+    "name": "Ananas Agency"
+  },
+  "plugins": [
+    {
+      "name": "website-audit-suite",
+      "description": "Nine skills that audit a website's messaging, conversion, SEO, UX, design and security, then deliver a graded action report.",
+      "source": "./"
+    }
+  ]
+}

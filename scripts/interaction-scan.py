@@ -9,7 +9,7 @@ the conversion actually *works*:
    would BLOCK an empty submit (client-side validation), via checkValidity() — **never submitting**.
 
 Engine: **Playwright** (bundled Chromium — no browser to install; Windows/macOS/Linux).
-Setup:  pip install playwright  &&  playwright install chromium
+Setup:  run the setup check: python scripts/setup-check.py
 Usage:  python scripts/interaction-scan.py <homepage-URL> [--pages url1,url2,...] [--out DIR]
 
 Ethics: it may follow a navigation CTA (that's just browsing) but it **never submits a form** —
@@ -20,7 +20,7 @@ from urllib.parse import urljoin, urlparse
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
-    print(json.dumps({"error": "Playwright not installed — run: pip install playwright && playwright install chromium"})); sys.exit(3)
+    print(json.dumps({"error": "Playwright not installed. Run the setup check: python scripts/setup-check.py"})); sys.exit(3)
 
 AUDIT_JS = r"""() => {
  const vis = el => { const s=getComputedStyle(el); if(s.display==='none'||s.visibility==='hidden')return false;
@@ -78,7 +78,7 @@ def check_links(reqctx, links, base_host, limit=40):
     return checked, broken
 
 def main():
-    if len(sys.argv) < 2 or sys.argv[1].startswith("--"):
+    if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
         print("usage: interaction-scan.py <homepage-URL> [--pages a,b,c] [--out DIR]"); return 2
     base = sys.argv[1].rstrip("/") + "/"
     outdir = "."; pages = None

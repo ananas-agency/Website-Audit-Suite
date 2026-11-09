@@ -1,0 +1,37 @@
+{
+  "strengths": [
+    "Plain language",
+    "A clear primary action"
+  ],
+  "benchmarks": [
+    {
+      "standard": "Core Web Vitals pass on mobile",
+      "status": "gap",
+      "note": "Overflow at 320px is tracked in [[mobile-overflow]].",
+      "keys": [
+        "mobile-overflow"
+      ]
+    },
+    {
+      "standard": "Unique page titles",
+      "status": "gap",
+      "note": "Four pages share a title.",
+      "keys": [
+        "title-tags"
+      ]
+    },
+    {
+      "standard": "HTTPS everywhere",
+      "status": "met",
+      "note": "All pages load over HTTPS."
+    },
+    {
+      "standard": "Cookie banner",
+      "status": "na",
+      "note": "No tracking cookies were set before consent."
+    }
+  ],
+  "rating_notes": [
+    "Rated on the scans in this run only"
+  ]
+}

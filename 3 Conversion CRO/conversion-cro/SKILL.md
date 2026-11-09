@@ -18,7 +18,7 @@ description: >
 
 Judge how well the website **removes friction and moves visitors toward its one primary conversion**, and
 turn every weakness into a prioritised, fixable **Finding**. Deliver a graded conversion scorecard
-(0–100 → letter grade) and a list of `CRO-` findings in **Issue · Impact · Fix** format, each rated on
+(0–100 → letter grade) and a list of findings in **Issue · Impact · Fix** format, each rated on
 Impact and Effort so the user knows what to fix first.
 
 **CRO** means Conversion Rate Optimisation: making it easier and more compelling for a visitor to take
@@ -50,7 +50,8 @@ short:
 - **Fix:** the concrete change or rewrite, ideally with an example.
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
-Give each finding an ID: `CRO-01`, `CRO-02`, … in impact order.
+Give each finding a short `key` (for example `long-form`; keys must be unique across all the files, and each skill has its own example). The builder numbers the findings, and you refer
+to another finding as `[[key]]`, never by a typed ID.
 
 ## Conversation flow
 
@@ -77,11 +78,17 @@ Apply the fast diagnostic tests before the full rubric; details and examples in
 
 ### Step 2b: Measure measurement-readiness (can they even track the outcome?)
 
+The suite's scripts live in `${CLAUDE_PLUGIN_ROOT}/scripts/`. Wherever these instructions or the rules
+files say `python scripts/<name>.py`, run `python "${CLAUDE_PLUGIN_ROOT}/scripts/<name>.py"` (use
+`python3` where `python` isn't available).
+Before the first scan, run the setup check (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`) if it
+hasn't run in this session, and follow its `MODE:` line as Site Snapshot describes.
+
 The whole audit tells the user to "improve the conversion", so **check they can measure it.** If a
 headless browser is available, run the bundled tool:
 
 ```
-python scripts/tracking-scan.py <URL> --out <folder>
+python "${CLAUDE_PLUGIN_ROOT}/scripts/tracking-scan.py" <URL> --out "audit-<slug>"
 ```
 
 It renders the page on a fresh load and reports: the **analytics stack** (GA4 / GTM / measurement IDs),
@@ -90,7 +97,7 @@ or just page views, the **Consent Management Platform** and whether **trackers f
 (a GDPR risk) with **Google Consent Mode** present or not, and the cookies set. Full method:
 [references/rules-conversion.md](references/rules-conversion.md), "Measurement-readiness (measured)".
 
-Turn gaps into `CRO-` findings; the highest-value one is usually *"analytics is installed but there's no
+Turn gaps into findings; the highest-value one is usually *"analytics is installed but there's no
 conversion tracking, so the primary goal can't actually be measured"* (which undercuts the entire
 improvement plan), plus any *"trackers fire before consent"* privacy issue. If the tool can't run, say so
 and check the analytics tags by hand from the markup.
@@ -112,19 +119,19 @@ to a **letter grade** (A–F, bands in [report-format.md](../../report-format.md
 the grade is explainable. State plainly that the grade is an **expert judgement**, not a lab measurement,
 and that real conversion behaviour needs the user's own analytics (see the honesty rule below).
 
-### Step 5: Deliver the files
+### Step 5: Build the report page and hand off
 
-Generate `conversion.md` and a styled, self-contained `conversion.html` and share them. Format, the finding
-card component, and the scorecard layout. See the reference, "Output file format". End the HTML with the
-Print hint; **no `pagenav`** mid-session.
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/conversion.json` ([audit-data-format.md](../../audit-data-format.md), "Dimension files").
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page conversion` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `conversion.html` and `conversion.md` from the run folder.
 
-### Step 6: Add to the Website Audit Report & hand off
-
-Record the **Conversion (CRO)** section (grade + criteria + findings) into the internal running **Website
-Audit Report** (do not create/show a report file now; that's the Action Report skill's job at the end).
-Format and section order: [report-format.md](../../report-format.md). Tell the user the remaining skills are
-any of **Messaging & Clarity**, **SEO & Content**, or **UX & Technical**, and that **Action Report** ties
-them together at the end.
+Tell the user the remaining skills are any of **Messaging & Clarity**, **SEO & Content**, or
+**UX & Technical**, and that **Action Report** ties them together at the end.
 
 ## Critical rules
 

@@ -1,0 +1,100 @@
+{
+  "url": "https://ananas-agency.com/",
+  "tokens": {
+    "distinctTextColors": 4,
+    "topTextColors": [
+      [
+        "rgb(255, 255, 255)",
+        29
+      ],
+      [
+        "rgb(224, 224, 224)",
+        27
+      ],
+      [
+        "rgb(247, 236, 31)",
+        24
+      ],
+      [
+        "rgb(0, 0, 0)",
+        1
+      ]
+    ],
+    "distinctBackgrounds": 4,
+    "topBackgrounds": [
+      [
+        "rgb(0, 0, 0)",
+        8
+      ],
+      [
+        "rgb(255, 255, 255)",
+        3
+      ],
+      [
+        "rgba(97, 206, 112, 0)",
+        1
+      ],
+      [
+        "rgb(247, 236, 31)",
+        1
+      ]
+    ],
+    "fontFamilies": [
+      [
+        "Roboto",
+        54
+      ],
+      [
+        "Ananas-font",
+        26
+      ],
+      [
+        "Poppins",
+        1
+      ]
+    ],
+    "distinctFontSizes": 6,
+    "topFontSizes": [
+      [
+        "32px",
+        34
+      ],
+      [
+        "16px",
+        26
+      ],
+      [
+        "28px",
+        9
+      ],
+      [
+        "48px",
+        6
+      ],
+      [
+        "19px",
+        5
+      ],
+      [
+        "64px",
+        1
+      ]
+    ],
+    "fontWeights": [
+      "400",
+      "500",
+      "700"
+    ],
+    "distinctButtonStyles": 4,
+    "buttonStyleKeys": [
+      "rgba(0, 0, 0, 0) | rgb(255, 255, 255) | 0px | 0px none | 0px",
+      "rgba(97, 206, 112, 0) | rgb(247, 236, 31) | 3px | 0px none | 43.6719px 16.375px 21.8281px",
+      "rgba(0, 0, 0, 0) | rgb(247, 236, 31) | 0px | 0px none | 0px",
+      "rgb(247, 236, 31) | rgb(0, 0, 0) | 3px | 1px solid | 8px 16px"
+    ]
+  },
+  "screenshots": {
+    "desktop": "design-desktop.png",
+    "mobile": "design-mobile.png"
+  }
+}

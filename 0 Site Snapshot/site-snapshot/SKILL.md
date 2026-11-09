@@ -116,44 +116,54 @@ landing page for a campaign). Record it so the analysis skills respect it.
 ### Step 4: Confirm & deliver
 
 Summarise the snapshot back and ask for a final confirm. Mark anything unknown as **TBD** rather than
-guessing. Then deliver the files.
+guessing.
 
 ### Step 5: Hand off (and note the run layer)
 
-Tell the user the snapshot is ready. The recommended next step is the **Goals & Discovery** interview. It
+Run the setup check first (below), then build the page (see "Build the report page"), then tell the user the
+snapshot is ready. The recommended next step is the **Goals & Discovery** interview. It
 captures how they feel about the site and what they want it to achieve, and it runs *while* the site is
 being read/measured (it's paced by the owner answering, so in the Extended layer you launch the background
 scans first and interview during them). After that, any of the five analyses (**Messaging & Clarity**,
 **Conversion**, **SEO**, **UX & Technical**, **Design & Visual**) can run; they're independent. From here
 on, the user pastes this snapshot (and the Goals & Discovery brief) whenever a later skill asks about the site.
 
-Also tell them which **layer** this audit will run in (both are free; see
-[report-format.md](../../report-format.md), "Basic & Extended layers"):
-- **Extended:** the measured tools can run here (you can execute `python`/Playwright), so the audit will
-  include real Core Web Vitals, accessibility, mobile, design-token and tracking measurements.
-- **Basic:** the tools can't run in this environment (e.g. the Claude web/desktop app), so those checks
-  will be reported as *"not measured: available with the Extended layer"* and the audit is Claude's
-  read-and-reason review. Everything else is identical.
-Quietly test whether a tool can run (or infer from the environment) and say which mode they're getting.
+Tell them which **layer** this audit will run in (both are free; see
+[report-format.md](../../report-format.md), "Basic & Extended layers"). Find out by running the setup
+check once per session, before you build anything (use `python3` where `python` isn't available):
 
-## Output: deliver the snapshot as files
+```
+python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"
+```
 
-Generate TWO files (`site-snapshot.md` and a styled, self-contained `site-snapshot.html`) and share them
-with the user. The `.html` must follow the shared navigation rules: cross-links to the other deliverables,
-hover hints on short terms, and end with the Print hint (no `pagenav` mid-session). Format and the full
-shared design system (CSS + page frame). See: [references/rules-snapshot.md](references/rules-snapshot.md),
-section "Output file format".
+Its last line is `MODE: extended`, `MODE: basic` or `MODE: unsupported`. Say which mode they're getting:
+- **Extended:** Python, Playwright and its browser are ready, so the audit will include real Core Web
+  Vitals, accessibility, mobile, design-token and tracking measurements. If a scan still can't reach the
+  site, mark that check "not measured" as usual.
+- **Basic:** Playwright or its browser is missing, so those checks will be reported as *"not measured:
+  available with the Extended layer"* and the audit is Claude's read-and-reason review. Everything else is
+  identical. Show the user the install commands the check printed and offer to run them; after an
+  install, run the check again.
+- **Unsupported:** Python is older than 3.9. Python 3.9+ is required to build the report. Show the install
+  options below.
+- **No `MODE:` line** (the command fails, for example "Python was not found" or a syntax error): Python 3.9+
+  isn't available. Python 3.9+ is required to build the report. Show the install options: python.org,
+  `winget install Python.Python.3.13` on Windows, `brew install python` on macOS, or the system package
+  manager on Linux. After they install it, run the check again.
 
-Save both files and share them with the user for download.
+For Unsupported and No `MODE:` line, keep interviewing if the user wants, but no page can be built until
+the check passes. Basic still means "no Playwright".
 
-## Add to the Website Audit Report
+## Build the report page
 
-This suite is meant to run as one continuous session, start to finish. **Deliver only your own two files
-now** (`.md` + `.html`). Keep the **Website Audit Report** as an **internal running document**. Do **not**
-create, show, or hand over a report file mid-session; it is assembled and delivered only at the very end
-(by the Action Report skill). As the first skill, start that internal record and add the **Site Snapshot**
-section from what you just captured. Full format and section order:
-[report-format.md](../../report-format.md).
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/site-snapshot.json` ([audit-data-format.md](../../audit-data-format.md), "site-snapshot.json").
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page site-snapshot` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `site-snapshot.html` and `site-snapshot.md` from the run folder.
 
 ## Critical rules
 

@@ -1,0 +1,33 @@
+{
+  "base": "https://ananas-agency.com/",
+  "pages": [
+    {
+      "url": "https://ananas-agency.com/",
+      "cta": null,
+      "formsOnPage": 1,
+      "form": {
+        "fields": 3,
+        "required": 1,
+        "types": [
+          "text",
+          "email",
+          "textarea"
+        ],
+        "novalidate": true,
+        "submitLabel": "Send",
+        "blocksEmptySubmit": true
+      },
+      "links": [
+        "https://ananas-agency.com/",
+        "https://ananas-agency.com/#how",
+        "https://wa.me/+380930690429"
+      ],
+      "title": "Ananas Agency - Creative Marketing That Cuts Through"
+    }
+  ],
+  "links": {
+    "checked": 3,
+    "found": 3,
+    "broken": []
+  }
+}

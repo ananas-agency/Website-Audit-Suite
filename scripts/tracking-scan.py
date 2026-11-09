@@ -6,7 +6,7 @@ watches the network + cookies + JS globals, and reports the analytics stack, mar
 platform, whether trackers fire before consent (GDPR risk), conversion-tracking signals, and cookies.
 
 Engine: **Playwright** (bundled Chromium — no browser to install; Windows/macOS/Linux).
-Setup:  pip install playwright  &&  playwright install chromium
+Setup:  run the setup check: python scripts/setup-check.py
 Usage:  python scripts/tracking-scan.py <URL> [--out DIR]   (read-only — no clicks, no submits)
 """
 import json, os, sys, re
@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
-    print(json.dumps({"error": "Playwright not installed — run: pip install playwright && playwright install chromium"})); sys.exit(3)
+    print(json.dumps({"error": "Playwright not installed. Run the setup check: python scripts/setup-check.py"})); sys.exit(3)
 
 TRACKERS = [
     ("googletagmanager.com/gtm.js", "tag-manager", "Google Tag Manager"),
@@ -69,7 +69,9 @@ GLOBALS_JS = r"""() => {
 }"""
 
 def main():
-    url = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "https://example.com/"
+    if len(sys.argv) < 2 or sys.argv[1].startswith("-"):
+        print("usage: tracking-scan.py <URL> [--out DIR]"); return 2
+    url = sys.argv[1]
     outdir = "."
     for i, a in enumerate(sys.argv):
         if a == "--out" and i+1 < len(sys.argv): outdir = sys.argv[i+1]

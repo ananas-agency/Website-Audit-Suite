@@ -24,7 +24,7 @@ description: >
 Judge how **usable and technically sound** the website is (can visitors find their way, read the
 page, use it on a phone, trust it, and complete a form without friction), and turn every weakness
 into a prioritised, fixable **Finding**. Deliver a graded UX & Technical scorecard (0–100 → letter
-grade) and a list of `UX-` findings in **Issue · Impact · Fix** format, each rated on Impact and
+grade) and a list of findings in **Issue · Impact · Fix** format, each rated on Impact and
 Effort so the user knows what to fix first.
 
 This is **URL-first**: inspect the live pages and quote what's actually in the markup and on screen.
@@ -54,7 +54,8 @@ short:
 - **Fix**: the concrete change, ideally with the exact markup or attribute to add.
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
-Give each finding an ID: `UX-01`, `UX-02`, … in impact order.
+Give each finding a short `key` (for example `slow-lcp`; keys must be unique across all the files, and each skill has its own example). The builder numbers the findings, and you refer
+to another finding as `[[key]]`, never by a typed ID.
 
 ## Conversation flow
 
@@ -80,12 +81,18 @@ Apply the fast diagnostic tests before the full rubric. Details and examples in
 
 ### Step 2b: Measure mobile-friendliness (headless render — the correct way)
 
+The suite's scripts live in `${CLAUDE_PLUGIN_ROOT}/scripts/`. Wherever these instructions or the rules
+files say `python scripts/<name>.py`, run `python "${CLAUDE_PLUGIN_ROOT}/scripts/<name>.py"` (use
+`python3` where `python` isn't available).
+Before the first scan, run the setup check (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`) if it
+hasn't run in this session, and follow its `MODE:` line as Site Snapshot describes.
+
 Don't guess mobile behaviour from the markup; **render the page and measure it**. If Playwright is
-available (`pip install playwright && playwright install chromium`, which bundles its own Chromium,
+available (the setup check prints the install commands; Playwright bundles its own Chromium,
 cross-platform), run the bundled tool:
 
 ```
-python scripts/mobile-audit.py <URL> --out <folder> --widths 320,390,414
+python "${CLAUDE_PLUGIN_ROOT}/scripts/mobile-audit.py" <URL> --out "audit-<slug>" --widths 320,390,414
 ```
 
 It renders the page with real mobile emulation at each phone width and reports, per width
@@ -99,7 +106,7 @@ It renders the page with real mobile emulation at each phone width and reports, 
 - **Text under 12px**: too small to read on a phone.
 - A **full-page screenshot per width**: open them and eyeball the layout for anything the numbers miss.
 
-Turn each measured problem into a `UX-` finding with the real numbers as evidence (e.g. "44 tap
+Turn each measured problem into a finding with the real numbers as evidence (e.g. "44 tap
 targets below 44×44px at 390px: pagination, language switch, carousel controls"). If **no headless
 browser is available** (Basic layer), say so and fall back to marking these "not measured", then describe the
 observable signals but never assume the result.
@@ -110,7 +117,7 @@ Don't guess "is it fast?", "is it accessible?", or "is it secure?"; **measure th
 run the bundled scanner:
 
 ```
-python scripts/perf-a11y-scan.py <URL> --out <folder>
+python "${CLAUDE_PLUGIN_ROOT}/scripts/perf-a11y-scan.py" <URL> --out "audit-<slug>"
 ```
 
 It renders the page (mobile-emulated, as Google measures) and returns, all locally with no API keys:
@@ -119,7 +126,7 @@ heaviest resources; **real WCAG violations** via **axe-core** (critical / seriou
 keyboard focus-order pass**; and a **security** read (HTTPS, TLS version, HSTS/CSP & security headers present
 vs. missing, redirect chain, mixed content). Thresholds and full method:
 [references/rules-ux-technical.md](references/rules-ux-technical.md), "Measured performance, accessibility & security".
-Turn each into a `UX-` finding with the numbers as evidence. **Honesty:** this is a **lab** run. The INP
+Turn each into a finding with the numbers as evidence. **Honesty:** this is a **lab** run. The INP
 figure is the standard lab proxy (TBT), not the real-world field percentile; and full **screen-reader**
 testing is manual and out of scope. Say so. If the scanner can't run (Basic layer), fall back to "not measured".
 
@@ -135,7 +142,7 @@ rating, and a quadrant. **Also note genuine strengths**, so the report isn't onl
 renders representative interior templates (an article, a service page, a case study) and measures each one's
 **body text-alignment** and **characters-per-line**. Use `design-pages.json` for the readability criterion:
 centred body copy, or lines well outside ~45-75 characters, on an article or service template is a real
-`UX-` readability finding even when the homepage reads fine. Cite the measured value.
+readability finding even when the homepage reads fine. Cite the measured value.
 
 ### Step 4: Score the dimension
 
@@ -149,19 +156,19 @@ table so the grade is explainable. State plainly that the grade is an **expert j
 measured numbers where the bundled tools ran (speed, mobile fit, accessibility, security, links), and by
 observable markup signals where they didn't (Basic layer).
 
-### Step 5: Deliver the files
+### Step 5: Build the report page and hand off
 
-Generate `ux-technical.md` and a styled, self-contained `ux-technical.html` and share them. Format,
-the finding card component, and the scorecard layout: see the reference, "Output file format". End
-the HTML with the Print hint; **no `pagenav`** mid-session.
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/ux-technical.json` ([audit-data-format.md](../../audit-data-format.md), "Dimension files").
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page ux-technical` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `ux-technical.html` and `ux-technical.md` from the run folder.
 
-### Step 6: Add to the Website Audit Report & hand off
-
-Record the **UX & Technical** section (grade + criteria + findings) into the internal running
-**Website Audit Report** (do not create/show a report file now; that's the Action Report skill's job
-at the end). Format and section order: [report-format.md](../../report-format.md). Tell the user the
-remaining analyses are any of **Messaging & Clarity**, **Conversion (CRO)**, or **SEO & Content**, and
-that **Action Report** ties them together at the end.
+Tell the user the remaining analyses are any of **Messaging & Clarity**, **Conversion (CRO)**, or
+**SEO & Content**, and that **Action Report** ties them together at the end.
 
 ## Critical rules
 

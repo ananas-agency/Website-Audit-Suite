@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Action report (action-report.json)",
+  "description": "The closing page: what works overall and how the site measures up against a list of standards.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["strengths", "benchmarks"],
+  "properties": {
+    "strengths": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Short statements of what works across the whole site.",
+      "items": {"type": "string", "pattern": "\\S"}
+    },
+    "benchmarks": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Standards the site was checked against.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["standard", "status", "note"],
+        "properties": {
+          "standard": {"type": "string", "pattern": "\\S", "description": "The standard being checked."},
+          "status": {"type": "string", "enum": ["met", "gap", "na"], "description": "met, gap, or na (not applicable)."},
+          "note": {"type": "string", "pattern": "\\S", "description": "One sentence on the result. May refer to findings as [[key]]."},
+          "keys": {
+            "type": "array",
+            "description": "Optional. Keys of the findings this benchmark relates to. Each must exist in a dimension file.",
+            "items": {"type": "string", "pattern": "\\S"}
+          }
+        }
+      }
+    },
+    "rating_notes": {
+      "type": "array",
+      "description": "Optional. Caveats about how the ratings were made.",
+      "items": {"type": "string", "pattern": "\\S"}
+    }
+  }
+}

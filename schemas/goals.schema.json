@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Goals discovery (goals.json)",
+  "description": "What the owner says they want, what the site shows, and the tensions between them. All six fields are required and the lists cannot be empty; if there is nothing to report, write one plain entry.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["framing", "brief", "stated_vs_observed", "tensions", "advice", "shapes"],
+  "properties": {
+    "framing": {
+      "type": "string",
+      "pattern": "\\S",
+      "description": "Opening paragraph that sets the goals in context."
+    },
+    "brief": {
+      "type": "array",
+      "minItems": 1,
+      "description": "The goals brief as [label, value] pairs. The label must not be blank.",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "prefixItems": [
+          {"type": "string", "pattern": "\\S", "description": "Label."},
+          {"type": "string", "description": "Value."}
+        ]
+      }
+    },
+    "stated_vs_observed": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Where what the owner said and what the site does line up or differ.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["said", "observed", "gap"],
+        "properties": {
+          "said": {"type": "string", "pattern": "\\S", "description": "What the owner stated."},
+          "observed": {"type": "string", "pattern": "\\S", "description": "What the site actually shows."},
+          "gap": {"type": "string", "pattern": "\\S", "description": "The difference between the two."}
+        }
+      }
+    },
+    "tensions": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Goals that pull against each other. Each entry is a sentence.",
+      "items": {"type": "string", "pattern": "\\S"}
+    },
+    "advice": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Strategic advice, each with a headline, detail and analysis.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["headline", "detail", "analysis"],
+        "properties": {
+          "headline": {"type": "string", "pattern": "\\S", "description": "Short title of the advice."},
+          "detail": {"type": "string", "pattern": "\\S", "description": "What to do."},
+          "analysis": {"type": "string", "pattern": "\\S", "description": "Why it helps."}
+        }
+      }
+    },
+    "shapes": {
+      "type": "string",
+      "pattern": "\\S",
+      "description": "How these goals shape the rest of the audit."
+    }
+  }
+}

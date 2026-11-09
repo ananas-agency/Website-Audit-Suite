@@ -63,12 +63,13 @@ Action Report ranks them.
 This interview is paced by the **owner answering**, so it costs almost no machine time, which makes it the
 ideal thing to run **concurrently** with the parts of the audit that do:
 
-- **Extended layer (tools can run, e.g. Claude Code):** as soon as you have the URL and a Site Snapshot,
-  **launch the measured scans in the background** (`perf-a11y-scan.py`, `mobile-audit.py`, `design-scan.py`,
-  `seo-sweep.py`, `tracking-scan.py`, `interaction-scan.py`; run them in the background so control returns
+- **Extended layer (tools can run):** as soon as you have the URL and a Site Snapshot,
+  **launch the measured scans in the background** (all six: `perf-a11y-scan.py`, `mobile-audit.py`,
+  `design-scan.py`, `seo-sweep.py`, `tracking-scan.py`, `interaction-scan.py`; each with
+  `--out "audit-<slug>"`, so the builder finds the results; run them in the background so control returns
   to you), then **run this interview while they render**. When the interview wraps, the scan outputs are
   waiting. This hides the slowest part of the whole audit behind the conversation.
-- **Basic layer (no tools, e.g. the Claude app):** there's no background thread, so simply **interleave**:
+- **Basic layer (no tools):** there's no background thread, so simply **interleave**:
   read a page, ask a question, read the next while the owner types. It still feels concurrent and nothing
   is wasted.
 
@@ -210,7 +211,15 @@ Check each off (or mark **TBD**) before you deliver:
 - [ ] **Advice:** the prioritised **"How to reach your goal"** recommendations, each tied to a gap and an analysis
 
 ### Step 1: Set up the parallel work, then open the conversation
-If you have the URL and a Snapshot and can run tools, **start the background scans now**. Then open warmly:
+If you have the URL and a Snapshot and can run tools, **start the background scans now**, all six, each
+with `--out "audit-<slug>"` (the run folder: `<slug>` is the first label of the site's domain, and it is the
+only place the builder reads scans from).
+The suite's scripts live in `${CLAUDE_PLUGIN_ROOT}/scripts/`. Wherever these instructions or the rules
+files say `python scripts/<name>.py`, run `python "${CLAUDE_PLUGIN_ROOT}/scripts/<name>.py"` (use
+`python3` where `python` isn't available).
+Before the first scan, run the setup check (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`) if it
+hasn't run in this session, and follow its `MODE:` line as Site Snapshot describes.
+Then open warmly:
 *"Before I dig into the site, how do you feel about it today, and what do you most want it to do for you?"*
 
 ### Step 2: Satisfaction & the one goal
@@ -252,33 +261,26 @@ Action Report produce the graded, prioritised plan.
 
 ### Step 8: Confirm & deliver
 Summarise the reality-check and the top advice back in a few lines and get a quick confirm. Mark genuine
-unknowns **TBD** (the Action Report's reconciliation pass backfills any answered later). Then deliver the files.
+unknowns **TBD** (the Action Report's reconciliation pass backfills any answered later).
 
 ### Step 9: Hand off
-Tell the owner the brief is ready and travels with the Site Snapshot; they paste both whenever a later
+Build the page (see "Build the report page" below), then tell the owner the brief is ready and travels with the Site Snapshot; they paste both whenever a later
 skill asks about the site. Point them to the analyses (**Messaging**, **Conversion**, **SEO**,
 **UX & Technical**, **Design & Visual**), any of which can run next, and note that by now the background
 scans (if you launched them) are likely done.
 
-## Output: deliver the brief as files
+## Build the report page
 
-Generate TWO files (`goals.md` and a styled, self-contained `goals.html`) and share them. The `.html` uses
-the **shared design system** and follows the shared navigation rules: cross-links to the other deliverables,
-hover hints on short terms, and the Print hint at the end (no `pagenav` mid-session). Format and the full
-shared page frame. See [references/rules-goals-discovery.md](references/rules-goals-discovery.md),
-section "Output file format".
-
-Save both files and share them with the user for download.
-
-## Add to the Website Audit Report
-
-This suite runs as one continuous session. **Deliver only your own two files now** (`.md` + `.html`). Keep
-the **Website Audit Report** as an **internal running document**. Do **not** create, show, or hand over a
-report file mid-session; the [Action Report](../../7%20Action%20Report/action-report/SKILL.md) assembles and
-delivers it at the very end. Record the **Goals & Discovery** section (the compressed owner brief, the
-**"Stated vs. observed"** reality-check, the tensions, and the prioritised **"How to reach your goal"**
-advice) into that internal record, in its fixed slot right after Site Snapshot. Full format and section
-order: [report-format.md](../../report-format.md).
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/goals.json` ([audit-data-format.md](../../audit-data-format.md), "goals.json").
+   If the owner settled the one goal here and it differs from `audit.json`, update `primary_goal` in
+   `audit.json` to match.
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page goals` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `goals.html` and `goals.md` from the run folder.
 
 ## Critical rules
 

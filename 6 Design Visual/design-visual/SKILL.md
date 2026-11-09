@@ -22,11 +22,11 @@ description: >
 Judge how the website **actually looks** (whether the rendered design leads the eye to the main action,
 feels coherent and current, and reads as professional and trustworthy), and turn every weakness into a
 prioritised, fixable **Finding**. Deliver a graded Design & Visual scorecard (0–100 → letter grade) and a
-list of `DSN-` findings in **Issue · Impact · Fix** format, each rated on Impact and Effort so the user
+list of findings in **Issue · Impact · Fix** format, each rated on Impact and Effort so the user
 knows what to fix first.
 
 This is the one dimension a **static-HTML read can't do**: you have to see the page. So it works from two
-inputs: the **measured design tokens** (objective counts, from the bundled `scripts/design-scan.py`) and a
+inputs: the **measured design tokens** (objective counts, from the bundled `${CLAUDE_PLUGIN_ROOT}/scripts/design-scan.py`) and a
 **visual read** of the rendered desktop + mobile screenshots (expert judgement). Written for **business
 owners and marketers**: plain language, no unexplained jargon, and every finding tied to a real effect on
 their visitors.
@@ -57,7 +57,8 @@ short:
   primary, one secondary").
 - **Effort 1–5** and a **priority quadrant** derived from Impact × Effort.
 
-Give each finding an ID: `DSN-01`, `DSN-02`, … in impact order.
+Give each finding a short `key` (for example `weak-contrast`; keys must be unique across all the files, and each skill has its own example). The builder numbers the findings, and you refer
+to another finding as `[[key]]`, never by a typed ID.
 
 ## Conversation flow
 
@@ -69,11 +70,17 @@ that leads the eye *toward the main action* and fits *who the site is for*.
 
 ### Step 2: Run the design scan (headless render — the correct way)
 
+The suite's scripts live in `${CLAUDE_PLUGIN_ROOT}/scripts/`. Wherever these instructions or the rules
+files say `python scripts/<name>.py`, run `python "${CLAUDE_PLUGIN_ROOT}/scripts/<name>.py"` (use
+`python3` where `python` isn't available).
+Before the first scan, run the setup check (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`) if it
+hasn't run in this session, and follow its `MODE:` line as Site Snapshot describes.
+
 Don't guess how the page looks from the markup; **render it and measure it**. If Playwright is available
-(`pip install playwright && playwright install chromium`, which bundles its own Chromium, cross-platform), run the bundled tool:
+(the setup check prints the install commands; Playwright bundles its own Chromium, cross-platform), run the bundled tool:
 
 ```
-python scripts/design-scan.py <URL> --pages <one-article,one-service-page,one-case-study> --out <folder>
+python "${CLAUDE_PLUGIN_ROOT}/scripts/design-scan.py" <URL> --pages <one-article,one-service-page,one-case-study> --out "audit-<slug>"
 ```
 
 Pass `--pages` with **one representative page per key interior template**: an **article/blog post**, a
@@ -123,7 +130,7 @@ homepage. This is where the biggest design problems on real sites hide. For each
   outside 45-75** (benchmarks-2026.md §4), makes a page hard to read regardless of how it looks. Quote the
   measured value in the finding.
 
-Turn each template-level problem into a `DSN-` finding with the screenshot and the measured readability
+Turn each template-level problem into a finding with the screenshot and the measured readability
 value as evidence (e.g. *"the article template centres its body text at ~120 chars/line, which is hard to
 read"*, or *"the service page is a wall of text: ~140 words per visual, no diagrams or section variety"*).
 These are page-**template** findings, so one finding per template pattern, not one per page. If a readability
@@ -160,20 +167,19 @@ aesthetic-usability effect on trust), so cite the benchmark in findings. Apply t
 criteria table so the grade is explainable. State plainly that the **token counts are measured** but the
 **visual judgement is expert-subjective**, grounded in the §4 UI/UX principles, not a lab metric.
 
-### Step 6: Deliver the files
+### Step 6: Build the report page and hand off
 
-Generate `design.md` and a styled, self-contained `design.html` (embedding the two rendered screenshots and
-the measured tokens) and share them. Format, the finding card component, the design-tokens block, and the
-scorecard layout: see the reference, "Output file format". End the HTML with the Print hint; **no
-`pagenav`** mid-session.
+1. If the setup check hasn't run in this session, run it (`python "${CLAUDE_PLUGIN_ROOT}/scripts/setup-check.py"`; use `python3` where
+   `python` isn't available). On `MODE: unsupported` or no `MODE:` line, stop and help the user install Python 3.9+
+   (python.org, `winget install Python.Python.3.13` on Windows, `brew install python` on macOS), then run the check again.
+2. If `audit-<slug>/audit-data/audit.json` doesn't exist, create it, with `mode` set from the `MODE:` line (`extended` or `basic`) ([audit-data-format.md](../../audit-data-format.md), "audit.json").
+3. Write `audit-<slug>/audit-data/design.json` ([audit-data-format.md](../../audit-data-format.md), "Dimension files").
+4. Run `python "${CLAUDE_PLUGIN_ROOT}/scripts/build-report.py" "audit-<slug>" --page design` (use `python3` where
+   `python` isn't available). On exit 2, fix each field it names and run it again.
+5. Give the user `design.html` and `design.md` from the run folder.
 
-### Step 7: Add to the Website Audit Report & hand off
-
-Record the **Design & Visual** section (grade + criteria + findings) into the internal running **Website
-Audit Report** (do not create/show a report file now; that's the Action Report skill's job at the end).
-Format and section order: [report-format.md](../../report-format.md). Tell the user the remaining analyses are
-any of **Messaging & Clarity**, **Conversion (CRO)**, **SEO & Content**, or **UX & Technical**, and that
-**Action Report** ties them together at the end.
+Tell the user the remaining analyses are any of **Messaging & Clarity**, **Conversion (CRO)**,
+**SEO & Content**, or **UX & Technical**, and that **Action Report** ties them together at the end.
 
 ## Critical rules
 
